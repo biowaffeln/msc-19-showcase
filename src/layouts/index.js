@@ -36,10 +36,21 @@ const GlobalStyle = createGlobalStyle`
       font-size: 1.5rem;
   }
 
+  h3, h4, h5, h6 {
+    font-size: 1.4rem;
+    font-weight: 800;
+  }
+
   p {
         font-size: 1.4rem;
         font-weight: 500;
         line-height: 1.25;
+  }
+
+  figcaption {
+    font-size: 1.2rem;
+    padding-top: 0.2rem;
+    font-family: "Suisse Condensed";
   }
 `;
 

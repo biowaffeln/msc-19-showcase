@@ -20,10 +20,28 @@ module.exports = {
         name: `markdown-pages`,
       },
     },
-    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-preload-fonts`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1100,
+              showCaptions: true,
+              backgroundColor: 'transparent',
+              quality: 80,
+              withWebp: true,
+              disableBgImageOnAlpha: true,
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
