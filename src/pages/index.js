@@ -49,6 +49,47 @@ const IndexPage = ({ data }) => {
             </h1>
           </StyledLink>
         ))}
+
+        {posts.map((post) => (
+          <StyledLink to={post.node.frontmatter.slug} className='mr-4'>
+            <h1>
+              {post.node.frontmatter.artist}
+              <span className='super ml-2'>{post.node.frontmatter.title}</span>
+            </h1>
+          </StyledLink>
+        ))}
+        {posts.map((post) => (
+          <StyledLink to={post.node.frontmatter.slug} className='mr-4'>
+            <h1>
+              {post.node.frontmatter.artist}
+              <span className='super ml-2'>{post.node.frontmatter.title}</span>
+            </h1>
+          </StyledLink>
+        ))}
+        {posts.map((post) => (
+          <StyledLink to={post.node.frontmatter.slug} className='mr-4'>
+            <h1>
+              {post.node.frontmatter.artist}
+              <span className='super ml-2'>{post.node.frontmatter.title}</span>
+            </h1>
+          </StyledLink>
+        ))}
+        {posts.map((post) => (
+          <StyledLink to={post.node.frontmatter.slug} className='mr-4'>
+            <h1>
+              {post.node.frontmatter.artist}
+              <span className='super ml-2'>{post.node.frontmatter.title}</span>
+            </h1>
+          </StyledLink>
+        ))}
+        {posts.map((post) => (
+          <StyledLink to={post.node.frontmatter.slug} className='mr-4'>
+            <h1>
+              {post.node.frontmatter.artist}
+              <span className='super ml-2'>{post.node.frontmatter.title}</span>
+            </h1>
+          </StyledLink>
+        ))}
       </section>
     </Layout>
   );
