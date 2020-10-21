@@ -1,1 +1,11 @@
-{"data":{"site":{"siteMetadata":{"title":"UAL Creative Computing Institute","description":"MSc '19 graduate showcase","author":"@gatsbyjs"}}}}
+{
+  "data": {
+    "site": {
+      "siteMetadata": {
+        "title": "UAL Creative Computing Institute",
+        "description": "MSc '19 graduate showcase",
+        "author": "@gatsbyjs"
+      }
+    }
+  }
+}
