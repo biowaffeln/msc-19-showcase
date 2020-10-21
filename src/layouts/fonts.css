@@ -1,0 +1,50 @@
+/* Regular */
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Regular-WebS.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-Regular-WebS.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+}
+
+/* Bold */
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Bold-WebS.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-Bold-WebS.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: block;
+}
+
+/* Light */
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Light-WebXL.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-Light-WebXL.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-LightItalic-WebXL.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-LightItalic-WebXL.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+  font-display: block;
+}
+
+/* Condensed */
+
+@font-face {
+  font-family: 'Suisse Condensed';
+  src: url('/fonts/SuisseIntlCond-Light-WebS.woff2') format('woff2'),
+    url('/fonts/SuisseIntlCond-Light-WebS.woff') format('woff');
+  font-display: block;
+}
