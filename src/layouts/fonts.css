@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'Suisse Intl';
-  src: url("https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Regular%20cuts/web%20files/SuisseIntl-Regular-Web/S/SuisseIntl-Regular-WebXL.woff2") format('woff2'),
-    url("https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Regular%20cuts/web%20files/SuisseIntl-Regular-Web/S/SuisseIntl-Regular-WebXL.woff") format('woff');
+  src: url("https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Regular%20cuts/web%20files/SuisseIntl-Regular-Web/XL/SuisseIntl-Regular-WebXL.woff2") format('woff2'),
+    url("https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Regular%20cuts/web%20files/SuisseIntl-Regular-Web/XL/SuisseIntl-Regular-WebXL.woff") format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: block;
