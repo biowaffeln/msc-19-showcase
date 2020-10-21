@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import Image from "gatsby-image";
+import Sticker from "../components/Sticker"
 
 import Layout from "../layouts/index";
 import SEO from "../components/seo";
@@ -40,6 +41,8 @@ const IndexPage = ({ data }) => {
         </h2>
       </Header>
 
+<a href="https://www.instagram.com/ual_cci/?hl=en"><Sticker>Instagram</Sticker></a>
+
       <section>
         {posts.map((post) => (
           <StyledLink
@@ -53,6 +56,7 @@ const IndexPage = ({ data }) => {
             </h1>
           </StyledLink>
         ))}
+      
       </section>
     </Layout>
   );
