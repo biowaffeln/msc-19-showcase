@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import React, { useEffect, useRef } from "react";
-import { useSpring, animated, config } from "react-spring";
+import styled from 'styled-components';
+import React, { useEffect, useRef } from 'react';
+import { useSpring, animated, config } from 'react-spring';
 
 const Wrapper = styled(animated.div)`
   background: ${(props) => props.theme.orange};
@@ -11,16 +11,17 @@ const Wrapper = styled(animated.div)`
   height: 100px;
   width: 100px;
   border-radius: 10rem;
-  position: fixed;
+  position: absolute;
   text-align: center;
   z-index: 100;
   font-size: 1rem;
+  font-feature-settings: 'ss01';
 `;
 
 const Sticker = ({ children }) => {
   const fadein = useSpring({
-    from: { transform: "scale(0)" },
-    to: { transform: "scale(1)" },
+    from: { transform: 'scale(0)' },
+    to: { transform: 'scale(1)' },
     delay: Math.floor(Math.random() * 500),
     config: config.wobbly,
   });
@@ -40,7 +41,7 @@ const Sticker = ({ children }) => {
   }, []);
 
   return (
-    <Wrapper ref={ref} className="p-5" style={fadein}>
+    <Wrapper ref={ref} className='p-5' style={fadein}>
       {children}
     </Wrapper>
   );

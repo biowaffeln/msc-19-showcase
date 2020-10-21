@@ -1,14 +1,14 @@
-import React from "react";
-import "./fonts.css";
-import { createGlobalStyle, ThemeProvider } from "styled-components";
-import Header from "../components/header";
+import React from 'react';
+import './fonts.css';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import Header from '../components/header';
 
 const theme = {
-  blue: "#2500E5",
-  white: "#FAF9F9",
-  orange: "rgba(255,118,44,0.99)",
-  strokeWeight: "1px",
-  borderRadius: "0.5rem",
+  blue: '#2500E5',
+  white: '#FAF9F9',
+  orange: 'rgba(255,118,44,0.99)',
+  strokeWeight: '1px',
+  borderRadius: '0.5rem',
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -22,11 +22,19 @@ const GlobalStyle = createGlobalStyle`
   body {
       background: ${(props) => props.theme.white};
       color: ${(props) => props.theme.blue};
-      font-family: "Suisse Intl"
+
+         font-family: "Suisse Intl", -apple-system, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+    font-feature-settings: 'kern';
+      text-rendering: geometricPrecision;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-feature-settings: 'ss01';
   }
 
   a {
       color: ${(props) => props.theme.blue};
+      text-decoration: none;
   }
 
   a:hover {
@@ -36,8 +44,8 @@ const GlobalStyle = createGlobalStyle`
 
   h1 {
       letter-spacing: -0.25rem;
-      line-height: 0.8;
-      font-weight: bold;
+      line-height: 0.9;
+      font-weight: 900;
       font-size: 6vw; 
 
 
@@ -77,13 +85,13 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Suisse Condensed";
   }
 
-  img {
-    border-radius: ${(props) => props.theme.borderRadius};
+  blockquote {
+    padding-left: 2rem;
   }
 `;
 
 const Layout = ({ children }) => (
-  <div className="m-2 m-md-3">
+  <div className='m-2 m-md-3'>
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Header />
