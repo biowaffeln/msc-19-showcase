@@ -7,9 +7,9 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: `UAL Creative Computing Institute`,
-    description: `MSc '19 graduate showcase`,
+    description: `We are the first creative computing cohort of the UAL Creative Computing Institute.`,
     siteUrl: `https://creativecomputing.cci.arts.ac.uk/`,
-    author: `@gatsbyjs`,
+    author: `@ual_cci`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -54,9 +54,6 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: process.env.ANALYTICS_ID,
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: true,
-        anonymize: false,
       },
     },
     {

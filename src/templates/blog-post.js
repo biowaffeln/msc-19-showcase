@@ -26,7 +26,7 @@ export default function BlogPost({ data }) {
   return (
     <Layout>
       <SEO
-        title={`${post.frontmatter.artist} — UAL Creative Computing Institute`}
+        title={`${post.frontmatter.artist} | Graduate Showcase 2020`}
         description={post.excerpt}
       />
 

@@ -33,7 +33,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title='UAL CCI — Graduate Showcase' />
+      <SEO title='CCI | Graduate Showcase 2020' />
 
       <a href='https://www.instagram.com/ual_cci/?hl=en' className='nohover'>
         <Sticker>Instagram↗</Sticker>

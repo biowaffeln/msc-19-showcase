@@ -1,6 +1,6 @@
 ---
 slug: '/josh-murr'
-artist: 'Jush Murr'
+artist: 'Josh Murr'
 title: 'Example Project'
 thumbnail: 'thumbnail.jpg'
 ---
