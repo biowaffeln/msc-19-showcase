@@ -12,6 +12,12 @@ Builds static files to `public/` folder:
 $ yarn run build
 ```
 
+Copy them into public_html from root:
+
+```
+$ cp -r ./msc-19-showcase/public/* ./creativecomputing.cci.arts.ac.uk/public_html/
+```
+
 ### Development
 
 To start a development server:
