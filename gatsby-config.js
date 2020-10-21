@@ -1,3 +1,9 @@
+const path = require('path')
+
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `UAL Creative Computing Institute`,
@@ -42,6 +48,15 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.ANALYTICS_ID,
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: true,
+        anonymize: false,
       },
     },
     {
