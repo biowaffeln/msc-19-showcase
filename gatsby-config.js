@@ -1,6 +1,6 @@
-const path = require("path");
+const path = require('path');
 
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     title: `UAL Creative Computing Institute`,
     description: `MSc '19 graduate showcase`,
-    siteUrl: `https://msc-19-showcase.vercel.app/`,
+    siteUrl: `https://creativecomputing.cci.arts.ac.uk/`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -41,7 +41,7 @@ module.exports = {
             options: {
               maxWidth: 1100,
               showCaptions: true,
-              backgroundColor: "transparent",
+              backgroundColor: 'transparent',
               quality: 80,
               withWebp: true,
               disableBgImageOnAlpha: true,
