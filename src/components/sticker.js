@@ -8,16 +8,22 @@ const Wrapper = styled(animated.div)`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
   border-radius: 10rem;
   position: fixed;
   text-align: center;
   z-index: 100;
+  font-size: 1rem;
 `;
 
 const Sticker = ({ children }) => {
-  const fadein = useSpring({ from: { transform: "scale(0)" }, to: { transform: "scale(1)" }, delay: Math.floor(Math.random() * 500), config: config.wobbly });
+  const fadein = useSpring({
+    from: { transform: "scale(0)" },
+    to: { transform: "scale(1)" },
+    delay: Math.floor(Math.random() * 500),
+    config: config.wobbly,
+  });
 
   const ref = useRef();
 

@@ -5,19 +5,34 @@ import { Link } from "gatsby";
 import SEO from "../components/seo";
 import Image from "gatsby-image";
 import styled from "styled-components";
+import { useSpring, animated } from "react-spring";
 
 const Outline = styled.div`
-  border: ${(props) => props.theme.strokeWeight} solid
-    ${(props) => props.theme.blue};
+  border: ${(props) => props.theme.strokeWeight} solid ${(props) => props.theme.blue};
   border-radius: ${(props) => props.theme.borderRadius};
 `;
 
 export default function BlogPost({ data }) {
   const post = data.markdownRemark;
+
+  const fadein = useSpring({
+    from: { transform: `translateY(${window.innerHeight}px)`, opacity: 0 },
+    to: { transform: `translateY(0px)`, opacity: 1 }
+  });
+
+  const maxWidth = { maxWidth: "1000px" }
+
   return (
     <Layout>
-      <SEO title={`${post.frontmatter.title}, ${post.frontmatter.artist}`} />
-      <main className="mx-auto" style={{ maxWidth: "1000px" }}>
+      <SEO
+        title={`${post.frontmatter.artist} — UAL Creative Computing Institute`}
+        description={post.excerpt}
+      />
+
+      <animated.section
+        className="mx-auto mb-5"
+        style={{...maxWidth, ...fadein}}
+      >
         <Outline className="p-3">
           <div className="d-flex justify-content-between">
             <header>
@@ -25,18 +40,18 @@ export default function BlogPost({ data }) {
               <h1>{post.frontmatter.title}</h1>
             </header>
             <h2>
-              <Link to="/">✕</Link>
+              <Link to="/" css="padding: 1rem; margin: -1rem">✕</Link>
             </h2>
           </div>
 
           <Image
             fluid={post.frontmatter.thumbnail.childImageSharp.fluid}
-            className="mt-4 mb-4"
+            className="my-3"
           />
 
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </Outline>
-      </main>
+      </animated.section>
     </Layout>
   );
 }
@@ -45,6 +60,7 @@ export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      excerpt
       frontmatter {
         title
         slug

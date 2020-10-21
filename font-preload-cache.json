@@ -1,1 +1,57 @@
-{"timestamp":1603286361460,"hash":"c26c6e03d5fbfa13789564349c59d6d9","assets":{"/moritz-salla/":{"/fonts/SuisseIntl-Bold-WebS.woff2":true,"/fonts/SuisseIntl-Regular-WebS.woff2":true,"/fonts/SuisseIntlCond-Light-WebS.woff2":true,"https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Regular%20cuts/web%20files/SuisseIntl-Regular-Web/XL/SuisseIntl-Regular-WebXL.woff2":true,"https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Bold%20cuts/web%20files/SuisseIntl-Bold-Web/S/SuisseIntl-Bold-WebS.woff2":true,"https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Condensed%20Light%20cuts/web%20files/SuisseIntlCond-Light-Web/S/SuisseIntlCond-Light-WebS.woff2":true},"/ben-stopher/":{"/fonts/SuisseIntl-Regular-WebS.woff2":true,"/fonts/SuisseIntl-Bold-WebS.woff2":true},"/aleksi-halttunen/":{"/fonts/SuisseIntl-Regular-WebS.woff2":true,"/fonts/SuisseIntl-Bold-WebS.woff2":true},"/":{"/fonts/SuisseIntl-Regular-WebS.woff2":true,"/fonts/SuisseIntl-Bold-WebS.woff2":true,"/fonts/SuisseIntlCond-Light-WebS.woff2":true,"https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Condensed%20Light%20cuts/web%20files/SuisseIntlCond-Light-Web/S/SuisseIntlCond-Light-WebS.woff2":true,"https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Regular%20cuts/web%20files/SuisseIntl-Regular-Web/XL/SuisseIntl-Regular-WebXL.woff2":true,"https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Bold%20cuts/web%20files/SuisseIntl-Bold-Web/S/SuisseIntl-Bold-WebS.woff2":true},"/sayed-coles/":{"/fonts/SuisseIntl-Regular-WebS.woff2":true,"/fonts/SuisseIntl-Bold-WebS.woff2":true,"/fonts/SuisseIntlCond-Light-WebS.woff2":true,"https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Bold%20cuts/web%20files/SuisseIntl-Bold-Web/S/SuisseIntl-Bold-WebS.woff2":true,"https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Condensed%20Light%20cuts/web%20files/SuisseIntlCond-Light-Web/S/SuisseIntlCond-Light-WebS.woff2":true,"https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Regular%20cuts/web%20files/SuisseIntl-Regular-Web/XL/SuisseIntl-Regular-WebXL.woff2":true},"/dev-404-page/":{"/fonts/SuisseIntl-Regular-WebS.woff2":true,"/fonts/SuisseIntl-Bold-WebS.woff2":true,"/fonts/SuisseIntlCond-Light-WebS.woff2":true},"/404/":{"/fonts/SuisseIntl-Regular-WebS.woff2":true,"/fonts/SuisseIntl-Bold-WebS.woff2":true,"/fonts/SuisseIntlCond-Light-WebS.woff2":true,"https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Bold%20cuts/web%20files/SuisseIntl-Bold-Web/S/SuisseIntl-Bold-WebS.woff2":true,"https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Regular%20cuts/web%20files/SuisseIntl-Regular-Web/XL/SuisseIntl-Regular-WebXL.woff2":true},"/404.html":{"/fonts/SuisseIntl-Regular-WebS.woff2":true,"/fonts/SuisseIntlCond-Light-WebS.woff2":true,"/fonts/SuisseIntl-Bold-WebS.woff2":true,"https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Bold%20cuts/web%20files/SuisseIntl-Bold-Web/S/SuisseIntl-Bold-WebS.woff2":true,"https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Regular%20cuts/web%20files/SuisseIntl-Regular-Web/XL/SuisseIntl-Regular-WebXL.woff2":true}}}
+{
+  "timestamp": 1603286361460,
+  "hash": "c26c6e03d5fbfa13789564349c59d6d9",
+  "assets": {
+    "/moritz-salla/": {
+      "/fonts/SuisseIntl-Bold-WebS.woff2": true,
+      "/fonts/SuisseIntl-Regular-WebS.woff2": true,
+      "/fonts/SuisseIntlCond-Light-WebS.woff2": true,
+      "https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Regular%20cuts/web%20files/SuisseIntl-Regular-Web/XL/SuisseIntl-Regular-WebXL.woff2": true,
+      "https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Bold%20cuts/web%20files/SuisseIntl-Bold-Web/S/SuisseIntl-Bold-WebS.woff2": true,
+      "https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Condensed%20Light%20cuts/web%20files/SuisseIntlCond-Light-Web/S/SuisseIntlCond-Light-WebS.woff2": true
+    },
+    "/ben-stopher/": {
+      "/fonts/SuisseIntl-Regular-WebS.woff2": true,
+      "/fonts/SuisseIntl-Bold-WebS.woff2": true
+    },
+    "/aleksi-halttunen/": {
+      "/fonts/SuisseIntl-Regular-WebS.woff2": true,
+      "/fonts/SuisseIntl-Bold-WebS.woff2": true
+    },
+    "/": {
+      "/fonts/SuisseIntl-Regular-WebS.woff2": true,
+      "/fonts/SuisseIntl-Bold-WebS.woff2": true,
+      "/fonts/SuisseIntlCond-Light-WebS.woff2": true,
+      "https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Condensed%20Light%20cuts/web%20files/SuisseIntlCond-Light-Web/S/SuisseIntlCond-Light-WebS.woff2": true,
+      "https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Regular%20cuts/web%20files/SuisseIntl-Regular-Web/XL/SuisseIntl-Regular-WebXL.woff2": true,
+      "https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Bold%20cuts/web%20files/SuisseIntl-Bold-Web/S/SuisseIntl-Bold-WebS.woff2": true
+    },
+    "/sayed-coles/": {
+      "/fonts/SuisseIntl-Regular-WebS.woff2": true,
+      "/fonts/SuisseIntl-Bold-WebS.woff2": true,
+      "/fonts/SuisseIntlCond-Light-WebS.woff2": true,
+      "https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Bold%20cuts/web%20files/SuisseIntl-Bold-Web/S/SuisseIntl-Bold-WebS.woff2": true,
+      "https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Condensed%20Light%20cuts/web%20files/SuisseIntlCond-Light-Web/S/SuisseIntlCond-Light-WebS.woff2": true,
+      "https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Regular%20cuts/web%20files/SuisseIntl-Regular-Web/XL/SuisseIntl-Regular-WebXL.woff2": true
+    },
+    "/dev-404-page/": {
+      "/fonts/SuisseIntl-Regular-WebS.woff2": true,
+      "/fonts/SuisseIntl-Bold-WebS.woff2": true,
+      "/fonts/SuisseIntlCond-Light-WebS.woff2": true
+    },
+    "/404/": {
+      "/fonts/SuisseIntl-Regular-WebS.woff2": true,
+      "/fonts/SuisseIntl-Bold-WebS.woff2": true,
+      "/fonts/SuisseIntlCond-Light-WebS.woff2": true,
+      "https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Bold%20cuts/web%20files/SuisseIntl-Bold-Web/S/SuisseIntl-Bold-WebS.woff2": true,
+      "https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Regular%20cuts/web%20files/SuisseIntl-Regular-Web/XL/SuisseIntl-Regular-WebXL.woff2": true
+    },
+    "/404.html": {
+      "/fonts/SuisseIntl-Regular-WebS.woff2": true,
+      "/fonts/SuisseIntlCond-Light-WebS.woff2": true,
+      "/fonts/SuisseIntl-Bold-WebS.woff2": true,
+      "https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Bold%20cuts/web%20files/SuisseIntl-Bold-Web/S/SuisseIntl-Bold-WebS.woff2": true,
+      "https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Regular%20cuts/web%20files/SuisseIntl-Regular-Web/XL/SuisseIntl-Regular-WebXL.woff2": true
+    }
+  }
+}

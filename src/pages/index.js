@@ -3,7 +3,6 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 import Image from "gatsby-image";
 import Sticker from "../components/sticker";
-
 import Layout from "../layouts/index";
 import SEO from "../components/seo";
 
@@ -23,23 +22,12 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const Header = styled.header`
-  margin-bottom: 20vh;
-`;
-
 const IndexPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
 
   return (
     <Layout>
       <SEO title="Graduate Showcase 2020" />
-      <Header>
-        <h2>
-          UAL Creative Computing Institute
-          <br />
-          MSc Creative Computing Graduates ⑲
-        </h2>
-      </Header>
 
       <a href="https://www.instagram.com/ual_cci/?hl=en">
         <Sticker>Instagram</Sticker>
