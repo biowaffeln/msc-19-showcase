@@ -5,13 +5,21 @@ var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWild
 exports.__esModule = true;
 exports.errorMap = exports.reportError = exports.clearError = void 0;
 
-var ReactRefreshErrorOverlay = _interopRequireWildcard(require("@pmmmwh/react-refresh-webpack-plugin/overlay"));
+var ReactRefreshErrorOverlay = _interopRequireWildcard(
+  require("@pmmmwh/react-refresh-webpack-plugin/overlay")
+);
 
 var ReactErrorOverlay = _interopRequireWildcard(require("react-error-overlay"));
 
 const ErrorOverlay = {
-  showCompileError: process.env.GATSBY_HOT_LOADER !== `fast-refresh` ? ReactErrorOverlay.reportBuildError : ReactRefreshErrorOverlay.showCompileError,
-  clearCompileError: process.env.GATSBY_HOT_LOADER !== `fast-refresh` ? ReactErrorOverlay.dismissBuildError : ReactRefreshErrorOverlay.clearCompileError
+  showCompileError:
+    process.env.GATSBY_HOT_LOADER !== `fast-refresh`
+      ? ReactErrorOverlay.reportBuildError
+      : ReactRefreshErrorOverlay.showCompileError,
+  clearCompileError:
+    process.env.GATSBY_HOT_LOADER !== `fast-refresh`
+      ? ReactErrorOverlay.dismissBuildError
+      : ReactRefreshErrorOverlay.clearCompileError,
 };
 
 if (process.env.GATSBY_HOT_LOADER !== `fast-refresh`) {
@@ -25,8 +33,7 @@ if (process.env.GATSBY_HOT_LOADER !== `fast-refresh`) {
     // If there was unhandled error, reload browser
     // on next HMR update
 
-
-    module.hot.addStatusHandler(status => {
+    module.hot.addStatusHandler((status) => {
       if (status === `apply` || status === `idle`) {
         window.location.reload();
       }
@@ -47,14 +54,21 @@ if (process.env.GATSBY_HOT_LOADER !== `fast-refresh`) {
 
   ReactErrorOverlay.startReportingRuntimeErrors({
     onError,
-    filename: `/commons.js`
+    filename: `/commons.js`,
   }); // ReactErrorOverlay `onError` handler is triggered pretty late
   // so we attach same error/unhandledrejection as ReactErrorOverlay
   // to be able to detect runtime error and setup listeners faster
 
   window.addEventListener(`error`, onError);
   window.addEventListener(`unhandledrejection`, onError);
-  ReactErrorOverlay.setEditorHandler(errorLocation => window.fetch(`/__open-stack-frame-in-editor?fileName=` + window.encodeURIComponent(errorLocation.fileName) + `&lineNumber=` + window.encodeURIComponent(errorLocation.lineNumber || 1)));
+  ReactErrorOverlay.setEditorHandler((errorLocation) =>
+    window.fetch(
+      `/__open-stack-frame-in-editor?fileName=` +
+        window.encodeURIComponent(errorLocation.fileName) +
+        `&lineNumber=` +
+        window.encodeURIComponent(errorLocation.lineNumber || 1)
+    )
+  );
 }
 
 const errorMap = {};
@@ -69,21 +83,23 @@ const handleErrorOverlay = () => {
   let errorStringsToDisplay = [];
 
   if (errors.length > 0) {
-    errorStringsToDisplay = flat(errors).map(error => {
-      if (typeof error === `string`) {
-        return error;
-      } else if (typeof error === `object`) {
-        const errorStrBuilder = [error.text];
+    errorStringsToDisplay = flat(errors)
+      .map((error) => {
+        if (typeof error === `string`) {
+          return error;
+        } else if (typeof error === `object`) {
+          const errorStrBuilder = [error.text];
 
-        if (error.filePath) {
-          errorStrBuilder.push(`File: ${error.filePath}`);
+          if (error.filePath) {
+            errorStrBuilder.push(`File: ${error.filePath}`);
+          }
+
+          return errorStrBuilder.join(`\n\n`);
         }
 
-        return errorStrBuilder.join(`\n\n`);
-      }
-
-      return null;
-    }).filter(Boolean);
+        return null;
+      })
+      .filter(Boolean);
   }
 
   if (errorStringsToDisplay.length > 0) {
@@ -93,7 +109,7 @@ const handleErrorOverlay = () => {
   }
 };
 
-const clearError = errorID => {
+const clearError = (errorID) => {
   delete errorMap[errorID];
   handleErrorOverlay();
 };

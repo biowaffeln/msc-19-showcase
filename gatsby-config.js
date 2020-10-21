@@ -33,7 +33,7 @@ module.exports = {
             options: {
               maxWidth: 1100,
               showCaptions: true,
-              backgroundColor: 'transparent',
+              backgroundColor: "transparent",
               quality: 80,
               withWebp: true,
               disableBgImageOnAlpha: true,

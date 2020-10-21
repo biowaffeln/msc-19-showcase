@@ -1,10 +1,10 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
-import Image from 'gatsby-image';
+import React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
+import Image from "gatsby-image";
 
-import Layout from '../layouts/index';
-import SEO from '../components/seo';
+import Layout from "../layouts/index";
+import SEO from "../components/seo";
 
 const StyledLink = styled(Link)`
   h1 {
@@ -16,7 +16,7 @@ const StyledLink = styled(Link)`
     letter-spacing: -0.04rem;
     font-weight: lighter;
     font-size: 1.75rem;
-    font-family: 'Suisse Condensed';
+    font-family: "Suisse Condensed";
     max-width: 15ch;
     hyphens: auto;
   }
@@ -31,7 +31,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title='Graduate Showcase 2020' />
+      <SEO title="Graduate Showcase 2020" />
       <Header>
         <h2>
           UAL Creative Computing Institute
@@ -42,51 +42,14 @@ const IndexPage = ({ data }) => {
 
       <section>
         {posts.map((post) => (
-          <StyledLink to={post.node.frontmatter.slug} className='mr-4'>
+          <StyledLink
+            key={post.node.id}
+            to={post.node.frontmatter.slug}
+            className="mr-4"
+          >
             <h1>
               {post.node.frontmatter.artist}
-              <span className='super ml-2'>{post.node.frontmatter.title}</span>
-            </h1>
-          </StyledLink>
-        ))}
-
-        {posts.map((post) => (
-          <StyledLink to={post.node.frontmatter.slug} className='mr-4'>
-            <h1>
-              {post.node.frontmatter.artist}
-              <span className='super ml-2'>{post.node.frontmatter.title}</span>
-            </h1>
-          </StyledLink>
-        ))}
-        {posts.map((post) => (
-          <StyledLink to={post.node.frontmatter.slug} className='mr-4'>
-            <h1>
-              {post.node.frontmatter.artist}
-              <span className='super ml-2'>{post.node.frontmatter.title}</span>
-            </h1>
-          </StyledLink>
-        ))}
-        {posts.map((post) => (
-          <StyledLink to={post.node.frontmatter.slug} className='mr-4'>
-            <h1>
-              {post.node.frontmatter.artist}
-              <span className='super ml-2'>{post.node.frontmatter.title}</span>
-            </h1>
-          </StyledLink>
-        ))}
-        {posts.map((post) => (
-          <StyledLink to={post.node.frontmatter.slug} className='mr-4'>
-            <h1>
-              {post.node.frontmatter.artist}
-              <span className='super ml-2'>{post.node.frontmatter.title}</span>
-            </h1>
-          </StyledLink>
-        ))}
-        {posts.map((post) => (
-          <StyledLink to={post.node.frontmatter.slug} className='mr-4'>
-            <h1>
-              {post.node.frontmatter.artist}
-              <span className='super ml-2'>{post.node.frontmatter.title}</span>
+              <span className="super ml-2">{post.node.frontmatter.title}</span>
             </h1>
           </StyledLink>
         ))}
@@ -100,6 +63,7 @@ export const pageQuery = graphql`
     allMarkdownRemark {
       edges {
         node {
+          id
           frontmatter {
             artist
             title

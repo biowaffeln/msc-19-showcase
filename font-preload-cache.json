@@ -1,1 +1,23 @@
-{"timestamp":1603235852638,"hash":"6e886e1752ad75e3fe4de3a330f0b6cc","assets":{"/moritz-salla/":{"/fonts/SuisseIntl-Bold-WebS.woff2":true,"/fonts/SuisseIntl-Regular-WebS.woff2":true},"/ben-stopher/":{"/fonts/SuisseIntl-Regular-WebS.woff2":true,"/fonts/SuisseIntl-Bold-WebS.woff2":true},"/aleksi-halttunen/":{"/fonts/SuisseIntl-Regular-WebS.woff2":true,"/fonts/SuisseIntl-Bold-WebS.woff2":true},"/":{"/fonts/SuisseIntl-Regular-WebS.woff2":true,"/fonts/SuisseIntl-Bold-WebS.woff2":true,"/fonts/SuisseIntlCond-Light-WebS.woff2":true}}}
+{
+  "timestamp": 1603235852638,
+  "hash": "6e886e1752ad75e3fe4de3a330f0b6cc",
+  "assets": {
+    "/moritz-salla/": {
+      "/fonts/SuisseIntl-Bold-WebS.woff2": true,
+      "/fonts/SuisseIntl-Regular-WebS.woff2": true
+    },
+    "/ben-stopher/": {
+      "/fonts/SuisseIntl-Regular-WebS.woff2": true,
+      "/fonts/SuisseIntl-Bold-WebS.woff2": true
+    },
+    "/aleksi-halttunen/": {
+      "/fonts/SuisseIntl-Regular-WebS.woff2": true,
+      "/fonts/SuisseIntl-Bold-WebS.woff2": true
+    },
+    "/": {
+      "/fonts/SuisseIntl-Regular-WebS.woff2": true,
+      "/fonts/SuisseIntl-Bold-WebS.woff2": true,
+      "/fonts/SuisseIntlCond-Light-WebS.woff2": true
+    }
+  }
+}

@@ -1,16 +1,21 @@
-import React from 'react';
-import './fonts.css';
-import { createGlobalStyle } from 'styled-components';
+import React from "react";
+import "./fonts.css";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
+
+const theme = {
+  blue: "#2500E5",
+  white: "#FAF9F9",
+};
 
 const GlobalStyle = createGlobalStyle`
   body {
-      background: #FAF9F9;
-      color: #2500E5;
+      background: ${(props) => props.theme.white};
+      color: ${(props) => props.theme.blue};
       font-family: "Suisse Intl"
   }
 
   a {
-      color: #2500E5;
+      color: ${(props) => props.theme.blue};
   }
 
   a:hover {
@@ -59,9 +64,11 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Layout = ({ children }) => (
-  <div className='m-3'>
-    <GlobalStyle />
-    {children}
+  <div className="m-3">
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      {children}
+    </ThemeProvider>
   </div>
 );
 
