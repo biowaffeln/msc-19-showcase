@@ -16,7 +16,7 @@ export default function BlogPost({ data }) {
   const post = data.markdownRemark;
 
   const fadein = useSpring({
-    from: { transform: `translateY(${window ? window.innerHeight : 0}px)`, opacity: 0 },
+    from: { transform: `translateY(200px)`, opacity: 0 },
     to: { transform: `translateY(0px)`, opacity: 1 }
   });
 
