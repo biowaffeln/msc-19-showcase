@@ -7,8 +7,8 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   border-radius: 10rem;
   position: fixed;
   text-align: center;
@@ -30,8 +30,8 @@ const Sticker = ({ children }) => {
   });
 
   return (
-    <Wrapper ref={ref}>
-      <a>{children}</a>
+    <Wrapper ref={ref} className="p-5">
+      {children}
     </Wrapper>
   );
 };

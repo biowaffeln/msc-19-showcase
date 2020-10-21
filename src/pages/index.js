@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import Image from "gatsby-image";
-import Sticker from "../components/Sticker";
+import Sticker from "../components/sticker";
 
 import Layout from "../layouts/index";
 import SEO from "../components/seo";
@@ -37,7 +37,7 @@ const IndexPage = ({ data }) => {
         <h2>
           UAL Creative Computing Institute
           <br />
-          MSc Creative Computing Graduates ⓳
+          MSc Creative Computing Graduates ⑲
         </h2>
       </Header>
 

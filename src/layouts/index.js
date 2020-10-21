@@ -57,7 +57,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   p {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         font-weight: 500;
         line-height: 1.25;
   }
