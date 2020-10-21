@@ -5,7 +5,7 @@ import Header from '../components/header';
 
 const theme = {
   blue: '#2500E5',
-  white: '#FAF9F9',
+  white: '#EFEFEF',
   orange: 'rgba(255,118,44,0.99)',
   strokeWeight: '1px',
   borderRadius: '0.5rem',
@@ -49,7 +49,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: 6vw; 
 
 
-      @media only screen and (max-width: 1300px) {
+      @media only screen and (max-width: 1100px) {
         letter-spacing: -0.4vw;
         font-size: 10vw; 
       }

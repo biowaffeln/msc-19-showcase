@@ -4,7 +4,7 @@ import { useSpring, animated, config } from 'react-spring';
 
 const Wrapper = styled(animated.div)`
   background: ${(props) => props.theme.orange};
-  color: ${(props) => props.theme.white};
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
