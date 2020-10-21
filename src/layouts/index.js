@@ -5,9 +5,19 @@ import { createGlobalStyle, ThemeProvider } from "styled-components";
 const theme = {
   blue: "#2500E5",
   white: "#FAF9F9",
+  orange: "rgba(255,118,44,0.99)",
+  strokeWeight: "1px",
+  borderRadius: "1rem",
 };
 
 const GlobalStyle = createGlobalStyle`
+::selection {
+  color: ${(props) => props.theme.blue};
+  background: ${(props) => props.theme.orange};
+  opacity: 1;
+}
+
+
   body {
       background: ${(props) => props.theme.white};
       color: ${(props) => props.theme.blue};

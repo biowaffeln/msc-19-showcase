@@ -69,11 +69,11 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `robots`,
-          content: noindex,
+          content: `noindex`,
         },
         {
           name: `googlebot`,
-          content: noindex,
+          content: `noindex`,
         },
       ].concat(meta)}
     />

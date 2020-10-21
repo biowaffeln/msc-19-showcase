@@ -7,8 +7,8 @@ import Image from "gatsby-image";
 import styled from "styled-components";
 
 const Outline = styled.div`
-  border: 1px solid blue;
-  border-radius: 1rem;
+  border: ${(props) => props.theme.strokeWeight} solid ${(props) => props.theme.blue};
+  border-radius: ${(props) => props.theme.borderRadius};
 `;
 
 export default function BlogPost({ data }) {

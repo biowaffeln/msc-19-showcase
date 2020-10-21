@@ -2,9 +2,9 @@ import styled from "styled-components";
 import React from "react";
 
 const Wrapper = styled.div`
-  border: 1px solid ${(props) => props.theme.blue};
+  border: ${(props) => props.theme.strokeWeight} solid ${(props) => props.theme.blue};
   display: inline-flex;
-  border-radius: 1rem;
+  border-radius: ${(props) => props.theme.borderRadius};
 
   &:hover {
     background: ${(props) => props.theme.blue};
