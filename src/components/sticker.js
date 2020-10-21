@@ -25,8 +25,11 @@ const Sticker = ({ children }) => {
     const x = calcRandPos(window.innerWidth - 200);
     const y = calcRandPos(window.innerHeight - 200);
 
+    // set random coordinates
     ref.current.style.top = `${y}px`;
     ref.current.style.left = `${x}px`;
+
+    // show once dom is updated
     ref.current.style.display = `flex`;
   }, []);
 
