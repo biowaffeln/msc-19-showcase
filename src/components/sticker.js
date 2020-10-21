@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from "react";
 const Wrapper = styled.div`
   background: ${(props) => props.theme.orange};
   color: ${(props) => props.theme.white};
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   height: 120px;
@@ -27,7 +27,8 @@ const Sticker = ({ children }) => {
 
     ref.current.style.top = `${y}px`;
     ref.current.style.left = `${x}px`;
-  });
+    ref.current.style.display = `flex`;
+  }, []);
 
   return (
     <Wrapper ref={ref} className="p-5">
