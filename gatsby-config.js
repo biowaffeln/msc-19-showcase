@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `UAL Creative Computing Institute`,
     description: `MSc '19 graduate showcase`,
+    siteUrl: `https://msc-19-showcase.vercel.app/`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -24,6 +25,7 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-preload-fonts`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
