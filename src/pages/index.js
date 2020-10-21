@@ -44,6 +44,9 @@ const IndexPage = ({ data }) => {
       <a href="https://www.instagram.com/ual_cci/?hl=en">
         <Sticker>Instagram</Sticker>
       </a>
+      <a href="https://www.instagram.com/ual_cci/?hl=en">
+        <Sticker>arts.ac.uk</Sticker>
+      </a>
 
       <section>
         {posts.map((post) => (
