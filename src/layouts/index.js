@@ -88,6 +88,26 @@ const GlobalStyle = createGlobalStyle`
   blockquote {
     padding-left: 2rem;
   }
+
+  span.super {
+    letter-spacing: -0.04rem;
+    line-height: 1;
+    font-weight: 200;
+    font-size: 1.7vw;
+    font-family: 'Suisse Condensed';
+    max-width: 15ch;
+    hyphens: none;
+    display: block;
+    overflow: hidden;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+
+    @media only screen and (max-width: 1300px) {
+        font-size: 1.5rem; 
+      }
+  }
 `;
 
 const Layout = ({ children }) => (

@@ -13,11 +13,6 @@ const StyledLink = styled(Link)`
   }
 
   span.super {
-    letter-spacing: -0.04rem;
-    line-height: 1;
-    font-weight: 200;
-    font-size: 1.75rem;
-    font-family: 'Suisse Condensed';
     max-width: 15ch;
     hyphens: none;
     display: block;
