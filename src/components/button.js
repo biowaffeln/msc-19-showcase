@@ -2,7 +2,8 @@ import styled from "styled-components";
 import React from "react";
 
 const Wrapper = styled.div`
-  border: ${(props) => props.theme.strokeWeight} solid ${(props) => props.theme.blue};
+  border: ${(props) => props.theme.strokeWeight} solid
+    ${(props) => props.theme.blue};
   display: inline-flex;
   border-radius: ${(props) => props.theme.borderRadius};
 
