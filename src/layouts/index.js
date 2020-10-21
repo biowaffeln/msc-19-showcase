@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
       letter-spacing: -0.25rem;
       line-height: 0.9;
       font-weight: bold;
-      font-size: 5.5rem; 
+      font-size: 6vw; 
 
 
       @media only screen and (max-width: 1300px) {
@@ -51,6 +51,10 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.2rem;
     padding-top: 0.2rem;
     font-family: "Suisse Condensed";
+  }
+
+  img {
+    border-radius: 1rem;
   }
 `;
 
