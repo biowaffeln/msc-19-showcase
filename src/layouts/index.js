@@ -23,8 +23,7 @@ const GlobalStyle = createGlobalStyle`
       background: ${(props) => props.theme.white};
       color: ${(props) => props.theme.blue};
 
-         font-family: "Suisse Intl", -apple-system, 'Segoe UI',
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+         font-family: "Suisse Intl", sans-serif;  
     font-feature-settings: 'kern';
       text-rendering: geometricPrecision;
       -webkit-font-smoothing: antialiased;
@@ -106,6 +105,10 @@ const GlobalStyle = createGlobalStyle`
     @media only screen and (max-width: 1300px) {
         font-size: 1.5rem; 
       }
+  }
+
+  a.nohover:hover {
+    opacity: 1;
   }
 `;
 

@@ -35,12 +35,15 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title='UAL CCI — Graduate Showcase' />
 
-      <a href='https://www.instagram.com/ual_cci/?hl=en'>
-        <Sticker>Instagram</Sticker>
+      <a href='https://www.instagram.com/ual_cci/?hl=en' className='nohover'>
+        <Sticker>Instagram↗</Sticker>
       </a>
-      <a href='https://www.instagram.com/ual_cci/?hl=en'>
-        <Sticker>arts.ac.uk</Sticker>
+      <a href='https://www.instagram.com/ual_cci/?hl=en' className='nohover'>
+        <Sticker>arts.ac.uk↗</Sticker>
       </a>
+      {/* <a href='https://www.instagram.com/ual_cci/?hl=en' className='nohover'>
+        <Sticker>Info</Sticker>
+      </a> */}
 
       <section className='mt-5'>
         {orderedArray.map((post) => (

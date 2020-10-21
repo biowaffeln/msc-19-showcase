@@ -8,8 +8,8 @@ const Wrapper = styled(animated.div)`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
-  width: 100px;
+  height: 110px;
+  width: 110px;
   border-radius: 10rem;
   position: absolute;
   text-align: center;
