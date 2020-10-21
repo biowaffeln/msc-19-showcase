@@ -1,11 +1,13 @@
-import React from "react";
+import React from 'react';
+
+// ⑲
 
 const Header = () => (
-  <header className="pb-5 mb-5">
+  <header className='mb-2 mb-md-3'>
     <h2>
-      UAL Creative Computing Institute
+      MSc Creative Computing Graduates ⓳
       <br />
-      MSc Creative Computing Graduates ⑲
+      UAL Creative Computing Institute
     </h2>
   </header>
 );

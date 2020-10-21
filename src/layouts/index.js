@@ -29,7 +29,6 @@ const GlobalStyle = createGlobalStyle`
       text-rendering: geometricPrecision;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      font-feature-settings: 'ss01';
   }
 
   a {

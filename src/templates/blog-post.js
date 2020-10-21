@@ -37,8 +37,8 @@ export default function BlogPost({ data }) {
         <Outline className='p-3'>
           <div className='d-flex justify-content-between'>
             <header>
-              <h2>{post.frontmatter.artist}</h2>
               <h1>{post.frontmatter.title}</h1>
+              <h2>{post.frontmatter.artist}</h2>
             </header>
             <h2>
               <Link to='/' css='padding: 1rem; margin: -1rem'>
@@ -49,7 +49,7 @@ export default function BlogPost({ data }) {
 
           <Image
             fluid={post.frontmatter.thumbnail.childImageSharp.fluid}
-            className='my-3'
+            className='mb-3 mt-1'
           />
 
           <div dangerouslySetInnerHTML={{ __html: post.html }} />

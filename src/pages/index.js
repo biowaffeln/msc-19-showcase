@@ -33,7 +33,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title='Graduate Showcase 2020' />
+      <SEO title='UAL CCI — Graduate Showcase' />
 
       <a href='https://www.instagram.com/ual_cci/?hl=en'>
         <Sticker>Instagram</Sticker>
@@ -42,7 +42,7 @@ const IndexPage = ({ data }) => {
         <Sticker>arts.ac.uk</Sticker>
       </a>
 
-      <section>
+      <section className='mt-5'>
         {orderedArray.map((post) => (
           <StyledLink key={post.id} to={post.frontmatter.slug} className='mr-2'>
             <h1>
