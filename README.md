@@ -4,9 +4,9 @@ Add your markdown files to the `src/markdown-pages` directory.
 
 When adding vimeo embeds to markdown, make sure to have responsive sizing enabled.
 
-## Deploy on Linux
+## Deploy on CCI Servers
 
-1. Manually cover the `.env` file
+1. Create a `.env` file
 
 2. Builds static files to `public/` folder:
 
