@@ -1,8 +1,9 @@
 ---
-slug: '/aleksi-halttunen'
-artist: 'Aleksi Halttunen'
-title: 'Example Project'
-thumbnail: 'thumbnail.jpg'
+slug: "/aleksi-halttunen"
+artist: "Aleksi Halttunen"
+title: "Example Project"
+thumbnail: "thumbnail.jpg"
+description: "A small sub header of what the project is so people can have a quick overview"
 ---
 
 _Lorem ipsum_ dolor sit amet, _consectetur_ adipiscing elit. Proin ante dolor, auctor vitae libero ac, pellentesque feugiat tellus. Aenean justo eros, **pellentesque** ac ultrices vel, suscipit id ex. Proin gravida nisi id semper gravida. Integer pharetra, dui sed dapibus posuere, arcu turpis ornare ante, id laoreet enim nulla non diam. Cras finibus efficitur eleifend. Vivamus tempus at quam ac scelerisque. Pellentesque consequat porta scelerisque. Integer finibus ultricies ex, eu pulvinar lacus iaculis a. Nullam congue vel massa a ultricies. Praesent iaculis sed tellus eget ultricies.

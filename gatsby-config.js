@@ -1,6 +1,6 @@
-const path = require('path');
+const path = require("path");
 
-require('dotenv').config({
+require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
@@ -41,7 +41,7 @@ module.exports = {
             options: {
               maxWidth: 1100,
               showCaptions: true,
-              backgroundColor: 'transparent',
+              backgroundColor: "transparent",
               quality: 80,
               withWebp: true,
               disableBgImageOnAlpha: true,

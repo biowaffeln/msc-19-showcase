@@ -5,56 +5,90 @@ import { Link } from 'gatsby';
 import SEO from '../components/seo';
 import Image from 'gatsby-image';
 import styled from 'styled-components';
-import { useSpring, animated } from 'react-spring';
 
-const Outline = styled.div`
-  border: ${(props) => props.theme.strokeWeight} solid
-    ${(props) => props.theme.blue};
-  border-radius: ${(props) => props.theme.borderRadius};
+const ProjectLink = styled(Link)`
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+
+  h3 {
+    pointer-events: all;
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+
+  ${(props) =>
+    props.right &&
+    `
+    right: 0;
+  `}
+
+  ${(props) =>
+    props.left &&
+    `
+    left: 0;
+  `}
+
+  @media (max-width: 1200px) {
+    position: relative;
+    ${(props) =>
+      props.right &&
+      `
+    display: none;
+  `}
+  }
+`;
+
+const MarkdownWrapper = styled.div`
+  p {
+    margin: 2rem 0;
+  }
 `;
 
 export default function BlogPost({ data }) {
-  const post = data.markdownRemark;
-
-  const fadein = useSpring({
-    from: { transform: `translateY(200px)`, opacity: 0 },
-    to: { transform: `translateY(0px)`, opacity: 1 },
-  });
-
-  const maxWidth = { maxWidth: '1000px' };
+  const {
+    title,
+    description,
+    artist,
+    thumbnail,
+  } = data.markdownRemark.frontmatter;
+  const body = data.markdownRemark.html;
 
   return (
     <Layout>
       <SEO
-        title={`${post.frontmatter.artist} | Graduate Showcase 2020`}
-        description={post.excerpt}
+        title={`${artist} | Graduate Showcase 2020`}
+        description={description}
       />
 
-      <animated.section
-        className='mx-auto mb-5'
-        style={{ ...maxWidth, ...fadein }}
-      >
-        <Outline className='p-3'>
-          <div className='d-flex justify-content-between'>
-            <header>
-              <h1>{post.frontmatter.title}</h1>
-              <h2>{post.frontmatter.artist}</h2>
-            </header>
-            <h2>
-              <Link to='/' css='padding: 1rem; margin: -1rem'>
-                ✕
-              </Link>
-            </h2>
+      <ProjectLink left to='/' className='p-4'>
+        <h3>← Project List</h3>
+      </ProjectLink>
+      <ProjectLink right to='/' className='p-4'>
+        <h3>Next Project →</h3>
+      </ProjectLink>
+
+      <section className='mx-auto py-5 my-5' style={{ maxWidth: '850px' }}>
+        <header className='d-flex justify-content-center my-5'>
+          <div>
+            <h3 className='text-center pb-2'>{artist}</h3>
+            <h1 className='text-center pb-4'>{title}</h1>
+            <h4 className='text-center' css='max-width: 40ch'>
+              {description}
+            </h4>
           </div>
+        </header>
 
-          <Image
-            fluid={post.frontmatter.thumbnail.childImageSharp.fluid}
-            className='mb-3 mt-1'
-          />
+        <Image fluid={thumbnail.childImageSharp.fluid} className='mb-3 mt-1' />
 
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        </Outline>
-      </animated.section>
+        <MarkdownWrapper>
+          <div dangerouslySetInnerHTML={{ __html: body }} />
+        </MarkdownWrapper>
+      </section>
     </Layout>
   );
 }
@@ -68,6 +102,7 @@ export const query = graphql`
         title
         slug
         artist
+        description
         thumbnail {
           childImageSharp {
             fluid(maxWidth: 1000, quality: 80) {

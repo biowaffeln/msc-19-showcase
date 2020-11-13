@@ -1,28 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import styled from 'styled-components';
-import Sticker from '../components/sticker';
 import Layout from '../layouts/index';
 import SEO from '../components/seo';
 import _ from 'lodash';
-
-const StyledLink = styled(Link)`
-  h1 {
-    display: inline-flex;
-    align-items: flex-start;
-  }
-
-  span.super {
-    max-width: 15ch;
-    hyphens: none;
-    display: block;
-    overflow: hidden;
-
-    display: -webkit-box;
-    -webkit-line-clamp: 3; /* number of lines to show */
-    -webkit-box-orient: vertical;
-  }
-`;
 
 const IndexPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
@@ -35,24 +15,14 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title='CCI | Graduate Showcase 2020' />
 
-      <a href='https://www.instagram.com/ual_cci/?hl=en' className='nohover'>
-        <Sticker>Instagram↗</Sticker>
-      </a>
-      <a href='https://www.instagram.com/ual_cci/?hl=en' className='nohover'>
-        <Sticker>arts.ac.uk↗</Sticker>
-      </a>
-      {/* <a href='https://www.instagram.com/ual_cci/?hl=en' className='nohover'>
-        <Sticker>Info</Sticker>
-      </a> */}
-
-      <section className='mt-5'>
+      <section className='mt-5 pt-5'>
         {orderedArray.map((post) => (
-          <StyledLink key={post.id} to={post.frontmatter.slug} className='mr-2'>
-            <h1>
-              {post.frontmatter.artist}
-              <span className='super ml-2'>{post.frontmatter.title}</span>
-            </h1>
-          </StyledLink>
+          <Link key={post.id} to={post.frontmatter.slug}>
+            <div className='py-4'>
+              <h3 className='m-0 p-0'>{post.frontmatter.title}</h3>
+              <h1 className='m-0 p-0'>{post.frontmatter.artist}</h1>
+            </div>
+          </Link>
         ))}
       </section>
     </Layout>

@@ -2,10 +2,17 @@
 
 @font-face {
   font-family: 'Suisse Intl';
-  src: url("https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Regular%20cuts/web%20files/SuisseIntl-Regular-Web/XL/SuisseIntl-Regular-WebXL.woff2")
-      format('woff2'),
-    url("https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Regular%20cuts/web%20files/SuisseIntl-Regular-Web/XL/SuisseIntl-Regular-WebXL.woff")
-      format('woff');
+  src: url('/fonts/SuisseIntl-Regular-WebS.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-Regular-WebS.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GT Pressura';
+  src: url('/fonts/GT-Pressura-Regular.woff2') format('woff2'),
+    url('/fonts/GT-Pressura-Regular.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -15,10 +22,8 @@
 
 @font-face {
   font-family: 'Suisse Intl';
-  src: url("https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Bold%20cuts/web%20files/SuisseIntl-Bold-Web/S/SuisseIntl-Bold-WebS.woff2")
-      format('woff2'),
-    url("https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Bold%20cuts/web%20files/SuisseIntl-Bold-Web/S/SuisseIntl-Bold-WebS.woff")
-      format('woff');
+  src: url('/fonts/SuisseIntl-Bold-WebS.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-Bold-WebS.woff') format('woff');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -28,22 +33,18 @@
 
 @font-face {
   font-family: 'Suisse Intl';
-  src: url("https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Light%20cuts/web%20files/SuisseIntl-Light-Web/S/SuisseIntl-Light-WebS.woff2")
-      format('woff2'),
-    url("https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Light%20cuts/web%20files/SuisseIntl-Light-Web/S/SuisseIntl-Light-WebS.woff")
-      format('woff');
-  font-weight: 200;
+  src: url('/fonts/SuisseIntl-Light-WebXL.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-Light-WebXL.woff') format('woff');
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
-/* condensed light */
-
 @font-face {
-  font-family: 'Suisse Condensed';
-  src: url("https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Condensed%20Light%20cuts/web%20files/SuisseIntlCond-Light-Web/S/SuisseIntlCond-Light-WebS.woff2")
-      format('woff2'),
-    url("https://font-server-zwybshvnc.vercel.app/suisse-intl/Suisse%20Int'l%20Condensed%20Light%20cuts/web%20files/SuisseIntlCond-Light-Web/S/SuisseIntlCond-Light-WebS.woff")
-      format('woff');
+  font-family: 'GT Pressura';
+  src: url('/fonts/GT-Pressura-Light.woff2') format('woff2'),
+    url('/fonts/GT-Pressura-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
   font-display: swap;
 }
