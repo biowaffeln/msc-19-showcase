@@ -70,5 +70,5 @@ yarn-error.log
 .DS_Store
 
 # fonts
-*.woff
-*.woff2
+# *.woff
+# *.woff2

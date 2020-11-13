@@ -8,13 +8,15 @@ When adding vimeo embeds to markdown, make sure to have responsive sizing enable
 
 1. Create a `.env` file
 
-2. Builds static files to `public/` folder:
+2. Clone repo
+
+3. Builds static files to `public/` folder:
 
 ```
 $ yarn run build
 ```
 
-3. Copy them into public_html from root:
+4. Copy them into public_html from root:
 
 ```
 $ cp -r ./msc-19-showcase/public/* ./creativecomputing.cci.arts.ac.uk/public_html/

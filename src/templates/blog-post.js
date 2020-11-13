@@ -1,10 +1,10 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import Layout from '../layouts/index';
-import { Link } from 'gatsby';
-import SEO from '../components/seo';
-import Image from 'gatsby-image';
-import styled from 'styled-components';
+import React from "react";
+import { graphql } from "gatsby";
+import Layout from "../layouts/index";
+import { Link } from "gatsby";
+import SEO from "../components/seo";
+import Image from "gatsby-image";
+import styled from "styled-components";
 
 const ProjectLink = styled(Link)`
   z-index: 10;
@@ -70,25 +70,25 @@ export default function BlogPost({ data }) {
         description={description}
       />
 
-      <section className='mx-auto py-5' style={{ maxWidth: '850px' }}>
-        <ProjectLink left to='/' className='p-0 p-md-4'>
+      <section className="mx-auto py-5" style={{ maxWidth: "850px" }}>
+        <ProjectLink left to="/" className="p-0 p-md-4">
           <h3>← Project List</h3>
         </ProjectLink>
-        <ProjectLink right to='/' className='p-4'>
+        <ProjectLink right to="/" className="p-4">
           <h3>Next Project →</h3>
         </ProjectLink>
 
-        <header className='d-flex justify-content-center my-5'>
+        <header className="d-flex justify-content-center my-5">
           <div>
-            <h3 className='text-center pb-2'>{artist}</h3>
-            <h1 className='text-center pb-4'>{title}</h1>
-            <h4 className='text-center' css='max-width: 40ch'>
+            <h3 className="text-center pb-2">{artist}</h3>
+            <h1 className="text-center pb-4">{title}</h1>
+            <h4 className="text-center" css="max-width: 40ch">
               {description}
             </h4>
           </div>
         </header>
 
-        <Image fluid={thumbnail.childImageSharp.fluid} className='mb-3 mt-1' />
+        <Image fluid={thumbnail.childImageSharp.fluid} className="mb-3 mt-1" />
 
         <MarkdownWrapper>
           <div dangerouslySetInnerHTML={{ __html: body }} />

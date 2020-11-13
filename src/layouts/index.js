@@ -1,15 +1,15 @@
-import React from 'react';
-import './fonts.css';
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import Nav from '../components/nav';
-import Footer from '../components/footer';
-import SocialLinks from '../components/socialLinks';
+import React from "react";
+import "./fonts.css";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
+import Nav from "../components/nav";
+import Footer from "../components/footer";
+import SocialLinks from "../components/socialLinks";
 
 const theme = {
-  white: '#FFFFFF',
-  grey: '#F8F7F5',
-  black: '#000000',
-  blue: '#0057FF',
+  white: "#FFFFFF",
+  grey: "#F8F7F5",
+  black: "#000000",
+  blue: "#0057FF",
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -115,7 +115,7 @@ const GlobalStyle = createGlobalStyle`
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
-    <div className='mx-4 my-5 py-5'>
+    <div className="mx-4 my-5 py-5">
       <GlobalStyle />
       <Nav />
       <main>{children}</main>
