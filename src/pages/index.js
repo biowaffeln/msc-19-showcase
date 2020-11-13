@@ -15,10 +15,10 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title='CCI | Graduate Showcase 2020' />
 
-      <section className='mt-5 pt-5'>
+      <section className='my-5'>
         {orderedArray.map((post) => (
           <Link key={post.id} to={post.frontmatter.slug}>
-            <div className='py-4'>
+            <div className='py-3 py-md-4'>
               <h3 className='m-0 p-0'>{post.frontmatter.title}</h3>
               <h1 className='m-0 p-0'>{post.frontmatter.artist}</h1>
             </div>

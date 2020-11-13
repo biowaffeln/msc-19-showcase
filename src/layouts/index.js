@@ -14,7 +14,7 @@ const theme = {
 
 const GlobalStyle = createGlobalStyle`
   ::selection {
-    color: ${(props) => props.theme.white};
+    color: ${(props) => props.theme.black};
     background: ${(props) => props.theme.blue};
     opacity: 1;
   }
@@ -33,7 +33,7 @@ const GlobalStyle = createGlobalStyle`
   a {
       color: ${(props) => props.theme.black};
       text-decoration: none;
-      transition: 0.25s ease color;
+      transition: 0.25s ease-in color;
   }
 
   a:hover {
@@ -75,13 +75,13 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h4 {
- font-family: "Suisse Intl";
- font-weight: 800;
- font-weight: 1.25rem;
+    font-family: "Suisse Intl";
+    font-weight: 800;
+    font-weight: 1.25rem;
 
- @media (max-width: 768px) { 
-        font-size: 20px;  
-       }
+    @media (max-width: 768px) { 
+      font-size: 20px;  
+    }
   }
 
   p {
@@ -115,7 +115,7 @@ const GlobalStyle = createGlobalStyle`
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
-    <div className='m-4'>
+    <div className='mx-4 my-5 py-5'>
       <GlobalStyle />
       <Nav />
       <main>{children}</main>

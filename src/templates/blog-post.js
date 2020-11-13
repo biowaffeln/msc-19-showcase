@@ -17,7 +17,6 @@ const ProjectLink = styled(Link)`
 
   h3 {
     pointer-events: all;
-    font-size: 1.5rem;
     font-weight: 200;
   }
 
@@ -32,6 +31,12 @@ const ProjectLink = styled(Link)`
     `
     left: 0;
   `}
+
+   @media (min-width: 768px) {
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
 
   @media (max-width: 1200px) {
     position: relative;
@@ -65,14 +70,14 @@ export default function BlogPost({ data }) {
         description={description}
       />
 
-      <ProjectLink left to='/' className='p-4'>
-        <h3>← Project List</h3>
-      </ProjectLink>
-      <ProjectLink right to='/' className='p-4'>
-        <h3>Next Project →</h3>
-      </ProjectLink>
+      <section className='mx-auto py-5' style={{ maxWidth: '850px' }}>
+        <ProjectLink left to='/' className='p-0 p-md-4'>
+          <h3>← Project List</h3>
+        </ProjectLink>
+        <ProjectLink right to='/' className='p-4'>
+          <h3>Next Project →</h3>
+        </ProjectLink>
 
-      <section className='mx-auto py-5 my-5' style={{ maxWidth: '850px' }}>
         <header className='d-flex justify-content-center my-5'>
           <div>
             <h3 className='text-center pb-2'>{artist}</h3>

@@ -13,25 +13,25 @@ const StyledFooter = styled.footer`
 `;
 
 const Footer = () => (
-  <StyledFooter className='d-md-none px-4 py-5 d-flex justify-content-between align-items-center'>
+  <StyledFooter className='d-md-none px-4 py-4 d-flex justify-content-between align-items-center'>
     <Logo />
 
-    <div className='d-flex'>
+    <div className='d-flex ml-4'>
       <a
         href='https://www.arts.ac.uk/creative-computing-institute'
-        className='pr-4'
+        className='pr-2 d-none'
       >
         <UAL />
       </a>
       <a
         href='https://www.youtube.com/channel/UCtj43Vmw85ghSncJHW1xBVA'
-        className='pr-4'
+        className='pr-2'
       >
         <Youtube />
       </a>
       <a
         href='https://twitter.com/ual_cci?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor'
-        className='pr-4'
+        className='pr-2'
       >
         <Twitter />
       </a>

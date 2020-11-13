@@ -1,6 +1,6 @@
-import React from "react";
-import { Instagram, Twitter, Youtube, UAL } from "./icons";
-import styled from "styled-components";
+import React from 'react';
+import { Instagram, Twitter, Youtube, UAL } from './icons';
+import styled from 'styled-components';
 
 const Wrapper = styled.div`
   position: fixed;
@@ -9,30 +9,36 @@ const Wrapper = styled.div`
 
   svg {
     fill: ${(props) => props.theme.black};
+    transition: 0.25s ease-in fill;
+  }
+
+  svg:hover {
+    fill: ${(props) => props.theme.blue};
+    transition: 0.5s ease fill;
   }
 `;
 
 const SocialLinks = () => (
-  <Wrapper className="d-none d-md-flex m-4 flex-column">
+  <Wrapper className='d-none d-md-flex m-4 flex-column'>
     <a
-      href="https://www.arts.ac.uk/creative-computing-institute"
-      className="mb-3 mx-auto"
+      href='https://www.arts.ac.uk/creative-computing-institute'
+      className='mb-3 mx-auto'
     >
       <UAL />
     </a>
     <a
-      href="https://www.youtube.com/channel/UCtj43Vmw85ghSncJHW1xBVA"
-      className="mb-3"
+      href='https://www.youtube.com/channel/UCtj43Vmw85ghSncJHW1xBVA'
+      className='mb-3'
     >
       <Youtube />
     </a>
     <a
-      href="https://twitter.com/ual_cci?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-      className="mb-3"
+      href='https://twitter.com/ual_cci?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor'
+      className='mb-3'
     >
       <Twitter />
     </a>
-    <a href="https://www.instagram.com/ual_cci/?hl=en">
+    <a href='https://www.instagram.com/ual_cci/?hl=en'>
       <Instagram />
     </a>
   </Wrapper>
