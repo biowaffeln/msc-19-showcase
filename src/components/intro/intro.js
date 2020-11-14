@@ -56,8 +56,11 @@ const Intro = () => {
   useEffect(() => {
     window.addEventListener('scroll', () => {
       let opc = map(window.scrollY, 0, window.innerHeight * 0.5, 1, 0);
-      opc = setOpacity(opc);
-      if (opc <= 0) context.setActive(false);
+      setOpacity(opc);
+
+      if (opc <= 0) {
+        context.setActive(false);
+      }
     });
   });
 
