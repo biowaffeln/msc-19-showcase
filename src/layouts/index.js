@@ -1,15 +1,15 @@
-import React from "react";
-import "./fonts.css";
-import { createGlobalStyle, ThemeProvider } from "styled-components";
-import Nav from "../components/nav";
-import Footer from "../components/footer";
-import SocialLinks from "../components/socialLinks";
+import React from 'react';
+import './fonts.css';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import Nav from '../components/nav';
+import Footer from '../components/footer';
+import SocialLinks from '../components/socialLinks';
 
 const theme = {
-  white: "#FFFFFF",
-  grey: "#F8F7F5",
-  black: "#000000",
-  blue: "#0057FF",
+  white: '#FFFFFF',
+  grey: '#F8F7F5',
+  black: '#000000',
+  blue: '#0057FF',
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -33,17 +33,17 @@ const GlobalStyle = createGlobalStyle`
   a {
       color: ${(props) => props.theme.black};
       text-decoration: none;
-      transition: 0.25s ease-in color;
+      transition: 0.2s ease-in color;
   }
 
   a:hover {
     color: ${(props) => props.theme.blue};
       text-decoration: none;
-      transition: 0.5s ease color;
+      transition: 0.2s ease color;
   }
 
   h1 {
-      letter-spacing: -0.1rem;
+      letter-spacing: -0.05rem;
       line-height: 1;
       font-weight: 900;
       font-size: 5.3125rem;  
@@ -99,6 +99,10 @@ const GlobalStyle = createGlobalStyle`
     padding-top: 0.2rem;
     font-family: "GT Pressura";
     font-weight: 200;
+
+    @media (max-width: 768px) { 
+        font-size: 0.9rem; 
+       }
   }
 
   blockquote p {
@@ -115,7 +119,7 @@ const GlobalStyle = createGlobalStyle`
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
-    <div className="mx-4 my-5 py-5">
+    <div className='m-3 m-md-4 py-5'>
       <GlobalStyle />
       <Nav />
       <main>{children}</main>
