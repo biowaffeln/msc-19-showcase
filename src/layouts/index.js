@@ -1,16 +1,19 @@
-import React from 'react';
-import './fonts.css';
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import Nav from '../components/nav';
-import Footer from '../components/footer';
-import SocialLinks from '../components/socialLinks';
+import React from "react";
+import "./fonts.css";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
+import Nav from "../components/nav";
+import Footer from "../components/footer";
+import SocialLinks from "../components/socialLinks";
 
 const theme = {
-  white: '#FFFFFF',
-  grey: '#F8F7F5',
-  black: '#000000',
-  blue: '#0057FF',
+  white: "#FFFFFF",
+  grey: "#F8F7F5",
+  black: "#000000",
+  blue: "#0057FF",
 };
+
+const helvetica = `"Suisse Intl", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif`;
+const pressura = `"GT Pressura", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif`;
 
 const GlobalStyle = createGlobalStyle`
   ::selection {
@@ -23,7 +26,6 @@ const GlobalStyle = createGlobalStyle`
       background: ${(props) => props.theme.grey};
       color: ${(props) => props.theme.black};
 
-      font-family: "Suisse Intl", sans-serif;  
       font-feature-settings: 'kern';
       text-rendering: geometricPrecision;
       -webkit-font-smoothing: antialiased;
@@ -43,6 +45,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
+    font-family: ${helvetica};
       letter-spacing: -0.05rem;
       line-height: 1;
       font-weight: 900;
@@ -54,7 +57,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h2 {
-    font-family: "Suisse Intl";
+    font-family: ${helvetica};
       line-height: 1.2;
       font-size: 4.375rem;
       font-weight: 800;
@@ -65,7 +68,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h3 {
-    font-family: "GT Pressura";
+    font-family: ${pressura};
     font-size: 1.875rem;
     font-weight: 300;
 
@@ -75,7 +78,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h4 {
-    font-family: "Suisse Intl";
+font-family: ${helvetica};
     font-weight: 800;
     font-weight: 1.25rem;
 
@@ -85,6 +88,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   p {
+    font-family: ${helvetica};
         font-size: 1.125rem;
         font-weight: 500;
         line-height: 1.35;
@@ -97,7 +101,7 @@ const GlobalStyle = createGlobalStyle`
   figcaption {
     font-size: 1.2rem;
     padding-top: 0.2rem;
-    font-family: "GT Pressura";
+    font-family: ${pressura};
     font-weight: 200;
 
     @media (max-width: 768px) { 
@@ -108,7 +112,7 @@ const GlobalStyle = createGlobalStyle`
   blockquote p {
     font-size: 1.875rem;
     padding-left: 2rem;
-    font-family: "Suisse Intl";
+    font-family: ${helvetica};
     font-weight: 800;
 
     @media (max-width: 768px) { 
@@ -119,7 +123,7 @@ const GlobalStyle = createGlobalStyle`
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
-    <div className='m-3 m-md-4 py-5'>
+    <div className="m-3 m-md-4 py-5">
       <GlobalStyle />
       <Nav />
       <main>{children}</main>

@@ -1,7 +1,7 @@
-import * as animData from './anim.json';
-import React, { useEffect, useRef } from 'react';
-import lottie from 'lottie-web';
-import styled from 'styled-components';
+import * as animData from "./anim.json";
+import React, { useEffect, useRef } from "react";
+import lottie from "lottie-web";
+import styled from "styled-components";
 
 const Wrapper = styled.div`
   position: fixed;
@@ -19,7 +19,7 @@ const Animation = () => {
     const anim = lottie.loadAnimation({
       container: animContainer.current,
       animationData: animData.default,
-      renderer: 'svg',
+      renderer: "svg",
       loop: true,
       autoplay: true,
     });

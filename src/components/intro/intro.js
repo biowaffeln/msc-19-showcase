@@ -1,7 +1,8 @@
-import React, { useState, useEffect, useContext } from 'react';
-import { Context } from './introContext';
-import styled from 'styled-components';
-import Animation from './animation.js';
+import React, { useState, useEffect, useContext } from "react";
+import { Context } from "./introContext";
+import styled from "styled-components";
+import Animation from "./animation.js";
+import * as arrow from "./arrow.svg";
 
 const Wrapper = styled.div`
   position: fixed;
@@ -46,7 +47,7 @@ const Intro = () => {
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       let opc = map(window.scrollY, 0, window.innerHeight * 0.5, 1, 0);
       opc = Math.round((opc + Number.EPSILON) * 100) / 100;
 
@@ -59,12 +60,14 @@ const Intro = () => {
     return (
       <>
         <Wrapper
-          className='d-flex justify-content-center align-items-center'
+          className="d-flex justify-content-center align-items-center"
           style={{ opacity: opacity }}
         >
           <Animation />
-          <h1 className='text-center mx-5'>MSc Creative Computing Graduates</h1>
-          <Arrow className='p-fixed fixed-bottom mx-auto text-center'>↓</Arrow>
+          <h1 className="text-center mx-5">MSc Creative Computing Graduates</h1>
+          <Arrow className="p-fixed fixed-bottom mx-auto text-center">
+            {arrow}
+          </Arrow>
         </Wrapper>
       </>
     );
