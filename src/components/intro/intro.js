@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useContext } from 'react';
-import { Context } from './introContext';
+import React, { useContext, useEffect } from 'react';
 import styled from 'styled-components';
 import Animation from './animation.js';
 import * as arrow from './arrow.svg';
+import { Context } from './introContext';
 
 const Wrapper = styled.div`
   position: fixed;
@@ -45,8 +45,6 @@ const Arrow = styled.div`
 const Intro = () => {
   const context = useContext(Context);
 
-  const [opacity, setOpacity] = useState(1);
-
   function map(n, start1, stop1, start2, stop2) {
     let val = ((n - start1) / (stop1 - start1)) * (stop2 - start2) + start2;
     val = Math.round((val + Number.EPSILON) * 100) / 100;
@@ -54,22 +52,26 @@ const Intro = () => {
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
-      let opc = map(window.scrollY, 0, window.innerHeight * 0.5, 1, 0);
-      setOpacity(opc);
+    const elem = document.getElementById('lottie');
 
-      if (opc <= 0) {
-        context.setActive(false);
-      }
-    });
-  });
+    if (elem) {
+      window.addEventListener('scroll', () => {
+        let opc = map(window.scrollY, 0, window.innerHeight * 0.2, 1, 0);
+        elem.style.opacity = opc;
+
+        if (opc <= 0) {
+          context.setActive(false);
+        }
+      });
+    }
+  }, []);
 
   if (context.active) {
     return (
       <>
         <Wrapper
           className='d-flex justify-content-center align-items-center'
-          style={{ opacity: opacity }}
+          id='lottie'
         >
           <Animation />
           <h1 className='text-center mx-5'>MSc Creative Computing Graduates</h1>

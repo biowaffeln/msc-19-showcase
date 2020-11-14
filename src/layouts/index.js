@@ -1,15 +1,15 @@
-import React from "react";
-import "./fonts.css";
-import { createGlobalStyle, ThemeProvider } from "styled-components";
-import Nav from "../components/nav";
-import Footer from "../components/footer";
-import SocialLinks from "../components/socialLinks";
+import React from 'react';
+import './fonts.css';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import Nav from '../components/nav';
+import Footer from '../components/footer';
+import SocialLinks from '../components/socialLinks';
 
 const theme = {
-  white: "#FFFFFF",
-  grey: "#F8F7F5",
-  black: "#000000",
-  blue: "#0057FF",
+  white: '#FFFFFF',
+  grey: '#F8F7F5',
+  black: '#000000',
+  blue: '#0057FF',
 };
 
 const helvetica = `"Suisse Intl", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif`;
@@ -46,7 +46,7 @@ const GlobalStyle = createGlobalStyle`
 
   h1 {
     font-family: ${helvetica};
-      letter-spacing: -0.05rem;
+      letter-spacing: -0.15rem;
       line-height: 1;
       font-weight: 900;
       font-size: 5.3125rem;  
@@ -102,7 +102,7 @@ font-family: ${helvetica};
     font-size: 1.2rem;
     padding-top: 0.2rem;
     font-family: ${pressura};
-    font-weight: 200;
+    font-weight: 300;
 
     @media (max-width: 768px) { 
         font-size: 0.9rem; 
@@ -123,7 +123,7 @@ font-family: ${helvetica};
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
-    <div className="m-3 m-md-4 py-5">
+    <div className='m-3 m-md-4 py-5'>
       <GlobalStyle />
       <Nav />
       <main>{children}</main>

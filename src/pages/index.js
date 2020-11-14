@@ -1,9 +1,9 @@
-import React from 'react';
-import { Link, graphql } from 'gatsby';
-import Layout from '../layouts/index';
-import SEO from '../components/seo';
+import { graphql, Link } from 'gatsby';
 import _ from 'lodash';
+import React from 'react';
 import Intro from '../components/intro/intro';
+import SEO from '../components/seo';
+import Layout from '../layouts/index';
 
 const IndexPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
@@ -18,10 +18,10 @@ const IndexPage = ({ data }) => {
 
       <Intro />
 
-      <section className='my-3 my-md-5'>
+      <section className='my-3 my-md-5 py-md-2'>
         {orderedArray.map((post) => (
           <Link key={post.id} to={post.frontmatter.slug}>
-            <div className='py-3 py-md-4'>
+            <div className='my-3 py-md-4'>
               <h3 className='m-0 p-0'>{post.frontmatter.title}</h3>
               <h1 className='m-0 p-0'>{post.frontmatter.artist}</h1>
             </div>

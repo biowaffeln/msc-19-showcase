@@ -1,10 +1,10 @@
-import React from "react";
-import { graphql } from "gatsby";
-import Layout from "../layouts/index";
-import { Link } from "gatsby";
-import SEO from "../components/seo";
-import Image from "gatsby-image";
-import styled from "styled-components";
+import React from 'react';
+import { graphql } from 'gatsby';
+import Layout from '../layouts/index';
+import { Link } from 'gatsby';
+import SEO from '../components/seo';
+import Image from 'gatsby-image';
+import styled from 'styled-components';
 
 const ProjectLink = styled(Link)`
   z-index: 10;
@@ -17,7 +17,7 @@ const ProjectLink = styled(Link)`
 
   h3 {
     pointer-events: all;
-    font-weight: 200;
+    font-weight: 300;
   }
 
   ${(props) =>
@@ -70,25 +70,25 @@ export default function BlogPost({ data }) {
         description={description}
       />
 
-      <ProjectLink left="true" to="/" className="p-0 mt-2 mt-xl-0 p-md-4">
+      <ProjectLink left='true' to='/' className='p-0 mt-2 mt-xl-0 p-md-4'>
         <h3>← Project List</h3>
       </ProjectLink>
-      <ProjectLink right="true" to="/" className="p-4">
+      <ProjectLink right='true' to='/' className='p-4'>
         <h3>Next Project →</h3>
       </ProjectLink>
 
-      <section className="mx-auto py-md-5" style={{ maxWidth: "850px" }}>
-        <header className="d-flex justify-content-center my-5">
+      <section className='mx-auto py-md-5' style={{ maxWidth: '850px' }}>
+        <header className='d-flex justify-content-center my-5'>
           <div>
-            <h3 className="text-center pb-2">{artist}</h3>
-            <h1 className="text-center pb-4">{title}</h1>
-            <h4 className="text-center" css="max-width: 40ch">
+            <h3 className='text-center pb-2'>{artist}</h3>
+            <h1 className='text-center pb-4'>{title}</h1>
+            <h4 className='text-center' css='max-width: 40ch'>
               {description}
             </h4>
           </div>
         </header>
 
-        <Image fluid={thumbnail.childImageSharp.fluid} className="mb-3 mt-1" />
+        <Image fluid={thumbnail.childImageSharp.fluid} className='mb-3 mt-1' />
 
         <MarkdownWrapper>
           <div dangerouslySetInnerHTML={{ __html: body }} />
@@ -111,7 +111,7 @@ export const query = graphql`
         thumbnail {
           childImageSharp {
             fluid(maxWidth: 1000, quality: 80) {
-              ...GatsbyImageSharpFluid_withWebp_noBase64
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
