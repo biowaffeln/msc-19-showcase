@@ -5,8 +5,11 @@ import Logo from './logo';
 
 const StyledNav = styled.nav`
   background: ${(props) => props.theme.blue};
-  color: ${(props) => props.theme.white};
   z-index: 15;
+
+  * {
+    color: ${(props) => props.theme.white};
+  }
 `;
 
 const Nav = () => (
@@ -15,7 +18,11 @@ const Nav = () => (
       <Logo />
     </Link>
 
-    <div>MSc Creative Computing Graduates</div>
+    <h3 className='mb-0'>MSc Creative Computing Graduates</h3>
+
+    <Link to='/' className='d-block d-md-none mb-0'>
+      ✕
+    </Link>
   </StyledNav>
 );
 
