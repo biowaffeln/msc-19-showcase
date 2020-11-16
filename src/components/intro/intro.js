@@ -54,17 +54,18 @@ const Intro = () => {
   useEffect(() => {
     const elem = document.getElementById('lottie');
 
-    if (elem) {
-      window.addEventListener('scroll', () => {
-        let opc = map(window.scrollY, 0, window.innerHeight * 0.2, 1, 0);
-        elem.style.opacity = opc;
+    function handleScroll() {
+      let opc = map(window.scrollY, 0, window.innerHeight * 0.2, 1, 0);
+      if (elem) elem.style.opacity = opc;
 
-        if (opc <= 0) {
-          context.setActive(false);
-        }
-      });
+      if (opc <= 0) {
+        context.setActive(false);
+        window.removeEventListener('scroll', handleScroll);
+      }
     }
-  }, []);
+
+    window.addEventListener('scroll', handleScroll);
+  });
 
   if (context.active) {
     return (
@@ -75,7 +76,7 @@ const Intro = () => {
         >
           <Animation />
           <h1 className='text-center mx-5'>MSc Creative Computing Graduates</h1>
-          <Arrow className='p-fixed fixed-bottom mx-auto text-center p-4'>
+          <Arrow className='p-fixed fixed-bottom mx-auto text-center p-2 p-md-3'>
             <img src={arrow} alt='Scroll Down' />
           </Arrow>
         </Wrapper>

@@ -61,31 +61,37 @@ export default function BlogPost({ data }) {
         description={description}
       />
 
-      <ProjectLink left='true' to='/' className='p-3 d-none d-md-block'>
+      <ProjectLink left='true' to='/' className='p-3 d-none d-md-flex'>
         <h3>← Project List</h3>
       </ProjectLink>
-      <ProjectLink right='true' to='/' className='p-3 d-none d-md-block'>
+      <ProjectLink right='true' to='/' className='p-3 d-none d-md-flex'>
         <h3>Next Project →</h3>
       </ProjectLink>
 
       <section className='mx-auto' style={{ maxWidth: '850px' }}>
         <header className='my-0 my-md-3'>
           <div>
-            <h3 className='text-md-center mb-1 mb-md-0'>{artist}</h3>
-            <h1 className='text-md-center py-0 py-md-2 mb-1'>{title}</h1>
+            <h3 className='text-md-center mb-1 mb-md-0'>
+              {artist ? artist : 'Artist'}
+            </h3>
+
+            <h1 className='text-md-center py-0 py-md-2 mb-0'>
+              {title ? title : 'Title'}
+            </h1>
+
             <h4
               className='text-md-center py-2 py-md-0 mx-auto'
               css='max-width: 40ch'
             >
-              {description}
+              {description ? description : 'Description'}
             </h4>
           </div>
         </header>
 
-        <Image fluid={thumbnail.childImageSharp.fluid} className='mb-3 mt-1' />
+        <Image fluid={thumbnail.childImageSharp.fluid} className='mb-3' />
 
         <MarkdownWrapper>
-          <div dangerouslySetInnerHTML={{ __html: body }} />
+          {body && <div dangerouslySetInnerHTML={{ __html: body }} />}
         </MarkdownWrapper>
       </section>
     </Layout>
