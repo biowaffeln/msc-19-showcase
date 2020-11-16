@@ -72,3 +72,4 @@ yarn-error.log
 # fonts
 *.woff
 *.woff2
+.vercel
