@@ -1,5 +1,7 @@
-import React from 'react';
+import './custom.scss';
 import './fonts.css';
+
+import React from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
@@ -46,13 +48,14 @@ const GlobalStyle = createGlobalStyle`
 
   h1 {
     font-family: ${helvetica};
-      letter-spacing: -0.15rem;
+      letter-spacing: -0.1rem;
       line-height: 1;
       font-weight: 900;
       font-size: 5.3125rem;  
 
       @media (max-width: 768px) { 
         font-size: 40px;  
+        letter-spacing: -0.01rem;
        }
   }
 
@@ -123,7 +126,7 @@ font-family: ${helvetica};
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
-    <div className='m-3 m-md-4 py-5'>
+    <div className='mx-2 mx-md-3 my-5 my-md-6'>
       <GlobalStyle />
       <Nav />
       <main>{children}</main>

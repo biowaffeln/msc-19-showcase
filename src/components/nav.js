@@ -10,7 +10,7 @@ const StyledNav = styled.nav`
 `;
 
 const Nav = () => (
-  <StyledNav className='d-flex justify-content-between align-items-center position-fixed w-100 fixed-top px-3 px-md-4 py-md-4 py-3'>
+  <StyledNav className='d-flex justify-content-between align-items-center position-fixed w-100 fixed-top p-2 p-md-3'>
     <Link to='/' className='d-none d-sm-block'>
       <Logo />
     </Link>

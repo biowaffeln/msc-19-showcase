@@ -1,6 +1,6 @@
-const path = require("path");
+const path = require('path');
 
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
@@ -32,6 +32,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-preload-fonts`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -41,7 +42,7 @@ module.exports = {
             options: {
               maxWidth: 1100,
               showCaptions: true,
-              backgroundColor: "transparent",
+              backgroundColor: 'transparent',
               quality: 80,
               withWebp: true,
               disableBgImageOnAlpha: true,

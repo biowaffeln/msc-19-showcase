@@ -18,10 +18,10 @@ const IndexPage = ({ data }) => {
 
       <Intro />
 
-      <section className='my-3 my-md-5 py-md-2'>
+      <section>
         {orderedArray.map((post) => (
           <Link key={post.id} to={post.frontmatter.slug}>
-            <div className='my-3 py-md-4'>
+            <div className='mb-2 mb-md-3'>
               <h3 className='m-0 p-0'>{post.frontmatter.title}</h3>
               <h1 className='m-0 p-0'>{post.frontmatter.artist}</h1>
             </div>

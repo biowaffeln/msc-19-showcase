@@ -37,15 +37,6 @@ const ProjectLink = styled(Link)`
       font-size: 1.5rem;
     }
   }
-
-  @media (max-width: 1200px) {
-    position: relative;
-    ${(props) =>
-      props.right &&
-      `
-    display: none;
-  `}
-  }
 `;
 
 const MarkdownWrapper = styled.div`
@@ -70,19 +61,22 @@ export default function BlogPost({ data }) {
         description={description}
       />
 
-      <ProjectLink left='true' to='/' className='p-0 mt-2 mt-xl-0 p-md-4'>
+      <ProjectLink left='true' to='/' className='p-3 d-none d-md-block'>
         <h3>← Project List</h3>
       </ProjectLink>
-      <ProjectLink right='true' to='/' className='p-4'>
+      <ProjectLink right='true' to='/' className='p-3 d-none d-md-block'>
         <h3>Next Project →</h3>
       </ProjectLink>
 
-      <section className='mx-auto py-md-5' style={{ maxWidth: '850px' }}>
-        <header className='d-flex justify-content-center my-5'>
+      <section className='mx-auto' style={{ maxWidth: '850px' }}>
+        <header className='my-0 my-md-3'>
           <div>
-            <h3 className='text-center pb-2'>{artist}</h3>
-            <h1 className='text-center pb-4'>{title}</h1>
-            <h4 className='text-center' css='max-width: 40ch'>
+            <h3 className='text-md-center mb-1 mb-md-0'>{artist}</h3>
+            <h1 className='text-md-center py-0 py-md-2 mb-1'>{title}</h1>
+            <h4
+              className='text-md-center py-2 py-md-0 mx-auto'
+              css='max-width: 40ch'
+            >
               {description}
             </h4>
           </div>
