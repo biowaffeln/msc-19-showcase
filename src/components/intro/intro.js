@@ -3,8 +3,9 @@ import styled from 'styled-components';
 import Animation from './animation.js';
 import * as arrow from './arrow.svg';
 import { Context } from './introContext';
+import { useTransition, animated, useSpring, config } from 'react-spring';
 
-const Wrapper = styled.div`
+const Wrapper = styled(animated.div)`
   position: fixed;
   top: 0;
   left: 0;
@@ -45,46 +46,46 @@ const Arrow = styled.div`
 const Intro = () => {
   const context = useContext(Context);
 
-  function map(n, start1, stop1, start2, stop2) {
-    let val = ((n - start1) / (stop1 - start1)) * (stop2 - start2) + start2;
-    val = Math.round((val + Number.EPSILON) * 100) / 100;
-    return val;
-  }
-
-  useEffect(() => {
-    const elem = document.getElementById('lottie');
-
-    function handleScroll() {
-      let opc = map(window.scrollY, 0, window.innerHeight * 0.2, 1, 0);
-      if (elem) elem.style.opacity = opc;
-
-      if (opc <= 0) {
-        context.setActive(false);
-        window.removeEventListener('scroll', handleScroll);
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll);
+  const transitions = useTransition(context.active, null, {
+    from: { opacity: 1 },
+    leave: { opacity: 0 },
   });
 
-  if (context.active) {
-    return (
-      <>
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      window.scrollY = 0;
+      context.setActive(false);
+    });
+  }, []);
+
+  const textFade = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    config: config.molasses,
+  });
+
+  return transitions.map(
+    ({ item, key, props }) =>
+      item && (
         <Wrapper
+          key={key}
+          style={props}
           className='d-flex justify-content-center align-items-center'
           id='lottie'
         >
           <Animation />
-          <h1 className='text-center mx-5'>MSc Creative Computing Graduates</h1>
-          <Arrow className='p-fixed fixed-bottom mx-auto text-center p-2 p-md-3'>
-            <img src={arrow} alt='Scroll Down' />
-          </Arrow>
-        </Wrapper>
-      </>
-    );
-  }
 
-  return null;
+          <animated.div style={textFade}>
+            <h1 className='text-center mx-5' style={textFade}>
+              MSc Creative Computing Graduates
+            </h1>
+            <Arrow className='p-fixed fixed-bottom mx-auto text-center p-2 p-md-3'>
+              <img src={arrow} alt='Scroll Down' />
+            </Arrow>
+          </animated.div>
+        </Wrapper>
+      )
+  );
 };
 
 export default Intro;
