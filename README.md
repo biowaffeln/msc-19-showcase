@@ -30,14 +30,6 @@ For the rest, treat the file as you'd treat a Github README. You can add quotes,
 
 Stage a pull request and I'll merge it.
 
-## Development
-
-To start a development server:
-
-```
-$ yarn run develop
-```
-
 ## Deploying on CCI Servers
 
 1. Clone repo
