@@ -53,5 +53,5 @@ $ cp -r ./msc-19-showcase/public/* ./creativecomputing.cci.arts.ac.uk/public_htm
 6. Copy font files to server. Example:
 
 ```
-$ scp -R /some/folder tom@cci.arts.ac.uk:~/public_html -P 2020
+$ scp -R /some/folder username:~/public_html -P 2020
 ```
