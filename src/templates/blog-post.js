@@ -88,7 +88,9 @@ export default function BlogPost({ data }) {
           </div>
         </header>
 
-        <Image fluid={thumbnail.childImageSharp.fluid} className='mb-3' />
+        {thumbnail && (
+          <Image fluid={thumbnail.childImageSharp.fluid} className='mb-3' />
+        )}
 
         <MarkdownWrapper>
           {body && <div dangerouslySetInnerHTML={{ __html: body }} />}
