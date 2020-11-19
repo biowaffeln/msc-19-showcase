@@ -16,6 +16,7 @@ const ProjectLink = styled(Link)`
   pointer-events: none;
 
   h3 {
+    max-width: 15ch;
     pointer-events: all;
     font-weight: 300;
   }
@@ -24,6 +25,7 @@ const ProjectLink = styled(Link)`
     props.right &&
     `
     right: 0;
+    text-align: right;
   `}
 
   ${(props) =>
@@ -45,14 +47,16 @@ const MarkdownWrapper = styled.div`
   }
 `;
 
-export default function BlogPost({ data }) {
+export default function BlogPost({ data, pageContext }) {
   const {
     title,
     description,
     artist,
     thumbnail,
   } = data.markdownRemark.frontmatter;
+
   const body = data.markdownRemark.html;
+  const { next } = pageContext;
 
   return (
     <Layout>
@@ -61,29 +65,29 @@ export default function BlogPost({ data }) {
         description={description}
       />
 
-      <ProjectLink left='true' to='/' className='p-3 d-none d-md-flex'>
-        <h3>← Project List</h3>
+      <ProjectLink left='true' to='/' className='p-3 d-none d-xl-flex'>
+        <h3>←&nbsp;Project List</h3>
       </ProjectLink>
-      <ProjectLink right='true' to='/' className='p-3 d-none d-md-flex'>
-        <h3>Next Project →</h3>
-      </ProjectLink>
+
+      {next.artist && (
+        <ProjectLink
+          right='true'
+          to={next.slug}
+          className='p-3 d-none d-xl-flex'
+        >
+          <h3>{next.artist}&nbsp;→</h3>
+        </ProjectLink>
+      )}
 
       <section className='mx-auto' style={{ maxWidth: '850px' }}>
         <header className='my-0 my-md-3'>
           <div>
-            <h3 className='text-md-center mb-1 mb-md-0'>
-              {artist ? artist : 'Artist'}
-            </h3>
+            <h3 className='text-md-center mb-1 mb-md-0'>{artist}</h3>
 
-            <h1 className='text-md-center py-0 py-md-2 mb-0'>
-              {title ? title : 'Title'}
-            </h1>
+            <h1 className='text-md-center py-0 py-md-3 mb-0'>{title}</h1>
 
-            <h4
-              className='text-md-center py-2 py-md-0 mx-auto'
-              css='max-width: 40ch'
-            >
-              {description ? description : 'Description'}
+            <h4 className='text-md-center py-2 py-md-0 mx-md-auto w-75 mx-0'>
+              {description}
             </h4>
           </div>
         </header>
@@ -99,6 +103,11 @@ export default function BlogPost({ data }) {
     </Layout>
   );
 }
+BlogPost.defaultProps = {
+  artist: 'Artist',
+  title: 'Title',
+  description: 'Description',
+};
 
 export const query = graphql`
   query($slug: String!) {

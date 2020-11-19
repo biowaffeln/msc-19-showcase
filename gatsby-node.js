@@ -17,10 +17,22 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const result = await graphql(`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(sort: { fields: frontmatter___artist, order: DESC }) {
         edges {
+          next {
+            frontmatter {
+              artist
+              slug
+            }
+          }
           node {
             fields {
+              slug
+            }
+          }
+          previous {
+            frontmatter {
+              artist
               slug
             }
           }
@@ -29,14 +41,20 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `);
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  result.data.allMarkdownRemark.edges.forEach(({ next, node, previous }) => {
     createPage({
       path: node.fields.slug,
       component: path.resolve(`./src/templates/blog-post.js`),
       context: {
-        // Data passed to context is available
-        // in page queries as GraphQL variables.
         slug: node.fields.slug,
+        next: {
+          artist: next ? next.frontmatter.artist : null,
+          slug: next ? next.frontmatter.slug : null,
+        },
+        prev: {
+          artist: previous ? previous.frontmatter.artist : null,
+          slug: previous ? previous.frontmatter.slug : null,
+        },
       },
     });
   });
