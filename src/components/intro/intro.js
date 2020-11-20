@@ -1,9 +1,9 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useLayoutEffect } from 'react';
+import { animated, config, useSpring, useTransition } from 'react-spring';
 import styled from 'styled-components';
 import Animation from './animation.js';
 import * as arrow from './arrow.svg';
 import { Context } from './introContext';
-import { useTransition, animated, useSpring, config } from 'react-spring';
 
 const Wrapper = styled(animated.div)`
   position: fixed;
@@ -51,12 +51,11 @@ const Intro = () => {
     leave: { opacity: 0 },
   });
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     window.addEventListener('scroll', () => {
-      window.scrollY = 0;
-      context.setActive(false);
+      if (window.scrollY !== 0) context.setActive(false);
     });
-  }, []);
+  });
 
   const textFade = useSpring({
     from: { opacity: 0 },
