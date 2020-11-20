@@ -1,9 +1,9 @@
-import React from "react";
-import Button from "../components/button";
-import Layout from "../layouts/index";
-import SEO from "../components/seo";
-import { Link } from "gatsby";
-import styled from "styled-components";
+import React from 'react';
+import Button from '../components/button';
+import Layout from '../layouts/index';
+import SEO from '../components/seo';
+import { Link } from 'gatsby';
+import styled from 'styled-components';
 
 const Wrapper = styled.div`
   display: flex;
@@ -19,13 +19,13 @@ const Wrapper = styled.div`
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="Page not found" />
+    <SEO title='Page not found' description="There's nothing here" />
 
     <Wrapper>
       <div>
         <h1>Page not found</h1>
         <br />
-        <Link to="/">
+        <Link to='/'>
           <Button>Take me home</Button>
         </Link>
       </div>

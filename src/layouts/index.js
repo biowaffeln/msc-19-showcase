@@ -1,11 +1,10 @@
-import './custom.scss';
-import './fonts.css';
-
 import React from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import Nav from '../components/nav';
 import Footer from '../components/footer';
+import Nav from '../components/nav';
 import SocialLinks from '../components/socialLinks';
+import './custom.scss';
+import './fonts.css';
 
 const theme = {
   white: '#FFFFFF',

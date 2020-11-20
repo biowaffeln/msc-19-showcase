@@ -14,7 +14,10 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title='Graduate Showcase 2020' />
+      <SEO
+        title='UAL CCI'
+        description='We are the first creative computing cohort of the UAL Creative Computing Institute'
+      />
 
       <Intro />
 
@@ -42,13 +45,6 @@ export const pageQuery = graphql`
             artist
             title
             slug
-            thumbnail {
-              childImageSharp {
-                resize(width: 600) {
-                  src
-                }
-              }
-            }
           }
         }
       }

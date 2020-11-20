@@ -4,6 +4,8 @@
 
 Clone the repository. Add your files by placing them in a `src/markdown-pages` directory.
 
+Running `yarn install && yarn run develop` will start up a development server.
+
 ```
 mardown-pages
 └── your-name
