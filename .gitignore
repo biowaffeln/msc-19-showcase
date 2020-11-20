@@ -70,6 +70,6 @@ yarn-error.log
 .DS_Store
 
 # fonts
-*.woff
-*.woff2
+static/fonts/
+
 .vercel
