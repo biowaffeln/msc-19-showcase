@@ -58,7 +58,9 @@ export default function BlogPost({ data, pageContext }) {
   const { excerpt, html } = data.markdownRemark;
 
   const nextPost = pageContext.next;
-  const socialMediaImage = thumbnail.childImageSharp.resize.src;
+  const socialMediaImage = thumbnail
+    ? thumbnail.childImageSharp.resize.src
+    : null;
 
   return (
     <Layout>
