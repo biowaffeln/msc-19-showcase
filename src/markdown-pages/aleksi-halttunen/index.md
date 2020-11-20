@@ -1,23 +1,19 @@
 ---
 slug: "/aleksi-halttunen"
 artist: "Aleksi Halttunen"
-title: "Example Project"
-thumbnail: "thumbnail.jpg"
-description: "A small sub header of what the project is so people can have a quick overview"
+title: "4104 frames"
+thumbnail: "4104_1.jpg"
+description: "Novel method for video manipulation using deep generative neural networks"
 ---
+_4104 frames_ (2020) is an experimental video exploring nature, architecture and life through the lens of a machine learning algorithm trained only to understand faces. It is an attempt at revealing the inner workings of a traditionally 'black-box' machine learning model. This results in scenes of human faces deteriorating into environments as part of a delirious exploration of the farthest edges of a model’s latent space. A demonstration of a novel use case of generative adversarial networks (GANs) for video manipulation.
 
-_Lorem ipsum_ dolor sit amet, _consectetur_ adipiscing elit. Proin ante dolor, auctor vitae libero ac, pellentesque feugiat tellus. Aenean justo eros, **pellentesque** ac ultrices vel, suscipit id ex. Proin gravida nisi id semper gravida. Integer pharetra, dui sed dapibus posuere, arcu turpis ornare ante, id laoreet enim nulla non diam. Cras finibus efficitur eleifend. Vivamus tempus at quam ac scelerisque. Pellentesque consequat porta scelerisque. Integer finibus ultricies ex, eu pulvinar lacus iaculis a. Nullam congue vel massa a ultricies. Praesent iaculis sed tellus eget ultricies.
-
-<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/6580726?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
+<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/466248675?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <br />
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ante dolor, auctor vitae libero ac, pellentesque feugiat tellus. Aenean justo eros, _pellentesque_ ac ultrices vel, suscipit id ex. Proin gravida nisi id semper gravida. Integer pharetra, dui sed dapibus posuere, arcu turpis ornare ante. Mauris ut nisi non lectus auctor **_condimentum vitae_** quis lacus. Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus.
+Video frames are fed through an inverted generative adversarial network pre-trained on a dataset of faces, outputting some latent representations of the input frames. These latent representations are then re-passed through the GAN, resulting in heavily manipulated versions of the original frames containing elements from both the original footage as well as facial features and textures reminding the viewer of the model’s intended purpose. This identity operation can be distorted by adjusting the loss function and reference images used in mapping images to the latent space, which directly affects the level of ‘obscurity’ present in the video. This results in increased creative freedom and transforms a ‘black-box’ generative model into a creative video manipulation tool. 
 
-> "Id laoreet enim nulla non diam. Cras finibus efficitur eleifend. Vivamus tempus at quam ac scelerisque. Pellentesque consequat porta scelerisque. Integer finibus ultricies ex, eu pulvinar lacus iaculis a. Nullam congue vel massa a ultricies. Praesent iaculis sed tellus eget ultricies." — Example Quote
+![Frame 837](4104_3.png)
 
-Mauris ut nisi non lectus auctor condimentum vitae quis lacus. Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus.
+Machine learning and artificial intelligence tools hold almost a mythical status in contemporary culture and have sparked widespread discussions on what the role of the machine is in the creative process. Considering neural networks as creative entities can be exciting, but can also lead to unattainable expectations, unwarranted fear and misplaced trust in these systems. The real dangers of the artificial intelligence of today lie elsewhere - in how the tools are inheriting their creators' unconscious biases, perpetuating inequality and enforcing existing oppressive power structures. This research and the resulting work is an attempt at gaining control over these tools and understanding their inner structures.
 
-![Two hands in the dark © Vincent van Gogh](image.png)
-
-Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus. Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus.
+![Frame 2308](4104_2.png)
