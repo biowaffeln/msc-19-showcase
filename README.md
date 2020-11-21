@@ -32,7 +32,7 @@ description: "A small sub header of what the project is so people can have a qui
 Type away…
 ```
 
-For the rest, treat the file as you'd treat a Github README. You can add quotes, images, youtube embeds…whatever suits your needs. When adding Vimeo embeds, make sure to have responsive sizing enabled.
+For the rest, treat the file as you'd treat a Github README. You can add quotes, images, youtube embeds…whatever suits your needs. Unlike Github, the website will display video embeds. When adding Vimeo embeds, make sure to have responsive sizing enabled.
 
 Stage a pull request and I'll merge it.
 
