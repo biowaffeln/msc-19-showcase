@@ -1,22 +1,41 @@
 ---
 slug: "/stuart-leitch"
 artist: "Stuart Leitch"
-title: "Example Project"
-thumbnail: "thumbnail.jpg"
+title: "Controversy Warning"
+thumbnail: "maybe_controversial.png"
+description: "If we knew we were about to be exposed to a controversy, would we choose to proceed, or avoid it?"
 ---
 
-_Lorem ipsum_ dolor sit amet, _consectetur_ adipiscing elit. Proin ante dolor, auctor vitae libero ac, pellentesque feugiat tellus. Aenean justo eros, **pellentesque** ac ultrices vel, suscipit id ex. Proin gravida nisi id semper gravida. Integer pharetra, dui sed dapibus posuere, arcu turpis ornare ante, id laoreet enim nulla non diam. Cras finibus efficitur eleifend. Vivamus tempus at quam ac scelerisque. Pellentesque consequat porta scelerisque. Integer finibus ultricies ex, eu pulvinar lacus iaculis a. Nullam congue vel massa a ultricies. Praesent iaculis sed tellus eget ultricies.
+# Controversy Warning
 
-<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/6580726?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+Have you gotten your 2 minutes of hate, yet, today?
 
-<br />
+It was once inconceivable to have a scheduled period of time just to be angry at "the enemy." Now, thought? Entire 24/7 cable channels are devoted to enraging viewers. Whole networks of businesses and political parties exist simply to make people angry or afraid or anxious, and divide them in a useful way. Useful to the parties and businesses doing this division, but harmful to you, me, nature, and seemingly the fabric of reality itself.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ante dolor, auctor vitae libero ac, pellentesque feugiat tellus. Aenean justo eros, _pellentesque_ ac ultrices vel, suscipit id ex. Proin gravida nisi id semper gravida. Integer pharetra, dui sed dapibus posuere, arcu turpis ornare ante. Mauris ut nisi non lectus auctor **_condimentum vitae_** quis lacus. Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus.
+Controversy Warning is a first effort to remind us to avert our gaze from content meant to drag us into an "us vs them" situation. When something is highly controversial, there are people arguing. 
 
-> "Id laoreet enim nulla non diam. Cras finibus efficitur eleifend. Vivamus tempus at quam ac scelerisque. Pellentesque consequat porta scelerisque. Integer finibus ultricies ex, eu pulvinar lacus iaculis a. Nullam congue vel massa a ultricies. Praesent iaculis sed tellus eget ultricies." — Example Quote
+Do we need that in our lives? 
 
-Mauris ut nisi non lectus auctor condimentum vitae quis lacus. Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus.
+Is it productive to wade in and try to form an opinion by absorbing others' opinions? 
 
-![Two hands in the dark © Vincent van Gogh](image.png)
+Is that even our opinion or just a lazy copycat attempt at avoiding making an informed thought?
 
-Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus. Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus.
+Avoid the others' fight. Use the time to relax and cultivate better virtues. 
+
+Or, if you REALLY want to read two thousand comments on THIS subject...
+
+![](beware.png)
+
+Using simple behavioral economics theories, by drawing users' attention to the potential negativities experienced by consuming the related content, I hope to get more people to simply move along. By consuming less negative content, and even better less tribal content, we can have a sunnier disposition and better feelings about our fellow human. As a second-order benefit, when "it bleeds, it leads" is no longer true to the media, then just perhaps we reduce the incentive for them to keep trying such nasty things.
+
+The project uses a Chrome extension combined with a machine learning model trained to detect controversial titles to achieve this effect. It's not flashy, but it works alright.
+
+Bonus? It considers EVERY SINGLE embedded advertisement as controversial.
+
+<p align="center">
+    vvvvv CLICK ME vvvvv <br>
+    <a href="https://youtu.be/jYRutUkP-9Y" target="_blank">
+    <img src="http://i3.ytimg.com/vi/jYRutUkP-9Y/hqdefault.jpg" />
+  </a>
+</p>
+
