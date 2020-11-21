@@ -1,3 +1,4 @@
+import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { graphql, Link } from 'gatsby';
 import Image from 'gatsby-image';
 import React from 'react';
@@ -47,15 +48,9 @@ const MarkdownWrapper = styled.div`
 `;
 
 export default function BlogPost({ data, pageContext }) {
-  const {
-    title,
-    description,
-    artist,
-    thumbnail,
-    slug,
-  } = data.markdownRemark.frontmatter;
+  const { title, description, artist, thumbnail, slug } = data.mdx.frontmatter;
 
-  const { excerpt, html } = data.markdownRemark;
+  const { excerpt, body } = data.mdx;
 
   const nextPost = pageContext.next;
   const socialMediaImage = thumbnail
@@ -101,7 +96,7 @@ export default function BlogPost({ data, pageContext }) {
         )}
 
         <MarkdownWrapper>
-          {html && <div dangerouslySetInnerHTML={{ __html: html }} />}
+          <MDXRenderer>{body}</MDXRenderer>
         </MarkdownWrapper>
       </section>
     </Layout>
@@ -115,9 +110,9 @@ BlogPost.defaultProps = {
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      excerpt(format: PLAIN, pruneLength: 170, truncate: false)
+    mdx(slug: { eq: $slug }) {
+      body
+      excerpt(pruneLength: 170, truncate: false)
       frontmatter {
         title
         slug

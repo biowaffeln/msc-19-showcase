@@ -6,7 +6,7 @@ import SEO from '../components/seo';
 import Layout from '../layouts/index';
 
 const IndexPage = ({ data }) => {
-  const posts = data.allMarkdownRemark.edges;
+  const posts = data.allMdx.edges;
 
   let orderedArray = [];
   posts.map((post) => orderedArray.push(post.node));
@@ -37,7 +37,7 @@ const IndexPage = ({ data }) => {
 
 export const pageQuery = graphql`
   query indexQuery {
-    allMarkdownRemark(sort: { fields: frontmatter___artist, order: DESC }) {
+    allMdx(sort: { fields: frontmatter___artist, order: DESC }) {
       edges {
         node {
           id
