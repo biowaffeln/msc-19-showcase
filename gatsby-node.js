@@ -15,18 +15,14 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
+
   const result = await graphql(`
-    query {
-      allMarkdownRemark(sort: { fields: frontmatter___artist, order: DESC }) {
+    query MdxQuery {
+      allMdx(sort: { fields: frontmatter___artist, order: DESC }) {
         edges {
           next {
             frontmatter {
               artist
-              slug
-            }
-          }
-          node {
-            fields {
               slug
             }
           }
@@ -36,17 +32,20 @@ exports.createPages = async ({ graphql, actions }) => {
               slug
             }
           }
+          node {
+            slug
+          }
         }
       }
     }
   `);
 
-  result.data.allMarkdownRemark.edges.forEach(({ next, node, previous }) => {
+  result.data.allMdx.edges.forEach(({ next, node, previous }) => {
     createPage({
-      path: node.fields.slug,
+      path: node.slug,
       component: path.resolve(`./src/templates/blog-post.js`),
       context: {
-        slug: node.fields.slug,
+        slug: node.slug,
         next: {
           artist: next ? next.frontmatter.artist : null,
           slug: next ? next.frontmatter.slug : null,
