@@ -1,9 +1,9 @@
 ---
 slug: "/stuart-leitch"
 artist: "Stuart Leitch"
-title: "Controvery Warning"
+title: "Controversy Warning"
 thumbnail: "maybe_controversial.png"
-description: "If we knew we were about to be exposed to a controvery, would we choose to proceed, or avoid it?"
+description: "If we knew we were about to be exposed to a controversy, would we choose to proceed, or avoid it?"
 ---
 
 # Controversy Warning
@@ -24,8 +24,18 @@ Avoid the others' fight. Use the time to relax and cultivate better virtues.
 
 Or, if you REALLY want to read two thousand comments on THIS subject...
 
-!(A rapist's execution - beware)[beware.png]
+![](beware.png)
 
-Using simple behavioral economics theories, by changing the color and drawing users' attention to the potential negativities experienced by consuming the related content, I hope to get more people to simply move along. By consuming less negative, and even better less tribal content, we can have a sunnier disposition and better feelings about our fellow man. As a second-order benefit, "it bleeds, it leads" is no longer true to the media, then just perhaps we reduce the incentive for them to keep trying such things.
+Using simple behavioral economics theories, by drawing users' attention to the potential negativities experienced by consuming the related content, I hope to get more people to simply move along. By consuming less negative content, and even better less tribal content, we can have a sunnier disposition and better feelings about our fellow human. As a second-order benefit, when "it bleeds, it leads" is no longer true to the media, then just perhaps we reduce the incentive for them to keep trying such nasty things.
 
-The project uses a Chrome extension combined with a machine learning model trained to detect controversial titles to achieve this effect. 
+The project uses a Chrome extension combined with a machine learning model trained to detect controversial titles to achieve this effect. It's not flashy, but it works alright.
+
+Bonus? It considers EVERY SINGLE embedded advertisement as controversial.
+
+<p align="center">
+    vvvvv CLICK ME vvvvv <br>
+    <a href="https://youtu.be/jYRutUkP-9Y" target="_blank">
+    <img src="http://i3.ytimg.com/vi/jYRutUkP-9Y/hqdefault.jpg" />
+  </a>
+</p>
+
