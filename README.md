@@ -2,9 +2,7 @@
 
 ## Adding your project
 
-Clone the repository. Add your files by placing them in a `src/markdown-pages` directory.
-
-Running `yarn install && yarn run develop` will start up a development server.
+Clone the repository. You can add your project by populating the `index.md` in your `src/markdown-pages/your-name` directory.
 
 ```
 mardown-pages
@@ -16,7 +14,9 @@ mardown-pages
     └── image4.jpg
 ```
 
-Your markdown's frontmatter should include a slug, artist name, project title, thumbnail URL and description.
+If you wish to spin up a development server, run `yarn install && yarn run develop`. This step is optional but will help you see the changes you made.
+
+Your markdown's frontmatter should include a slug, artist name, project title, thumbnail URL and description. A slug is the part of the URL that uniquely identifies a page.
 
 ```
 ---
@@ -26,11 +26,15 @@ title: "Example Project"
 thumbnail: "./thumbnail.jpg"
 description: "A small sub header of what the project is so people can have a quick overview"
 ---
+
+# Example Project
+
+Type away…
 ```
 
 For the rest, treat the file as you'd treat a Github README. You can add quotes, images, youtube embeds…whatever suits your needs. When adding Vimeo embeds, make sure to have responsive sizing enabled.
 
-Stage a pull request and I'll merge it. Preview: https://msc-19-showcase.vercel.app.
+Stage a pull request and I'll merge it. Once I've done so, you can see a preview here: https://msc-19-showcase.vercel.app.
 
 ## Deploying on CCI Servers
 
