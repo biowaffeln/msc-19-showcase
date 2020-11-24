@@ -83,7 +83,7 @@ export default function BlogPost({ data, pageContext }) {
       <section className='mx-auto' style={{ maxWidth: '850px' }}>
         <header className='my-0 my-md-3'>
           <div>
-            <h3 className='text-md-center mb-1 mb-md-0'>{artist}</h3>
+            <h3 className='text-md-center mb-md-0'>{artist}</h3>
             <h1 className='text-md-center py-0 py-md-3 mb-0'>{title}</h1>
             <h4 className='text-md-center py-2 py-md-0 mx-md-auto w-75 mx-0'>
               {description}

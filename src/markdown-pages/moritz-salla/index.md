@@ -1,7 +1,7 @@
 ---
 slug: '/moritz-salla'
 artist: 'Moritz Salla'
-title: 'Funky lamp that does all kinds of things'
+title: 'Healing Orb'
 thumbnail: './render1.jpg'
 description: 'An exploration into how smart furtniture can promote digital wellbeing'
 ---
