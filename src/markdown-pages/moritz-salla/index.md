@@ -3,7 +3,7 @@ slug: '/moritz-salla'
 artist: 'Moritz Salla'
 title: 'Healing Orb'
 thumbnail: './render1.jpg'
-description: 'An exploration into how smart furtniture can promote digital wellbeing'
+description: 'A Smart Lamp for Digital Wellbeing'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ante dolor, auctor vitae libero ac, pellentesque feugiat tellus. Aenean justo eros, pellentesque ac ultrices vel, suscipit id ex. Proin gravida nisi id semper gravida. Integer pharetra, dui sed dapibus posuere, arcu turpis ornare ante, id laoreet enim nulla non diam. Cras finibus efficitur eleifend. Vivamus tempus at quam ac scelerisque. Pellentesque consequat porta scelerisque. Integer finibus ultricies ex, eu pulvinar lacus iaculis a. Nullam congue vel massa a ultricies. Praesent iaculis sed tellus eget ultricies.
