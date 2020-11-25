@@ -53,7 +53,9 @@ const Nav = ({ exit }) => {
         <Logo />
       </Link>
 
-      <h3 className='mb-0'>MSc Creative Computing Graduates</h3>
+      <Link to='/'>
+        <p className='mb-0'>MSc Creative Computing Graduates</p>
+      </Link>
 
       {exit && (
         <Link to='/' className='d-block d-md-none mb-0 ml-0 ml-1'>
