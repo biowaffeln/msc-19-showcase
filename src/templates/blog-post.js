@@ -45,6 +45,20 @@ const MarkdownWrapper = styled.div`
   p {
     margin: 1.5rem 0;
   }
+
+  /* make youtube resonsive  */
+  .iframe-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    iframe {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
 `;
 
 export default function BlogPost({ data, pageContext }) {
@@ -66,7 +80,7 @@ export default function BlogPost({ data, pageContext }) {
         image={socialMediaImage}
       />
 
-      <ProjectLink left='true' to='/' className='p-3 d-none d-xl-flex'>
+      <ProjectLink left='true' to='/' className='p-3 d-block d-xl-flex'>
         <h3>←&nbsp;Project List</h3>
       </ProjectLink>
 

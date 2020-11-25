@@ -32,7 +32,24 @@ description: "A small sub header of what the project is so people can have a qui
 Type away…
 ```
 
-For the rest, treat the file as you'd treat a Github README. You can add text, quotes, images…whatever suits your needs. **Unlike Github, the website will display video embeds**. When adding Vimeo embeds, make sure to have responsive sizing enabled.
+For the rest, treat the file as you'd treat a Github README. You can add text, quotes, images…whatever suits your needs. **Unlike Github, the website will display video embeds**.
+
+When adding Vimeo embeds, make sure to have responsive sizing enabled. Youtube embeds need to be enclosed by a `<div class="iframe-wrapper"></div>` to make them responsive.
+
+```
+### Example of a youtube embed in a markdown file
+
+<div class='iframe-wrapper'>
+  <iframe
+    width='560'
+    height='315'
+    src='https://www.youtube.com/embed/jYRutUkP-9Y'
+    frameborder='0'
+    allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+    allowfullscreen
+  ></iframe>
+</div>
+```
 
 Stage a pull request and I'll merge it.
 
