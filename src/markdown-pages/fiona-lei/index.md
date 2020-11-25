@@ -1,22 +1,28 @@
 ---
 slug: "/fiona-lei"
 artist: "Fiona Lei"
-title: "Example Project"
-thumbnail: "thumbnail.jpg"
+title: "CUBe"
+thumbnail: "CUBe_thumbnail.jpg"
 ---
 
-_Lorem ipsum_ dolor sit amet, _consectetur_ adipiscing elit. Proin ante dolor, auctor vitae libero ac, pellentesque feugiat tellus. Aenean justo eros, **pellentesque** ac ultrices vel, suscipit id ex. Proin gravida nisi id semper gravida. Integer pharetra, dui sed dapibus posuere, arcu turpis ornare ante, id laoreet enim nulla non diam. Cras finibus efficitur eleifend. Vivamus tempus at quam ac scelerisque. Pellentesque consequat porta scelerisque. Integer finibus ultricies ex, eu pulvinar lacus iaculis a. Nullam congue vel massa a ultricies. Praesent iaculis sed tellus eget ultricies.
+Download Available at: https://muzitua.itch.io/cube Windows only
 
-<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/6580726?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+CUBe is a digital installation that allows you to take control over shapes and structure. I am hoping to bring out the concept of medium that have introduced by Marshall McLuhan in the 1960s, the time before digital games and the TV were just introduced to the public. Feel the control you have with the shapes and feel the message from the twisted textures over the shape. 
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6PwUuf-9ljg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br />
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ante dolor, auctor vitae libero ac, pellentesque feugiat tellus. Aenean justo eros, _pellentesque_ ac ultrices vel, suscipit id ex. Proin gravida nisi id semper gravida. Integer pharetra, dui sed dapibus posuere, arcu turpis ornare ante. Mauris ut nisi non lectus auctor **_condimentum vitae_** quis lacus. Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus.
 
-> "Id laoreet enim nulla non diam. Cras finibus efficitur eleifend. Vivamus tempus at quam ac scelerisque. Pellentesque consequat porta scelerisque. Integer finibus ultricies ex, eu pulvinar lacus iaculis a. Nullam congue vel massa a ultricies. Praesent iaculis sed tellus eget ultricies." — Example Quote
+![Project look](https://github.com/muziFiona/CCI_Final_CUBe/blob/main/Process/Images/CUBe_01.png)
 
-Mauris ut nisi non lectus auctor condimentum vitae quis lacus. Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus.
+The concept of this piece is to split a cube into 3 equivalent parts, representing fragments of the content we receive in daily life. This piece is to visualise how information is being reshaped into different forms when you interact with the 3D models. The different combination is generated from the cube, the substance is the same but is transformed, and visual is different from the original cube. So as the media we get in touch, a movie transfers a book into moving images that express differently on screen; a book transforms the speech we say or our imagination. 
 
-![Two hands in the dark © Vincent van Gogh](image.png)
+>Concept comes from Marshall McLuhan, Understanding Media
 
-Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus. Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus.
+![Installation shape](https://github.com/muziFiona/CCI_Final_CUBe/blob/main/Process/Images/CUBe_05.png)
+
+Animated textures strengthen the sense of media transformation; textures are mapped over the 3D models which you view its appearance with the form that is shown. No one can really see the complete animation with the model structures that are generated for you, which is to emphasise the transformation of media. Texture as the content and the changeable forms as the medium; players can change the forms they receive information, but will never see the complete information as the message that is presented to you is already designed.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZoFK_3SN0Jo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
