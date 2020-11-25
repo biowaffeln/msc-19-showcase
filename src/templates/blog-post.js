@@ -80,7 +80,7 @@ export default function BlogPost({ data, pageContext }) {
         image={socialMediaImage}
       />
 
-      <ProjectLink left='true' to='/' className='p-3 d-block d-xl-flex'>
+      <ProjectLink left='true' to='/' className='p-3 d-none d-xl-flex'>
         <h3>←&nbsp;Project List</h3>
       </ProjectLink>
 
