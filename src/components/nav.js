@@ -41,7 +41,10 @@ const StyledNav = styled.nav`
 
 const Nav = ({ exit }) => (
   <StyledNav className='d-flex justify-content-between align-items-center position-fixed w-100 fixed-top p-2 p-md-3'>
-    <a href='/' className='d-none d-sm-block'>
+    <a
+      href='https://creativecomputing.cci.arts.ac.uk/'
+      className='d-none d-sm-block'
+    >
       <Logo />
     </a>
 
@@ -50,7 +53,10 @@ const Nav = ({ exit }) => (
     </a>
 
     {exit && (
-      <Link to='/' className='d-block d-md-none mb-0 ml-0 ml-1'>
+      <Link
+        to='https://creativecomputing.cci.arts.ac.uk/'
+        className='d-block d-md-none mb-0 ml-0 ml-1'
+      >
         {Cross}
       </Link>
     )}
