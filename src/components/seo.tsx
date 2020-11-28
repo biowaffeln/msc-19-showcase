@@ -10,6 +10,7 @@ interface Props {
 
 const SEO = ({ title, description, image, slug }: Props) => {
   const byline = `CCI Postgraduate Showcase 2020`;
+  const seoTitle = title ? `${title} | ${byline}` : byline;
 
   return (
     <Helmet>
@@ -20,17 +21,17 @@ const SEO = ({ title, description, image, slug }: Props) => {
       <meta property='og:type' content='website' />
       <meta property='twitter:card' content='summary_large_image' />
 
-      <title>{title ? `${title} | ${byline}` : byline}</title>
-      <meta name='title' content={`${title} | ${byline}`} />
-      <meta property='og:title' content={`${title} | ${byline}`} />
-      <meta property='twitter:title' content={`${title} | ${byline}`} />
+      <title>{seoTitle}</title>
+      <meta name='title' content={seoTitle} />
+      <meta property='og:title' content={seoTitle} />
+      <meta property='twitter:title' content={seoTitle} />
 
       <meta name='description' content={description} />
       <meta property='og:description' content={description} />
       <meta property='twitter:description' content={description} />
 
-      <meta property='twitter:image' content={image} />
-      <meta property='og:image' content={image} />
+      {image && <meta property='twitter:image' content={image} />}
+      {image && <meta property='og:image' content={image} />}
 
       <link
         rel='canonical'
