@@ -13,6 +13,13 @@ const theme = {
   blue: '#0057FF',
 };
 
+const typeBase = `
+  font-feature-settings:"kern" 1;
+  font-kerning: normal;
+  -webkit-font-smoothing: antialiased; /* Chrome, Safari */
+  -moz-osx-font-smoothing: grayscale; /* Firefox */
+`;
+
 const helvetica = `"Suisse Intl", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif`;
 const pressura = `"GT Pressura", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif`;
 
@@ -34,6 +41,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   a {
+    ${typeBase}
       color: ${(props) => props.theme.black};
       text-decoration: none;
       transition: 0.2s ease-in color;
@@ -46,10 +54,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
+    ${typeBase}
     font-family: ${helvetica};
-      letter-spacing: -0.1rem;
+      letter-spacing: -0.05rem;
       line-height: 1;
-      font-weight: 900;
+      font-weight: 800;
       font-size: 5.3125rem;  
 
       @media (max-width: 768px) { 
@@ -59,6 +68,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h2 {
+    ${typeBase}
     font-family: ${helvetica};
       line-height: 1.2;
       font-size: 4.375rem;
@@ -70,6 +80,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h3 {
+    ${typeBase}
     font-family: ${pressura};
     font-size: 1.875rem;
     font-weight: 300;
@@ -80,7 +91,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h4 {
-font-family: ${helvetica};
+    ${typeBase}
+    font-family: ${helvetica};
     font-weight: 800;
     font-weight: 1.25rem;
 
@@ -90,17 +102,21 @@ font-family: ${helvetica};
   }
 
   p {
+    ${typeBase}
     font-family: ${helvetica};
-        font-size: 1.125rem;
-        font-weight: 500;
-        line-height: 1.35;
+    letter-spacing: 0.015em;
+    word-spacing: 0.001em;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.45;
 
-        @media (max-width: 768px) { 
-        font-size: 16px;  
-       }
+    @media (max-width: 768px) { 
+      font-size: 16px;  
+    }
   }
 
   figcaption {
+    ${typeBase}
     font-size: 1.2rem;
     padding-top: 0.2rem;
     font-family: ${pressura};
@@ -112,6 +128,7 @@ font-family: ${helvetica};
   }
 
   blockquote p {
+    ${typeBase}
     font-size: 1.875rem;
     padding-left: 2rem;
     font-family: ${helvetica};
