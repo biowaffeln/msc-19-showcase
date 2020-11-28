@@ -1,8 +1,15 @@
-import React from 'react';
-import { Provider } from './src/components/intro/context';
+const greeting = String.raw`
+ ________  ________  ___     
+|\   ____\|\   ____\|\  \    
+\ \  \___|\ \  \___|\ \  \   
+ \ \  \    \ \  \    \ \  \  
+  \ \  \____\ \  \____\ \  \ 
+   \ \_______\ \_______\ \__\
+    \|_______|\|_______|\|__|
+                             
+Website by Moritz Salla & Josh Murr                          
+`;
 
-export const wrapRootElement = ({ element }) => {
-  return <Provider>{element}</Provider>;
-};
+console.info(greeting);
 
 export const onServiceWorkerUpdateReady = () => window.location.reload();

@@ -1,8 +1,7 @@
 import { Link } from 'gatsby';
-import React, { useContext } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Logo from './logo';
-import { Context } from './intro/context';
 
 const Cross = () => (
   <svg
@@ -40,30 +39,28 @@ const StyledNav = styled.nav`
   }
 `;
 
-const Nav = ({ exit }) => {
-  const context = useContext(Context);
+const Nav = ({ exit }) => (
+  <StyledNav className='d-flex justify-content-between align-items-center position-fixed w-100 fixed-top p-2 p-md-3'>
+    <a
+      href='https://creativecomputing.cci.arts.ac.uk/'
+      className='d-none d-sm-block'
+    >
+      <Logo />
+    </a>
 
-  return (
-    <StyledNav className='d-flex justify-content-between align-items-center position-fixed w-100 fixed-top p-2 p-md-3'>
+    <a href='/'>
+      <p className='mb-0'>MSc Creative Computing Graduates</p>
+    </a>
+
+    {exit && (
       <Link
-        to='/'
-        className='d-none d-sm-block'
-        onClick={() => context.active(true)}
+        to='https://creativecomputing.cci.arts.ac.uk/'
+        className='d-block d-md-none mb-0 ml-0 ml-1'
       >
-        <Logo />
+        {Cross}
       </Link>
-
-      <Link to='/'>
-        <p className='mb-0'>MSc Creative Computing Graduates</p>
-      </Link>
-
-      {exit && (
-        <Link to='/' className='d-block d-md-none mb-0 ml-0 ml-1'>
-          {Cross}
-        </Link>
-      )}
-    </StyledNav>
-  );
-};
+    )}
+  </StyledNav>
+);
 
 export default Nav;
