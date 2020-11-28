@@ -10,7 +10,7 @@ const theme = {
   white: '#FFFFFF',
   grey: '#F8F7F5',
   black: '#000000',
-  blue: '#0057FF',
+  blue: '#3E01FF',
 };
 
 const typeBase = `
@@ -27,7 +27,6 @@ const GlobalStyle = createGlobalStyle`
   ::selection {
     color: ${(props) => props.theme.black};
     background: ${(props) => props.theme.blue};
-    opacity: 1;
   }
 
   body {
