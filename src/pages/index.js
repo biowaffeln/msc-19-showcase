@@ -6,6 +6,7 @@ import SEO from '../components/seo';
 import Layout from '../layouts/index';
 
 const IndexPage = ({ data }) => {
+  const seoImage = data.seoImage.childImageSharp.resize.src;
   const posts = data.allMdx.edges;
 
   let orderedArray = [];
@@ -15,8 +16,8 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO
-        title='UAL CCI'
         description='We are the first creative computing cohort of the UAL Creative Computing Institute'
+        image={seoImage}
       />
 
       <Intro />
@@ -37,6 +38,13 @@ const IndexPage = ({ data }) => {
 
 export const pageQuery = graphql`
   query indexQuery {
+    seoImage: file(relativePath: { eq: "socialmedia.jpg" }) {
+      childImageSharp {
+        resize(width: 1200, height: 628) {
+          src
+        }
+      }
+    }
     allMdx(sort: { fields: frontmatter___artist, order: DESC }) {
       edges {
         node {

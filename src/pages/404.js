@@ -19,7 +19,7 @@ const Wrapper = styled.div`
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title='Page not found' description="There's nothing here" />
+    <SEO title='Page not found' description="You've hit a dead route" />
 
     <Wrapper>
       <div>

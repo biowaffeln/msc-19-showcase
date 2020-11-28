@@ -9,23 +9,21 @@ interface Props {
 }
 
 const SEO = ({ title, description, image, slug }: Props) => {
+  const byline = `CCI Postgraduate Showcase 2020`;
+
   return (
     <Helmet>
       <meta charSet='utf-8' />
       <html lang='en' />
       <meta name='robots' content='noindex' />
       <meta name='googlebot' content='noindex' />
-
       <meta property='og:type' content='website' />
       <meta property='twitter:card' content='summary_large_image' />
 
-      <title>{title} | Graduate Showcase 2020</title>
-      <meta name='title' content={`${title} | Graduate Showcase 2020`} />
-      <meta property='og:title' content={`${title} | Graduate Showcase 2020`} />
-      <meta
-        property='twitter:title'
-        content={`${title} | Graduate Showcase 2020`}
-      />
+      <title>{title ? `${title} | ${byline}` : byline}</title>
+      <meta name='title' content={`${title} | ${byline}`} />
+      <meta property='og:title' content={`${title} | ${byline}`} />
+      <meta property='twitter:title' content={`${title} | ${byline}`} />
 
       <meta name='description' content={description} />
       <meta property='og:description' content={description} />
