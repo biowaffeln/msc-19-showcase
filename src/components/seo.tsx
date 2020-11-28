@@ -11,8 +11,8 @@ interface Props {
 const SEO = ({ title, description, image, slug }: Props) => {
   const byline = `CCI Postgraduate Showcase 2020`;
   const seoTitle = title ? `${title} | ${byline}` : byline;
-  const siteUrl = "https://creativecomputing.cci.arts.ac.uk"
-  const projectUrl = slug ? siteUrl + slug : siteUrl
+  const siteUrl = 'https://creativecomputing.cci.arts.ac.uk';
+  const projectUrl = slug ? siteUrl + slug : siteUrl;
 
   return (
     <Helmet>
@@ -35,18 +35,9 @@ const SEO = ({ title, description, image, slug }: Props) => {
       {image && <meta property='twitter:image' content={image} />}
       {image && <meta property='og:image' content={image} />}
 
-      <link
-        rel='canonical'
-        href={projectUrl}
-      />
-      <meta
-        property='twitter:url'
-        content={siteUrl}
-      />
-      <meta
-        property='og:url'
-        content={siteUrl}
-      />
+      <link rel='canonical' href={projectUrl} />
+      <meta property='twitter:url' content={projectUrl} />
+      <meta property='og:url' content={projectUrl} />
     </Helmet>
   );
 };

@@ -54,12 +54,17 @@ const Arrow = styled.div`
 const Intro = () => {
   const wrapper = useRef(null);
 
-  useEffect(() => {
-    window.addEventListener('scroll', (e) => {
+  function handleScroll() {
+    if (wrapper.current) {
       wrapper.current.style.transform = `translateY(-${
         window.pageYOffset * 2
       }px)`;
-    });
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => handleScroll());
+    return () => window.removeEventListener('scroll', () => handleScroll());
   }, []);
 
   return (
