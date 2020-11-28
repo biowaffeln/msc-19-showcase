@@ -2,7 +2,7 @@ import { Link } from 'gatsby';
 import React, { useContext } from 'react';
 import styled from 'styled-components';
 import Logo from './logo';
-import { Context } from './intro/introContext';
+import { Context } from './intro/context';
 
 const Cross = () => (
   <svg

@@ -1,9 +1,9 @@
 import React, { useContext, useLayoutEffect } from 'react';
-import { animated, config, useSpring, useTransition } from 'react-spring';
+import { animated, useTransition } from 'react-spring';
 import styled from 'styled-components';
-import Animation from './animation.js';
 import * as arrow from './arrow.svg';
-import { Context } from './introContext';
+import Canvas from './Canvas';
+import { Context } from './context';
 
 const Wrapper = styled(animated.div)`
   position: fixed;
@@ -20,7 +20,12 @@ const Wrapper = styled(animated.div)`
   }
 `;
 
+const Title = styled.h1`
+  pointer-events: none;
+`;
+
 const Arrow = styled.div`
+  pointer-events: none;
   animation-name: wiggle-anim;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -57,12 +62,6 @@ const Intro = () => {
     });
   });
 
-  const textFade = useSpring({
-    from: { opacity: 0 },
-    to: { opacity: 1 },
-    config: config.molasses,
-  });
-
   return transitions.map(
     ({ item, key, props }) =>
       item && (
@@ -72,16 +71,15 @@ const Intro = () => {
           className='d-flex justify-content-center align-items-center'
           id='lottie'
         >
-          <Animation />
+          <Canvas />
 
-          <animated.div style={textFade}>
-            <h1 className='text-center mx-5' style={textFade}>
-              MSc Creative Computing Graduates
-            </h1>
-            <Arrow className='p-fixed fixed-bottom mx-auto text-center p-2 p-md-3'>
-              <img src={arrow} alt='Scroll Down' />
-            </Arrow>
-          </animated.div>
+          <Title className='text-center mx-5'>
+            MSc Creative Computing Graduates
+          </Title>
+
+          <Arrow className='p-fixed fixed-bottom mx-auto text-center p-2 p-md-3'>
+            <img src={arrow} alt='Scroll Down' />
+          </Arrow>
         </Wrapper>
       )
   );
