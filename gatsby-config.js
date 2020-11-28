@@ -36,7 +36,11 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1000,
-              sizeByPixelDensity: true,
+              showCaptions: true,
+              backgroundColor: 'transparent',
+              quality: 80,
+              withWebp: true,
+              disableBgImageOnAlpha: true,
             },
           },
         ],
@@ -48,24 +52,6 @@ module.exports = {
     `gatsby-plugin-preload-fonts`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 1000,
-              showCaptions: true,
-              backgroundColor: 'transparent',
-              quality: 80,
-              withWebp: true,
-              disableBgImageOnAlpha: true,
-            },
-          },
-        ],
-      },
-    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
