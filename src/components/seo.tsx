@@ -35,15 +35,15 @@ const SEO = ({ title, description, image, slug }: Props) => {
 
       <link
         rel='canonical'
-        href={`https://creativecomputing.cci.arts.ac.uk/${slug}`}
+        href={`https://creativecomputing.cci.arts.ac.uk${slug}`}
       />
       <meta
         property='twitter:url'
-        content={`https://creativecomputing.cci.arts.ac.uk/${slug}`}
+        content={`https://creativecomputing.cci.arts.ac.uk${slug}`}
       />
       <meta
         property='og:url'
-        content={`https://creativecomputing.cci.arts.ac.uk/${slug}`}
+        content={`https://creativecomputing.cci.arts.ac.uk${slug}`}
       />
     </Helmet>
   );

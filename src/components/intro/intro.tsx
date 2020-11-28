@@ -1,11 +1,14 @@
-import React, { useContext, useLayoutEffect } from 'react';
-import { animated, useTransition } from 'react-spring';
+import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import * as arrow from './arrow.svg';
 import Canvas from './canvas';
-import { Context } from './context';
 
-const Wrapper = styled(animated.div)`
+const Spacer = styled.div`
+  width: 100%;
+  height: 50vh;
+`;
+
+const HoverWrapper = styled.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -49,39 +52,35 @@ const Arrow = styled.div`
 `;
 
 const Intro = () => {
-  const context = useContext(Context);
+  const wrapper = useRef(null);
 
-  const transitions = useTransition(context.active, null, {
-    from: { opacity: 1 },
-    leave: { opacity: 0 },
-  });
-
-  useLayoutEffect(() => {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY !== 0) context.setActive(false);
+  useEffect(() => {
+    window.addEventListener('scroll', (e) => {
+      wrapper.current.style.transform = `translateY(-${
+        window.pageYOffset * 2
+      }px)`;
     });
-  });
+  }, []);
 
-  return transitions.map(
-    ({ item, key, props }) =>
-      item && (
-        <Wrapper
-          key={key}
-          style={props}
-          className='d-flex justify-content-center align-items-center'
-          id='lottie'
-        >
-          <Canvas />
+  return (
+    <>
+      <Spacer />
 
-          <Title className='text-center mx-5'>
-            MSc Creative Computing Graduates
-          </Title>
+      <HoverWrapper
+        className='d-flex justify-content-center align-items-center'
+        ref={wrapper}
+      >
+        <Canvas />
 
-          <Arrow className='p-fixed fixed-bottom mx-auto text-center p-2 p-md-3'>
-            <img src={arrow} alt='Scroll Down' />
-          </Arrow>
-        </Wrapper>
-      )
+        <Title className='text-center mx-5'>
+          MSc Creative Computing Graduates
+        </Title>
+
+        <Arrow className='p-fixed fixed-bottom mx-auto text-center p-2 p-md-3'>
+          <img src={arrow} alt='Scroll Down' />
+        </Arrow>
+      </HoverWrapper>
+    </>
   );
 };
 
