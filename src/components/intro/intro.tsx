@@ -2,7 +2,7 @@ import React, { useContext, useLayoutEffect } from 'react';
 import { animated, useTransition } from 'react-spring';
 import styled from 'styled-components';
 import * as arrow from './arrow.svg';
-import Canvas from './Canvas';
+import Canvas from './canvas';
 import { Context } from './context';
 
 const Wrapper = styled(animated.div)`
