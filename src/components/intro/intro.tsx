@@ -81,9 +81,9 @@ const Intro = () => {
           MSc Creative Computing Graduates
         </Title>
 
-        <Arrow className='p-fixed fixed-bottom mx-auto text-center p-2 p-md-3'>
+        {/* <Arrow className='p-fixed fixed-bottom mx-auto text-center p-2 p-md-3'>
           <img src={arrow} alt='Scroll Down' />
-        </Arrow>
+        </Arrow> */}
       </HoverWrapper>
     </>
   );
