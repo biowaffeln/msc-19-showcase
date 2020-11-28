@@ -11,6 +11,7 @@ interface Props {
 const SEO = ({ title, description, image, slug }: Props) => {
   const byline = `CCI Postgraduate Showcase 2020`;
   const seoTitle = title ? `${title} | ${byline}` : byline;
+  const url = slug ? `https://creativecomputing.cci.arts.ac.uk${slug}` : "https://creativecomputing.cci.arts.ac.uk"
 
   return (
     <Helmet>
