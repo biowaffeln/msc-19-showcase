@@ -1,22 +1,41 @@
 ---
 slug: '/waihin-chan'
 artist: 'Waihin Chan'
-title: 'Example Project'
-thumbnail: 'thumbnail.jpg'
+title: 'Time Machine'
+thumbnail: 'cover.png'
 ---
 
-_Lorem ipsum_ dolor sit amet, _consectetur_ adipiscing elit. Proin ante dolor, auctor vitae libero ac, pellentesque feugiat tellus. Aenean justo eros, **pellentesque** ac ultrices vel, suscipit id ex. Proin gravida nisi id semper gravida. Integer pharetra, dui sed dapibus posuere, arcu turpis ornare ante, id laoreet enim nulla non diam. Cras finibus efficitur eleifend. Vivamus tempus at quam ac scelerisque. Pellentesque consequat porta scelerisque. Integer finibus ultricies ex, eu pulvinar lacus iaculis a. Nullam congue vel massa a ultricies. Praesent iaculis sed tellus eget ultricies.
+Outstanding painters and artists are sharing their drawing process on internet. There are thousands of painting styles and techniques when different artists create the same scene or object. Although creating one’s own art style and drawing habits is important, many new beginners start their career by imitating famous artists’ drawing approaches and techniques. However, what if those artists didn’t share any information about their painting or illustration techniques?  Would it be possible to use machine learning method to predict the inverse process, and reveal aspects of their potential technique from a single finished image? Given a certain finished image, how will another artist recreate this work? If we can train a model which can predict the problems mentions above, it will be helpful for those beginners who wants to learn the potential techniques and approaches they might take when attempting to construct an illustration and explore more potential possibilities of the whole process.
+<br />
+See our result below:
+<br />
 
-<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/6580726?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+
+<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/484815033" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 <br />
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ante dolor, auctor vitae libero ac, pellentesque feugiat tellus. Aenean justo eros, _pellentesque_ ac ultrices vel, suscipit id ex. Proin gravida nisi id semper gravida. Integer pharetra, dui sed dapibus posuere, arcu turpis ornare ante. Mauris ut nisi non lectus auctor **_condimentum vitae_** quis lacus. Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus.
+Our model used VAE + GAN structure. The target of our model is to capture the stroke changing between each stage and draw at the previous frames until it reach to the painting we gave.
+See our code at : https://github.com/waihinchan/scar
 
-> "Id laoreet enim nulla non diam. Cras finibus efficitur eleifend. Vivamus tempus at quam ac scelerisque. Pellentesque consequat porta scelerisque. Integer finibus ultricies ex, eu pulvinar lacus iaculis a. Nullam congue vel massa a ultricies. Praesent iaculis sed tellus eget ultricies." — Example Quote
+Our model structure at below:
 
-Mauris ut nisi non lectus auctor condimentum vitae quis lacus. Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus.
+![model structure](model_structure.png)
 
-![Two hands in the dark © Vincent van Gogh](image.png)
+<br />
 
-Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus. Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus.
+We used a auto labeling function to label our dataset.
+
+![auto labeling function](degree.png)
+
+<br />
+
+
+
+To train our model, please  run our pair-wise optimization first, then run our sequence-wise optimization.
+
+![pair-wise](pairwiseoptimization.png)
+
+![sequence-wise](optimization.png)
+
