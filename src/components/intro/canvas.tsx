@@ -48,7 +48,7 @@ const Canvas = () => {
 
     gl.uniform1f(program.u.frame, frameCount);
     gl.uniform2f(program.u.resolution, program.ripple.w, program.ripple.h);
-    gl.uniform3f(program.u.mouse, mouse.x, mouse.y, 1);
+    gl.uniform3f(program.u.mouse, mouse.x, mouse.y, mouse.z);
     gl.drawArrays(gl.TRIANGLES, 0, 6);
 
     gl.useProgram(program.output.prog);
@@ -77,7 +77,7 @@ const Canvas = () => {
     let frameCount = 0;
     let animationFrameId;
 
-    const SCALE = 2;
+    const SCALE = 4;
     const RES = {
       x: Math.floor(canvas.width/SCALE),
       y: Math.floor(canvas.height/SCALE)
@@ -95,15 +95,21 @@ const Canvas = () => {
     let mouse = {
       x: 0,
       y: 0,
+      z: 0,
     };
     let canDraw = false;
+
+    let timeout;
     canvas.addEventListener('mousemove', (e) => {
+      clearTimeout(timeout);
       canDraw = true;
       const rect = canvas.getBoundingClientRect();
       mouse = {
         x: (e.clientX - rect.left) / SCALE,
         y: (rect.height - (e.clientY - rect.top) - 1) / SCALE,
+        z: 1,
       };
+      timeout = setTimeout(function() {mouse.z = 0;}, 500);
     });
 
     const program = {

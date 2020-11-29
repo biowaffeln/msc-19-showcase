@@ -198,7 +198,7 @@ export const out_fs = `#version 100
   uniform sampler2D u_background;
   uniform vec2 u_resolution;
 
-  #define TEXTURE 1
+  #define TEXTURE 2
 
   void main(){
 
@@ -223,6 +223,16 @@ export const out_fs = `#version 100
 		float sh = 1.35 - h*2.0;
     vec3 col = vec3(exp(pow(sh-.75,2.)*-10.), exp(pow(sh-.50,2.)*-20.), exp(pow(sh-.25,2.)*-10.));
     gl_FragColor = vec4(col, 1.0);
+
+  #elif TEXTURE == 2
+    
+		float h = texture2D(u_heightMap, v_texcoord).r;
+		float sh = 1.35 - h*2.0;
+    vec3 col = vec3(exp(pow(sh-.75,2.)*-10.), exp(pow(sh-.50,2.)*-20.), exp(pow(sh-.25,2.)*-10.));
+    //float bright = 0.2126*col.r + 0.7152*col.g + 0.0722*col.b;
+    float bright = 0.3333 * col.r + col.g + col.b;
+    vec3 thresh = bright > 0.7 ? vec3(0.0, 0.341, 1.0) : vec3(1.0);
+    gl_FragColor = vec4(thresh, 1.0);
 
   #else
 
