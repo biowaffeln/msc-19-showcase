@@ -5,7 +5,7 @@
 Clone the repository. You can add your project by populating the `index.md` in your `src/markdown-pages/your-name` directory.
 
 ```
-mardown-pages
+markdown-pages
 └── your-name
     ├── index.md
     ├── image1.jpg
@@ -14,9 +14,11 @@ mardown-pages
     └── image4.jpg
 ```
 
+⚠️ When sending subsequent pull requests, be sure to ![rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase#:~:text=What%20is%20git%20rebase%3F,of%20a%20feature%20branching%20workflow.) your branch, as I might have made some corrections to your file in the meantime. This will prevent merge conflicts.
+
 If you wish to spin up a development server, run `yarn install && yarn run develop`. This step is optional but will help you see the changes you made.
 
-**Your markdown's frontmatter should include a slug, artist name, project title, thumbnail URL and description.** A slug is the part of the URL that uniquely identifies a page.
+**Your markdown's frontmatter should include a slug, artist name, project title, thumbnail URL and description.** The slug is already filled out, no need to change it.
 
 ```
 ---
