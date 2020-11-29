@@ -1,22 +1,57 @@
 ---
-slug: '/xiangsong-yang'
+slug: '/Emotion communication'
 artist: 'Xiangsong Yang'
-title: 'Example Project'
-thumbnail: 'thumbnail.jpg'
+title: 'Emotional Visualizer'
+thumbnail: 'cover.png'
 ---
+## Affective computing system
+The initial ideal of this system is to use the facial capture technology, FaceOSC, combing with an
+interactive machine learning application, Wekinator and a C++ based visualiser, to provide
+customised emotion visualisation and playful user interface. 
 
-_Lorem ipsum_ dolor sit amet, _consectetur_ adipiscing elit. Proin ante dolor, auctor vitae libero ac, pellentesque feugiat tellus. Aenean justo eros, **pellentesque** ac ultrices vel, suscipit id ex. Proin gravida nisi id semper gravida. Integer pharetra, dui sed dapibus posuere, arcu turpis ornare ante, id laoreet enim nulla non diam. Cras finibus efficitur eleifend. Vivamus tempus at quam ac scelerisque. Pellentesque consequat porta scelerisque. Integer finibus ultricies ex, eu pulvinar lacus iaculis a. Nullam congue vel massa a ultricies. Praesent iaculis sed tellus eget ultricies.
-
-<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/6580726?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+![System map](system_map.JPG)
 
 <br />
+The communication of between these three sections are based on OSC signal. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ante dolor, auctor vitae libero ac, pellentesque feugiat tellus. Aenean justo eros, _pellentesque_ ac ultrices vel, suscipit id ex. Proin gravida nisi id semper gravida. Integer pharetra, dui sed dapibus posuere, arcu turpis ornare ante. Mauris ut nisi non lectus auctor **_condimentum vitae_** quis lacus. Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus.
 
-> "Id laoreet enim nulla non diam. Cras finibus efficitur eleifend. Vivamus tempus at quam ac scelerisque. Pellentesque consequat porta scelerisque. Integer finibus ultricies ex, eu pulvinar lacus iaculis a. Nullam congue vel massa a ultricies. Praesent iaculis sed tellus eget ultricies." — Example Quote
+## Face Capture
+The input for this system is the facial expression of the user. Xiangsong used FaceOSC to capture
+the data of the human face and make it usable for Wekinator by normalising and selecting with 8
+different parameters. These 8 parameter are sent in OSC channel /wek/input.
 
-Mauris ut nisi non lectus auctor condimentum vitae quis lacus. Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus.
+![Input](INPUT.JPG)
+## Wekinator
+This is the core of the system, that used a machine learning model to process inputs and map
+with outputs. The feature of the Interactive machine learning interface is providing a highly enduser friendly using experience. It also involve the users into the loop of design-refine mechanism,
+which is also an interesting feature of the typical interface of interactive machine learning
+applications.
+Wekinator will process the inputs from FaceOSC and mapping the with 5 outputs to the visualiser
+based on the control from the users.
 
-![Two hands in the dark © Vincent van Gogh](image.png)
 
-Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus. Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus.
+![Wekinator interface](Wekinator.JPG)
+
+## Visualizer
+The visualiser developed based on OpenFrameWorks in C++.
+The control of the visualiser had been defined with 5 different aspects:
+1. Background colour (for controlling the colour, the control is based on changes in RGB
+value of the display colour, range in from 120-200)
+2. Round corner ratio (for controlling the shape, the ratio is from 0-50)
+3. Movement range (for controlling the line movement, the range is within +- 40 pixels in
+both x and y direction)
+4. Movement path noise (for controlling the line movement, the range is within +-20 pixels)
+5. Movement speed (for controlling the line movement, the range is from 1-1.50x speed)
+The graphic design is illustrated with the image below.
+
+![Graphic design](Graphic.JPG)
+
+## Concept Proven experiment design
+With the curiosity and passion in understanding the emotions in telework communication and
+testing concept of his emotion visualisation system, an experiment was designed.
+The procedure of this experiment can be summarised as:
+1. Room, gear, and equipment set up.
+2. Invite participants to train the visualisation system with IML.
+3. Role-play in the simulated remote job interviews and fill in questionnaires.
+4. Investigation with participants
+![Study Setup](setup.JPG)
