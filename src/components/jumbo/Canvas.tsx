@@ -74,7 +74,7 @@ const Canvas = () => {
     let frameCount = 0;
     let animationFrameId;
 
-    const SCALE = 4;
+    const SCALE = 10;
     const RES = {
       x: Math.floor(canvas.width / SCALE),
       y: Math.floor(canvas.height / SCALE),
@@ -106,7 +106,9 @@ const Canvas = () => {
         y: (rect.height - (e.clientY - rect.top) - 1) / SCALE,
         z: 1,
       };
-      timeout = setTimeout(function() {mouse.z = 0;}, 500);
+      timeout = setTimeout(function () {
+        mouse.z = 0;
+      }, 500);
     });
 
     const program = {
