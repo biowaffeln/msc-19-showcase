@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Instagram, Twitter, Youtube } from './icons';
-import Logo from './logo';
+import { Instagram, Twitter, Youtube } from './Icons';
+import Logo from './Logo';
 
 const StyledFooter = styled.footer`
   background: ${(props) => props.theme.blue};
