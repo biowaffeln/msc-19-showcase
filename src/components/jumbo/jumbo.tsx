@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import Canvas from './canvas';
+import Canvas from './Canvas';
 
 const Spacer = styled.div`
   width: 100%;

@@ -1,8 +1,8 @@
 import React from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import Footer from '../components/footer';
-import Nav from '../components/nav';
-import SocialLinks from '../components/socialLinks';
+import Footer from '../components/Footer';
+import Nav from '../components/Nav';
+import SocialLinks from '../components/SocialMediaLinks';
 import './custom.scss';
 import './fonts.css';
 

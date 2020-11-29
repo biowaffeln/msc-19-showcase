@@ -1,8 +1,8 @@
 import { graphql, Link } from 'gatsby';
 import _ from 'lodash';
 import React from 'react';
-import Jumbo from '../components/jumbo/jumbo';
-import SEO from '../components/seo';
+import Jumbo from '../components/jumbo/Jumbo';
+import SEO from '../components/SEO';
 import Layout from '../layouts/index';
 
 const IndexPage = ({ data }) => {

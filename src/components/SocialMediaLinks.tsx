@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Twitter, Youtube, UAL } from './icons';
+import { Instagram, Twitter, Youtube, UAL } from './Icons';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
