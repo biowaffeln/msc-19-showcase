@@ -1,19 +1,18 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import * as arrow from './arrow.svg';
 import Canvas from './canvas';
 
 const Spacer = styled.div`
   width: 100%;
-  height: 50vh;
+  height: 65vh;
 `;
 
 const HoverWrapper = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   z-index: 20;
   background: ${(props) => props.theme.blue};
   color: ${(props) => props.theme.white};
@@ -56,9 +55,12 @@ const Intro = () => {
 
   function handleScroll() {
     if (wrapper.current) {
-      wrapper.current.style.transform = `translateY(-${
+      // wrapper.current.style.transform = `translateY(-${
+      //   window.pageYOffset * 2
+      // }px)`;
+      wrapper.current.style.transform = `translate3d(0px, -${
         window.pageYOffset * 2
-      }px)`;
+      }px, 0px)`;
     }
   }
 
