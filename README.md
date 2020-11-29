@@ -1,5 +1,9 @@
 # MSc '19 Showcase
 
+```
+⚠️ When sending subsequent pull requests, be sure to [rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase#:~:text=What%20is%20git%20rebase%3F,of%20a%20feature%20branching%20workflow.) your branch, as I might have made some corrections to your file in the meantime. This will prevent merge conflicts.
+```
+
 ## Adding your project
 
 Clone the repository. You can add your project by populating the `index.md` in your `src/markdown-pages/your-name` directory.
@@ -13,8 +17,6 @@ markdown-pages
     ├── image3.jpg
     └── image4.jpg
 ```
-
-⚠️ When sending subsequent pull requests, be sure to ![rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase#:~:text=What%20is%20git%20rebase%3F,of%20a%20feature%20branching%20workflow.) your branch, as I might have made some corrections to your file in the meantime. This will prevent merge conflicts.
 
 If you wish to spin up a development server, run `yarn install && yarn run develop`. This step is optional but will help you see the changes you made.
 
