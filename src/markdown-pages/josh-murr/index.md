@@ -17,7 +17,7 @@ Machine learning on the internet is rich field of research as it poses many tech
 
 ![](thumb.png)
 
-Made by [Josh Murr][jm]
+Made by [Josh Murr](https://github.com/joshmurr)
 
 [lts]: http://www.memo.tv/works/learning-to-see/
 [lts_paper]: https://arxiv.org/abs/2003.00902

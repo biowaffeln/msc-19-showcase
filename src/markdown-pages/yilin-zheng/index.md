@@ -1,8 +1,9 @@
 ---
 slug: '/yilin-zheng'
 artist: 'Yilin Zheng'
-title: 'Example Project'
+title: 'Forest Daydream VR'
 thumbnail: 'thumbnail.jpg'
+description: 'Lorem Ipsum'
 ---
 
 alfjh
@@ -21,34 +22,34 @@ describe
 
 > Description
 
-![Game Scene](screenshot1.png)
+![Game Scene](Screenshot1.png)
 
-![Game Scene](screenshot2.png)
+![Game Scene](Screenshot2.png)
 
-![Game Scene](screenshot3.png)
+![Game Scene](Screenshot3.png)
 
-![Game Scene](screenshot4.png)
+![Game Scene](Screenshot4.png)
 
-![Game Scene](screenshot6.png)
+![Game Scene](Screenshot6.png)
 
-![Game Scene](screenshot7.png)
+![Game Scene](Screenshot7.png)
 
-![Game Scene](screenshot8.png)
+![Game Scene](Screenshot8.png)
 
-![Game Scene](screenshot9.png)
+![Game Scene](Screenshot9.png)
 
-![Game Scene](screenshot10.png)
+![Game Scene](Screenshot10.png)
 
-![Game Scene](screenshot11.png)
+![Game Scene](Screenshot11.png)
 
-![Game Scene](screenshot12.png)
+![Game Scene](Screenshot12.png)
 
-![Game Scene](screenshot13.png)
+![Game Scene](Screenshot13.png)
 
-![Game Scene](screenshot14.png)
+![Game Scene](Screenshot14.png)
 
-![Game Scene](screenshot15.png)
+![Game Scene](Screenshot15.png)
 
-![Game Scene](screenshot16.png)
+![Game Scene](Screenshot16.png)
 
-![Game Scene](screenshot17.png)
+![Game Scene](Screenshot17.png)
