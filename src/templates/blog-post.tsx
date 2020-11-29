@@ -3,7 +3,7 @@ import { graphql, Link } from 'gatsby';
 import Image from 'gatsby-image';
 import React from 'react';
 import styled from 'styled-components';
-import SEO from '../components/seo';
+import SEO from '../components/SEO';
 import Layout from '../layouts/index';
 
 const ProjectLink = styled(Link)`

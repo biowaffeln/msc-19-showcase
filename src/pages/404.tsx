@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from '../components/button';
+import Button from '../components/Button';
 import Layout from '../layouts/index';
-import SEO from '../components/seo';
+import SEO from '../components/SEO';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
