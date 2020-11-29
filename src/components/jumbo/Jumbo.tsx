@@ -24,6 +24,7 @@ const HoverWrapper = styled.div`
 
 const Title = styled.h1`
   pointer-events: none;
+  user-select: none;
 `;
 
 const Jumbo = () => {

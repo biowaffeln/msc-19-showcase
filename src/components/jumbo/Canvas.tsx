@@ -96,7 +96,8 @@ const Canvas = () => {
     let canDraw = false;
 
     let timeout;
-    canvas.addEventListener('mousemove', (e) => {
+
+    function handleMouse(e) {
       clearTimeout(timeout);
       canDraw = true;
       const rect = canvas.getBoundingClientRect();
@@ -108,7 +109,27 @@ const Canvas = () => {
       timeout = setTimeout(function () {
         mouse.z = 0;
       }, 500);
-    });
+    }
+
+    function handleTouch(e) {
+      const touch = e.touches[0];
+      clearTimeout(timeout);
+      canDraw = true;
+      const rect = canvas.getBoundingClientRect();
+      mouse = {
+        x: (touch.clientX - rect.left) / SCALE,
+        y: (rect.height - (touch.clientY - rect.top) - 1) / SCALE,
+        z: 1,
+      };
+      timeout = setTimeout(function () {
+        mouse.z = 0;
+      }, 500);
+    }
+
+    canvas.addEventListener('click', handleMouse, false);
+    canvas.addEventListener('mousemove', handleMouse, false);
+    canvas.addEventListener('touchstart', handleTouch, false);
+    canvas.addEventListener('touchmove', handleTouch, false);
 
     const program = {
       ripple: {
