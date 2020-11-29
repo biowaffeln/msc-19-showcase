@@ -21,7 +21,7 @@ export const water_fs = `#version 100
   uniform vec3 u_mouse;
 
   const float dampening = 0.97;
-  const float speed = 0.05;
+  const float sparkle = 0.05;
 
   float getHeight(vec2 p){
     vec2 offset = vec2(1.0 / u_resolution.x, 0.0);
@@ -33,7 +33,7 @@ export const water_fs = `#version 100
     float s = 0.0;
 
     if (u_mouse.z > 0.0) {
-      s = smoothstep(4.5,.004,length(u_mouse.xy - gl_FragCoord.xy));
+      s = smoothstep(4.5,0.5,length(u_mouse.xy - gl_FragCoord.xy));
     } else {
       float t = u_frame * speed;
       vec2 pos = fract(floor(t)*vec2(0.456665,0.708618))*u_resolution.xy;
