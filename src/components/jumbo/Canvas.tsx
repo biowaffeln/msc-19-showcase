@@ -63,7 +63,6 @@ const Canvas = () => {
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    //const context = canvas.getContext('2d');
     const gl = canvas.getContext('webgl');
     // retina support
     canvas.width = window.innerWidth;
