@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 
+// A TEST COMMENT
+
 const StyledCanvas = styled.canvas`
   position: fixed;
   top: 0;
