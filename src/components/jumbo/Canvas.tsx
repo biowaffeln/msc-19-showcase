@@ -74,7 +74,7 @@ const Canvas = () => {
     let frameCount = 0;
     let animationFrameId;
 
-    const SCALE = 10;
+    const SCALE = 12;
     const RES = {
       x: Math.floor(canvas.width / SCALE),
       y: Math.floor(canvas.height / SCALE),
