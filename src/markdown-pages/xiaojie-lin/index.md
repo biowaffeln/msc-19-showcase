@@ -1,4 +1,3 @@
----
 slug: "/xiaojie-lin"
 artist: "Xiaojie Lin"
 title: "ChAOS"
