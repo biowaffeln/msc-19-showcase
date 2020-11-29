@@ -1,7 +1,7 @@
 import { graphql, Link } from 'gatsby';
 import _ from 'lodash';
 import React from 'react';
-import Intro from '../components/intro/intro';
+import Jumbo from '../components/jumbo/jumbo';
 import SEO from '../components/seo';
 import Layout from '../layouts/index';
 
@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => {
         image={seoImage}
       />
 
-      <Intro />
+      <Jumbo />
 
       <section>
         {orderedArray.map((post) => (

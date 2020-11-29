@@ -5,9 +5,9 @@ import {
   createTexture,
   setupVertexAttribs,
   createFramebuffer,
-  water_vs, water_fs,
-  out_vs, out_fs
-} from './utils.js';
+} from './utils';
+import { water_vs, water_fs } from './shaders/water';
+import { out_vs, out_fs } from './shaders/out';
 
 const StyledCanvas = styled.canvas`
   position: fixed;
@@ -18,14 +18,13 @@ const StyledCanvas = styled.canvas`
   z-index: -1;
 `;
 
-
 const Canvas = () => {
   const canvasRef = useRef(null);
 
   function draw(gl, shuffle, frameCount, mouse, program) {
-    let a = shuffle%3;
-    let b = (shuffle+1)%3;
-    let c = (shuffle+2)%3;
+    let a = shuffle % 3;
+    let b = (shuffle + 1) % 3;
+    let c = (shuffle + 2) % 3;
 
     gl.useProgram(program.ripple.prog);
     gl.bindFramebuffer(gl.FRAMEBUFFER, program.framebuffer);
@@ -60,7 +59,6 @@ const Canvas = () => {
     gl.activeTexture(gl.TEXTURE0 + 0);
     gl.bindTexture(gl.TEXTURE_2D, program.textures[b]);
     gl.drawArrays(gl.TRIANGLES, 0, 6);
-
   }
 
   useEffect(() => {
@@ -72,15 +70,14 @@ const Canvas = () => {
     canvas.height = window.innerHeight;
     //context.scale(2, 2);
 
-
     let shuffle = 0;
     let frameCount = 0;
     let animationFrameId;
 
     const SCALE = 2;
     const RES = {
-      x: Math.floor(canvas.width/SCALE),
-      y: Math.floor(canvas.height/SCALE)
+      x: Math.floor(canvas.width / SCALE),
+      y: Math.floor(canvas.height / SCALE),
     };
 
     const rippleProg = createProgram(gl, water_vs, water_fs);
@@ -90,7 +87,7 @@ const Canvas = () => {
     const tex_A = createTexture(gl, RES.x, RES.y, black);
     const tex_B = createTexture(gl, RES.x, RES.y, black);
     const tex_C = createTexture(gl, RES.x, RES.y);
-    const fbo   = createFramebuffer(gl, tex_C);
+    const fbo = createFramebuffer(gl, tex_C);
 
     let mouse = {
       x: 0,
@@ -129,9 +126,9 @@ const Canvas = () => {
         resolutionOut: gl.getUniformLocation(outputProg, 'u_resolution'),
         heightMap: gl.getUniformLocation(outputProg, 'u_heightMap'),
         background: gl.getUniformLocation(outputProg, 'u_background'),
-      }
-    }
-    
+      },
+    };
+
     setupVertexAttribs(gl, program.ripple.prog);
     setupVertexAttribs(gl, program.output.prog);
 

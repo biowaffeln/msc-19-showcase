@@ -26,38 +26,11 @@ const Title = styled.h1`
   pointer-events: none;
 `;
 
-const Arrow = styled.div`
-  pointer-events: none;
-  animation-name: wiggle-anim;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-
-  img {
-    height: 3rem;
-    width: auto;
-  }
-
-  @keyframes wiggle-anim {
-    0% {
-      transform: translateY(-1.5rem);
-    }
-    50% {
-      transform: translateY(0rem);
-    }
-    100% {
-      transform: translateY(-1.5rem);
-    }
-  }
-`;
-
-const Intro = () => {
+const Jumbo = () => {
   const wrapper = useRef(null);
 
   function handleScroll() {
     if (wrapper.current) {
-      // wrapper.current.style.transform = `translateY(-${
-      //   window.pageYOffset * 2
-      // }px)`;
       wrapper.current.style.transform = `translate3d(0px, -${
         window.pageYOffset * 2
       }px, 0px)`;
@@ -82,13 +55,9 @@ const Intro = () => {
         <Title className='text-center mx-5'>
           MSc Creative Computing Graduates
         </Title>
-
-        {/* <Arrow className='p-fixed fixed-bottom mx-auto text-center p-2 p-md-3'>
-          <img src={arrow} alt='Scroll Down' />
-        </Arrow> */}
       </HoverWrapper>
     </>
   );
 };
 
-export default Intro;
+export default Jumbo;
