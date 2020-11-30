@@ -8,6 +8,7 @@ const Spacer = styled.div`
 `;
 
 const HoverWrapper = styled.div`
+  cursor: none;
   position: fixed;
   top: 0;
   left: 0;
