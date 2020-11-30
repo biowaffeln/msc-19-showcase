@@ -24,8 +24,6 @@ export const water_fs = `#version 100
   const float sparkle = 0.05;
 
   float getHeight(vec2 p){
-
-
     vec2 offset = vec2(1.0 / u_resolution.x, 0.0);
     float a = texture2D(u_prevTex, p + offset.xy).r;
     float b = texture2D(u_prevTex, p - offset.xy).r;

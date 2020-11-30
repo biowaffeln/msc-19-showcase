@@ -1,7 +1,7 @@
 ---
 slug: '/katharina-botel-azzinnaro'
 artist: 'Katharina Botel-Azzinnaro'
-title: 'UN road-trip - a news feature game'
+title: 'UN road-trip—a news feature game'
 thumbnail: 'thumbnail.jpg'
 ---
 
