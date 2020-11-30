@@ -2,6 +2,7 @@
 slug: '/xiangsong-yang'
 artist: 'Xiangsong Yang'
 title: 'Emotional Visualizer'
+description: 'Lorem Ipsum'
 thumbnail: 'graphic.jpg'
 ---
 
