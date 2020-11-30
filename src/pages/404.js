@@ -26,7 +26,9 @@ const NotFoundPage = () => (
         <h1>Page not found</h1>
         <br />
         <Link to='/'>
-          <Button>Take me home</Button>
+          <h3>
+            <Button>Take me home</Button>
+          </h3>
         </Link>
       </div>
     </Wrapper>

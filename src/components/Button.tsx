@@ -2,19 +2,17 @@ import styled from 'styled-components';
 import React from 'react';
 
 const Wrapper = styled.div`
-  border: ${(props) => props.theme.strokeWeight} solid
-    ${(props) => props.theme.blue};
+  background: ${(props) => props.theme.blue};
+  color: ${(props) => props.theme.white};
   display: inline-flex;
-  border-radius: 3rem;
 
   &:hover {
-    background: ${(props) => props.theme.blue};
-    color: ${(props) => props.theme.white};
+    opacity: 0.8;
   }
 `;
 
 const Button = ({ children }) => (
-  <Wrapper className='px-3 py-1'>{children}</Wrapper>
+  <Wrapper className='px-2 py-1'>{children}</Wrapper>
 );
 
 export default Button;
