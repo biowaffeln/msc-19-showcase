@@ -1,6 +1,8 @@
 # MSc '19 Showcase
 
+<!---
 #### ⚠️ When sending subsequent pull requests, be sure to [rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase#:~:text=What%20is%20git%20rebase%3F,of%20a%20feature%20branching%20workflow.) your branch, as I might have made some corrections to your file in the meantime. This will prevent merge conflicts.
+-->
 
 ## Adding your project
 
