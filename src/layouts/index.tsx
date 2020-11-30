@@ -61,7 +61,8 @@ const GlobalStyle = createGlobalStyle`
       font-size: 5.3125rem;  
 
       @media (max-width: 768px) { 
-        font-size: 40px;  
+        font-size: 2.25rem; 
+        line-height: 1.15; 
         letter-spacing: -0.01rem;
        }
   }
@@ -74,7 +75,8 @@ const GlobalStyle = createGlobalStyle`
       font-weight: 800;
 
       @media (max-width: 768px) { 
-        font-size: 40px;  
+        font-size: 40px; 
+        line-height: 1.3; 
        }
   }
 
@@ -85,7 +87,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 300;
 
     @media (max-width: 768px) { 
-        font-size: 20px;  
+        font-size: 1.5rem;  
        }
   }
 
@@ -96,7 +98,8 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 1.25rem;
 
     @media (max-width: 768px) { 
-      font-size: 20px;  
+      font-size: 1.45rem;  
+      line-height: 1.4;
     }
   }
 
@@ -110,7 +113,7 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.45;
 
     @media (max-width: 768px) { 
-      font-size: 16px;  
+      font-size: 1rem;  
     }
   }
 
@@ -122,19 +125,22 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 300;
 
     @media (max-width: 768px) { 
-        font-size: 0.9rem; 
+      padding-top: 0.5rem;
+        font-size: 1rem; 
+        line-height: 1.25;
        }
   }
 
   blockquote p {
     ${typeBase}
     font-size: 1.875rem;
-    padding-left: 2rem;
+    padding-left: 2.5rem;
     font-family: ${helvetica};
     font-weight: 800;
 
     @media (max-width: 768px) { 
-        font-size: 20px;  
+        font-size: 1.2rem;
+        padding-left: 1.5rem;  
        }
   }
 `;
