@@ -1,55 +1,50 @@
 ---
 slug: '/yilin-zheng'
 artist: 'Yilin Zheng'
-title: 'Forest Daydream VR'
+title: 'Example Project'
 thumbnail: 'thumbnail.jpg'
-description: 'Lorem Ipsum'
 ---
 
-alfjh
+Forest Daydream VR is an interactive VR experience that aimed to create emotional connections of players with the virtual world, while expressing the concern of global climate emergency nowadays. It is an open-ended game that players can interact with game objects and build on the virtual world.
 
-**b**
+#### Download the game at: https://aaaraly.itch.io/forestdaydreamvr
 
-**_i,b_**
-
-Forest Daydream VR
-
-<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/6580726?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://vimeo.com/485396365=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 <br />
 
-describe
+The concept of this VR game came from an interactive exhibition called Forest Daydream. Our whole class involved in implementing the exhibition. The exhibition created a rich and dynamic atmosphere by lightings and soundscape. The room was filled with interactive installations, and participants can press the buttons and to different weather states. The music composition by Ben Kelly, who also teaches at our creative computing institute, imitated the feeling as if participants are in the rainforest. The interactive nature of the exhibition attracted a lot of kids playing with it. Also, there were participants sitting and lying in the dome in the centre of the room, to just appreciate the immersive calmness brought by the exhibition.
 
-> Description
+![Exhibition Photo](IMG_20200216_132119.jpg)
 
-![Game Scene](Screenshot1.png)
+![Exhibition Photo](IMG_20200216_132232.jpg)
 
-![Game Scene](Screenshot2.png)
+![Exhibition Photo](IMG_20200216_132831.jpg)
 
-![Game Scene](Screenshot3.png)
+The VR version of Forest Daydream shared the same environmental considerations as the exhibition, and I tried to interpret the features of the exhibition into a way that fit more into virtual reality.
 
-![Game Scene](Screenshot4.png)
+### Low-poly Aesthetics
+
+![Game Scene](Screenshot11.png)
+
+![Game Scene](Screenshot13.png)
+
+![Game Scene](Screenshot9.png)
+
+### Game Atmosphere
+
+![Game Scene](Anna3.png)
 
 ![Game Scene](Screenshot6.png)
 
 ![Game Scene](Screenshot7.png)
 
-![Game Scene](Screenshot8.png)
-
-![Game Scene](Screenshot9.png)
-
 ![Game Scene](Screenshot10.png)
 
-![Game Scene](Screenshot11.png)
+### Weather state (day, night, wind, rain)
 
-![Game Scene](Screenshot12.png)
-
-![Game Scene](Screenshot13.png)
-
-![Game Scene](Screenshot14.png)
-
-![Game Scene](Screenshot15.png)
-
-![Game Scene](Screenshot16.png)
+![Game Scene](Screenshot8.png)
 
 ![Game Scene](Screenshot17.png)
+
+![Game Scene](Screenshot.png)
