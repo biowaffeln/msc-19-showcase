@@ -23,7 +23,7 @@ const HoverWrapper = styled.div`
   }
 `;
 
-const Title = styled.h1`
+const Title = styled.h2`
   pointer-events: none;
   user-select: none;
 `;
@@ -54,7 +54,7 @@ const Jumbo = () => {
       >
         <Canvas />
 
-        <Title className='text-center mx-5'>
+        <Title className='text-center mx-1'>
           MSc Creative Computing Graduates
         </Title>
       </HoverWrapper>
