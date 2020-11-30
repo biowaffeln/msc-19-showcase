@@ -5,15 +5,16 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@mdx-js/mdx": "^1.6.21",
+    "@mdx-js/react": "^1.6.21",
     "babel-plugin-styled-components": "^1.11.1",
     "bootstrap": "^4.5.3",
     "dotenv": "^8.2.0",
     "gatsby": "^2.24.79",
     "gatsby-image": "^2.4.21",
-    "gatsby-plugin-google-analytics": "^2.3.19",
     "gatsby-plugin-manifest": "^2.4.34",
+    "gatsby-plugin-mdx": "^1.5.0",
     "gatsby-plugin-offline": "^3.2.33",
-    "gatsby-plugin-preload-fonts": "^1.2.28",
     "gatsby-plugin-react-helmet": "^3.3.14",
     "gatsby-plugin-sass": "^2.5.1",
     "gatsby-plugin-sharp": "^2.6.42",
@@ -24,7 +25,6 @@
     "gatsby-transformer-remark": "^2.8.44",
     "gatsby-transformer-sharp": "^2.5.17",
     "lodash": "^4.17.20",
-    "lottie-web": "^5.7.4",
     "node-sass": "4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
@@ -35,15 +35,21 @@
   },
   "devDependencies": {
     "@types/react-helmet": "^6.1.0",
+    "@types/styled-components": "^5.1.4",
     "prettier": "2.1.2"
   },
   "keywords": [
     "gatsby"
   ],
+  "prettier": {
+    "singleQuote": true,
+    "jsxSingleQuote": true
+  },
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "develop-m": "gatsby develop -o -H $HOSTNAME -p 8000",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",

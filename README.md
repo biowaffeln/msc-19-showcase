@@ -1,13 +1,15 @@
 # MSc '19 Showcase
 
+<!---
+#### ⚠️ When sending subsequent pull requests, be sure to [rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase#:~:text=What%20is%20git%20rebase%3F,of%20a%20feature%20branching%20workflow.) your branch, as I might have made some corrections to your file in the meantime. This will prevent merge conflicts.
+-->
+
 ## Adding your project
 
-Clone the repository. Add your files by placing them in a `src/markdown-pages` directory.
-
-Running `yarn install && yarn run develop` will start up a development server.
+Clone the repository. You can add your project by populating the `index.md` in your `src/markdown-pages/your-name` directory.
 
 ```
-mardown-pages
+markdown-pages
 └── your-name
     ├── index.md
     ├── image1.jpg
@@ -16,7 +18,9 @@ mardown-pages
     └── image4.jpg
 ```
 
-Your markdown's frontmatter should include a slug, artist name, project title, thumbnail URL and description.
+If you wish to spin up a development server, run `yarn install && yarn run develop`. This step is optional but will help you see the changes you made.
+
+**Your markdown's frontmatter should include a slug, artist name, project title, thumbnail URL and description.** The slug is already filled out, no need to change it.
 
 ```
 ---
@@ -26,11 +30,34 @@ title: "Example Project"
 thumbnail: "./thumbnail.jpg"
 description: "A small sub header of what the project is so people can have a quick overview"
 ---
+
+# Example Project
+
+Type away…
 ```
 
-For the rest, treat the file as you'd treat a Github README. You can add quotes, images, youtube embeds…whatever suits your needs. When adding Vimeo embeds, make sure to have responsive sizing enabled.
+For the rest, treat the file as you'd treat a Github README. You can add text, quotes, images…whatever suits your needs. **Unlike Github, the website will display video embeds**.
 
-Stage a pull request and I'll merge it. Preview: https://msc-19-showcase.vercel.app.
+When adding Vimeo embeds, make sure to have responsive sizing enabled. Youtube embeds need to be enclosed by a `<div class="iframe-wrapper"></div>` to make them responsive.
+
+```
+### Example of a youtube embed in a markdown file
+
+<div class='iframe-wrapper'>
+  <iframe
+    width='560'
+    height='315'
+    src='https://www.youtube.com/embed/jYRutUkP-9Y'
+    frameborder='0'
+    allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+    allowfullscreen
+  ></iframe>
+</div>
+```
+
+Stage a pull request and I'll merge it.
+
+Once I've done so, you can see a preview here: https://msc-19-showcase.vercel.app.
 
 ## Deploying on CCI Servers
 
