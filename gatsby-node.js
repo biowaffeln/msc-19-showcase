@@ -18,7 +18,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const result = await graphql(`
     query MdxQuery {
-      allMdx(sort: { fields: frontmatter___artist, order: DESC }) {
+      allMdx(sort: { fields: frontmatter___artist, order: ASC }) {
         edges {
           next {
             frontmatter {

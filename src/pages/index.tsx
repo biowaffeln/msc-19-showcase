@@ -9,9 +9,10 @@ const IndexPage = ({ data }) => {
   const seoImage = data.seoImage.childImageSharp.resize.src;
   const posts = data.allMdx.edges;
 
-  let orderedArray = [];
-  posts.map((post) => orderedArray.push(post.node));
-  orderedArray = _.shuffle(orderedArray);
+  // ----- shuffled order
+  // let orderedArray = [];
+  // posts.map((post) => orderedArray.push(post.node));
+  // orderedArray = _.shuffle(orderedArray);
 
   return (
     <Layout>
@@ -23,11 +24,11 @@ const IndexPage = ({ data }) => {
       <Jumbo />
 
       <section>
-        {orderedArray.map((post) => (
-          <Link key={post.id} to={post.frontmatter.slug}>
+        {posts.map(({ node }) => (
+          <Link key={node.id} to={node.frontmatter.slug}>
             <div className='mb-2 mb-md-3'>
-              <h3 className='m-0 p-0'>{post.frontmatter.title}</h3>
-              <h1 className='m-0 p-0'>{post.frontmatter.artist}</h1>
+              <h3 className='m-0 p-0'>{node.frontmatter.title}</h3>
+              <h1 className='m-0 p-0'>{node.frontmatter.artist}</h1>
             </div>
           </Link>
         ))}
@@ -45,7 +46,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allMdx(sort: { fields: frontmatter___artist, order: DESC }) {
+    allMdx(sort: { fields: frontmatter___artist, order: ASC }) {
       edges {
         node {
           id
