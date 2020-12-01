@@ -36,26 +36,6 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1000,
-              sizeByPixelDensity: true,
-            },
-          },
-        ],
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-styled-components`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-preload-fonts`,
-    `gatsby-plugin-sitemap`,
-    `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 1000,
               showCaptions: true,
               backgroundColor: 'transparent',
               quality: 80,
@@ -66,17 +46,16 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.ANALYTICS_ID,
-      },
-    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `ual-cci-graduates-19`,
-        short_name: `cci-19`,
+        short_name: `cci-msc-20`,
         start_url: `/`,
         background_color: `white`,
         theme_color: `white`,

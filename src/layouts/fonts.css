@@ -1,4 +1,11 @@
-/* regular */
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Light-WebXL.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-Light-WebXL.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
   font-family: 'Suisse Intl';
@@ -10,34 +17,12 @@
 }
 
 @font-face {
-  font-family: 'GT Pressura';
-  src: url('/fonts/GT-Pressura-Regular.woff2') format('woff2'),
-    url('/fonts/GT-Pressura-Regular.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* bold */
-
-@font-face {
   font-family: 'Suisse Intl';
-  src: url('/fonts/SuisseIntl-Bold-WebS.woff2') format('woff2'),
-    url('/fonts/SuisseIntl-Bold-WebS.woff') format('woff');
+  src: url('/fonts/SuisseIntl-SemiBold-WebXL.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-SemiBold-WebXL.woff') format('woff');
   font-weight: 800;
   font-style: normal;
-  font-display: swap;
-}
-
-/* light */
-
-@font-face {
-  font-family: 'Suisse Intl';
-  src: url('/fonts/SuisseIntl-Light-WebXL.woff2') format('woff2'),
-    url('/fonts/SuisseIntl-Light-WebXL.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -46,5 +31,14 @@
     url('/fonts/GT-Pressura-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'GT Pressura';
+  src: url('/fonts/GT-Pressura-Regular.woff2') format('woff2'),
+    url('/fonts/GT-Pressura-Regular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
 }

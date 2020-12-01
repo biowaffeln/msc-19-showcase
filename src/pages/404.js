@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from '../components/button';
+import Button from '../components/Button';
 import Layout from '../layouts/index';
-import SEO from '../components/seo';
+import SEO from '../components/SEO';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
@@ -19,14 +19,16 @@ const Wrapper = styled.div`
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title='Page not found' description="There's nothing here" />
+    <SEO title='Page not found' description="You've hit a dead route" />
 
     <Wrapper>
       <div>
         <h1>Page not found</h1>
         <br />
         <Link to='/'>
-          <Button>Take me home</Button>
+          <h3>
+            <Button>Take me home</Button>
+          </h3>
         </Link>
       </div>
     </Wrapper>

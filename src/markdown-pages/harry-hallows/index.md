@@ -1,22 +1,21 @@
 ---
-slug: "/harry-hallows"
-artist: "Harry Hallows"
-title: "Example Project"
-thumbnail: "thumbnail.jpg"
+slug: '/harry-hallows'
+artist: 'Harry Hallows'
+title: 'Example Project'
+thumbnail: 'thumbnail.jpg'
 ---
 
-_Lorem ipsum_ dolor sit amet, _consectetur_ adipiscing elit. Proin ante dolor, auctor vitae libero ac, pellentesque feugiat tellus. Aenean justo eros, **pellentesque** ac ultrices vel, suscipit id ex. Proin gravida nisi id semper gravida. Integer pharetra, dui sed dapibus posuere, arcu turpis ornare ante, id laoreet enim nulla non diam. Cras finibus efficitur eleifend. Vivamus tempus at quam ac scelerisque. Pellentesque consequat porta scelerisque. Integer finibus ultricies ex, eu pulvinar lacus iaculis a. Nullam congue vel massa a ultricies. Praesent iaculis sed tellus eget ultricies.
+Bystander 
 
-<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/6580726?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+This is a project that's purpose is to try and understand the mindset of people who act as Bystanders when witnessing Sexual Harassment (Male towards Female) and currently the project is focused from the perspective of trying to understand why other males continue to be Bystanders turning a blind eye to these situations.
 
-<br />
+The project goes from what is considered a rather mild experience from a social media platform to then esculating further and further as the game progresses. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ante dolor, auctor vitae libero ac, pellentesque feugiat tellus. Aenean justo eros, _pellentesque_ ac ultrices vel, suscipit id ex. Proin gravida nisi id semper gravida. Integer pharetra, dui sed dapibus posuere, arcu turpis ornare ante. Mauris ut nisi non lectus auctor **_condimentum vitae_** quis lacus. Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus.
+What the game hopes to tackle is to potentially reduce these situations from happening at all, by forcing the audience to acknowledge these issues happening at hand. By doing this as the developer I hope to see (in safe environments) people standing up against these bullies, standing up to their friends who are overstepping the line of "okay". Which then eventually men in the streets will stop hopefully having these assumptions that they own any women that crosses their path.
 
-> "Id laoreet enim nulla non diam. Cras finibus efficitur eleifend. Vivamus tempus at quam ac scelerisque. Pellentesque consequat porta scelerisque. Integer finibus ultricies ex, eu pulvinar lacus iaculis a. Nullam congue vel massa a ultricies. Praesent iaculis sed tellus eget ultricies." — Example Quote
 
-Mauris ut nisi non lectus auctor condimentum vitae quis lacus. Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus.
+Game Link: https://hhallows.itch.io/bystander
 
-![Two hands in the dark © Vincent van Gogh](image.png)
 
-Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus. Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus.
+
+![Bystander Screenshot](BystanderShot04.JPG)

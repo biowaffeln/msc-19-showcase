@@ -63,13 +63,12 @@ public
 
 # Yarn
 yarn-error.log
+.yarn-integrity
 .pnp/
 .pnp.js
-# Yarn Integrity file
-.yarn-integrity
-.DS_Store
 
 # fonts
 static/fonts/
 
+# vercel
 .vercel
