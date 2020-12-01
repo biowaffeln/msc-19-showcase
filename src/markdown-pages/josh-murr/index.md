@@ -3,6 +3,7 @@ slug: '/josh-murr'
 artist: 'Josh Murr'
 title: 'Learning to Learn To See'
 thumbnail: 'image.png'
+description: "A remake of Memo Akten's Learning To See built specifically for the web"
 ---
 
 _Learning to Learn to See_ is a remake of Memo Akten's [_Learning To See_][lts] built specifically for the web, [available to use here.][app]
@@ -17,7 +18,7 @@ Machine learning on the internet is rich field of research as it poses many tech
 
 ![](thumb.png)
 
-Made by [Josh Murr](https://github.com/joshmurr)
+#### Made by Josh Murr: <https://github.com/joshmurr>
 
 [lts]: http://www.memo.tv/works/learning-to-see/
 [lts_paper]: https://arxiv.org/abs/2003.00902

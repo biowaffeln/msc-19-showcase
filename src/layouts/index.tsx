@@ -25,7 +25,11 @@ const pressura = `"GT Pressura", "HelveticaNeue-Light", "Helvetica Neue Light", 
 
 const GlobalStyle = createGlobalStyle`
   ::selection {
-    color: ${(props) => props.theme.black};
+    background: rgba(0,0,0,0);
+    color: ${(props) => props.theme.blue};
+  }
+
+  html {
     background: ${(props) => props.theme.blue};
   }
 
@@ -43,13 +47,13 @@ const GlobalStyle = createGlobalStyle`
     ${typeBase}
       color: ${(props) => props.theme.black};
       text-decoration: none;
-      transition: 0.2s ease-in color;
+      transition: 0.15s ease-in color;
   }
 
   a:hover {
     color: ${(props) => props.theme.blue};
       text-decoration: none;
-      transition: 0.2s ease color;
+      transition: 0.15s ease color;
   }
 
   h1 {
@@ -149,7 +153,7 @@ const GlobalStyle = createGlobalStyle`
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
-    <div className='mx-2 mx-md-3 my-5 my-md-6'>
+    <div className='mx-2 mx-md-3 py-5 py-md-5'>
       <GlobalStyle />
       <Nav />
       <main>{children}</main>

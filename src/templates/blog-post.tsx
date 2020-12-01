@@ -47,11 +47,12 @@ const MarkdownWrapper = styled.div`
   }
 
   a {
-    color: ${(props) => props.theme.blue};
+    color: ${(props) => props.theme.black};
+    text-decoration: underline;
   }
 
   a:hover {
-    color: ${(props) => props.theme.blue};
+    color: ${(props) => props.theme.black};
   }
 
   /* make youtube resonsive  */

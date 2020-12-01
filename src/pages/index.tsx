@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => {
       <section>
         {posts.map(({ node }) => (
           <Link key={node.id} to={node.frontmatter.slug}>
-            <div className='mb-2 mb-md-3'>
+            <div className='mb-3 mb-md-3'>
               <h3 className='m-0 p-0'>{node.frontmatter.title}</h3>
               <h1 className='m-0 p-0'>{node.frontmatter.artist}</h1>
             </div>

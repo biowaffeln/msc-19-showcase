@@ -9,12 +9,12 @@ const Wrapper = styled.div`
 
   svg {
     fill: ${(props) => props.theme.black};
-    transition: 0.25s ease-in fill;
+    transition: 0.15s ease-in fill;
   }
 
   svg:hover {
     fill: ${(props) => props.theme.blue};
-    transition: 0.5s ease fill;
+    transition: 0.15s ease fill;
   }
 `;
 

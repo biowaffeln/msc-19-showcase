@@ -4,7 +4,7 @@ import Canvas from './Canvas';
 
 const Spacer = styled.div`
   width: 100%;
-  height: 65vh;
+  height: 70vh;
 `;
 
 const HoverWrapper = styled.div`
