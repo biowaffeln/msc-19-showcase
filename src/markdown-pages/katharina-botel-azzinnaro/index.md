@@ -2,7 +2,7 @@
 slug: "/katharina-botel-azzinnaro"
 artist: "Katharina Botel-Azzinnaro"
 title: "UN road-trip"
-thumbnail: "thumbnail.jpg"
+thumbnail: "image.png"
 description: "A news feature videogame"
 ---
 
