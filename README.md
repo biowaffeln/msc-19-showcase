@@ -57,7 +57,7 @@ When adding Vimeo embeds, make sure to have responsive sizing enabled. Youtube e
 </div>
 ```
 
-If you try to simply `git push origin master` it will prompt you to create a fork instead. Do so.
+If you try to simply `git push origin main` it will prompt you to create a fork instead. Do so.
 
 Stage a pull request and I'll merge it.
 
