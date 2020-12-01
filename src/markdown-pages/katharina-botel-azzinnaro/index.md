@@ -7,7 +7,7 @@ description: "A news feature videogame"
 ---
 
 
-![Two hands in the dark © Vincent van Gogh](image.png)
+![UN road-trip](UN road-trip.png)
 
 You can play the game here. 
 
