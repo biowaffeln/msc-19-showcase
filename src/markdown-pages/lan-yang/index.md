@@ -1,20 +1,41 @@
 ---
 slug: '/lan-yang'
 artist: 'Lan Yang'
-title: 'Example Project'
-thumbnail: 'thumbnail.jpg'
+title: 'Pocket Zoo AR'
+thumbnail: 'giraffe.jpg'
+description: 'An interactive game for children with the theme of zoo'
 ---
 
-_Lorem ipsum_ dolor sit amet, _consectetur_ adipiscing elit. Proin ante dolor, auctor vitae libero ac, pellentesque feugiat tellus. Aenean justo eros, **pellentesque** ac ultrices vel, suscipit id ex. Proin gravida nisi id semper gravida. Integer pharetra, dui sed dapibus posuere, arcu turpis ornare ante, id laoreet enim nulla non diam. Cras finibus efficitur eleifend. Vivamus tempus at quam ac scelerisque. Pellentesque consequat porta scelerisque. Integer finibus ultricies ex, eu pulvinar lacus iaculis a. Nullam congue vel massa a ultricies. Praesent iaculis sed tellus eget ultricies.
+Pocket zoo AR is an interactive game for children with the theme of zoo. This game is from an educational point of view, allowing children to learn some animal-related knowledge in the game. This is an interactive game. Children can take pictures of animals in reality to interact with animal models made on the screen, and learn knowledge in the game.
 
-<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/6580726?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ante dolor, auctor vitae libero ac, pellentesque feugiat tellus. Aenean justo eros, _pellentesque_ ac ultrices vel, suscipit id ex. Proin gravida nisi id semper gravida. Integer pharetra, dui sed dapibus posuere, arcu turpis ornare ante. Mauris ut nisi non lectus auctor **_condimentum vitae_** quis lacus. Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus.
-
-> "Id laoreet enim nulla non diam. Cras finibus efficitur eleifend. Vivamus tempus at quam ac scelerisque. Pellentesque consequat porta scelerisque. Integer finibus ultricies ex, eu pulvinar lacus iaculis a. Nullam congue vel massa a ultricies. Praesent iaculis sed tellus eget ultricies." — Example Quote
-
-Mauris ut nisi non lectus auctor condimentum vitae quis lacus. Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus.
-
-![Two hands in the dark © Vincent van Gogh](image.png)
+The theme of the project proposal is about the practicality of educational AR applications. Is looking for an interactive way of children's education. I developed an AR application prototype called "Pocket Zoo", which contains 3D animal models that can interact with players. When the player clicks on the animal model on the computer, the model will change the body movements to generate interaction. Look for better ways to educate children by observing the interaction process between children and AR applications.
 
 Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus. Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus.
+
+### Game Interface Design
+
+This is the interface of the game homepage I designed. Click sign in to enter the game. This page is designed based on the audience (kids) and related elements of the zoo.
+
+![Exhibition photo](homepage.jpg)
+
+In the interface at the end of the game, I made a design about the zoo vector diagram. Click play again to restart the game.
+
+![Exhibition photo](lastpage.jpg)
+
+### Game Model and Display (animals)
+
+This is about the pictures of animals and the animal model after camera recognition
+
+![3D model](tiger.jpg)
+![3D model](camel.jpg)
+![3D model](antelope.jpg)
+![3D model](leopard.jpg)
+![3D model](giraffe.jpg)
+
+This is about the graphic knowledge of the animal that appears on the screen after the camera recognizes the picture of the animal
+
+![Exhibition photo](IMG1.jpg)
+![Exhibition photo](IMG2.jpg)
+![Exhibition photo](IMG3.jpg)
+![Exhibition photo](IMG4.jpg)
+![Exhibition photo](IMG5.jpg)
