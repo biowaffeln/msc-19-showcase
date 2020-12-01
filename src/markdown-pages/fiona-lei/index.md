@@ -3,7 +3,7 @@ slug: '/fiona-lei'
 artist: 'Fiona Lei'
 title: 'CUBe'
 description: 'A digital installation that allows you to take control over shapes and structure'
-thumbnail: 'CUBe_thumbnail.png'
+thumbnail: 'CUBe_thumbnail.jpg'
 ---
 
 #### [Download the windows game](https://muzitua.itch.io/cube)
