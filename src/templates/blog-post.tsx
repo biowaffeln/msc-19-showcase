@@ -46,6 +46,14 @@ const MarkdownWrapper = styled.div`
     margin: 1.5rem 0;
   }
 
+  a {
+    color: ${(props) => props.theme.blue};
+  }
+
+  a:hover {
+    color: ${(props) => props.theme.blue};
+  }
+
   /* make youtube resonsive  */
   .iframe-wrapper {
     position: relative;

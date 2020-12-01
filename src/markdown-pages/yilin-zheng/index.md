@@ -7,7 +7,7 @@ thumbnail: 'thumbnail.jpg'
 
 Forest Daydream VR is an interactive VR experience that aimed to create emotional connections of players with the virtual world, while expressing the concern of global climate emergency nowadays. It is an open-ended game that players can interact with game objects and build on the virtual world.
 
-#### Download the game at: https://aaaraly.itch.io/forestdaydreamvr
+#### [Download the game](https://aaaraly.itch.io/forestdaydreamvr)
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/485396365?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 

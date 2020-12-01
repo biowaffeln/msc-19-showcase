@@ -55,7 +55,7 @@ const GlobalStyle = createGlobalStyle`
   h1 {
     ${typeBase}
     font-family: ${helvetica};
-      letter-spacing: -0.05rem;
+      letter-spacing: -0.1rem;
       line-height: 1;
       font-weight: 800;
       font-size: 5.3125rem;  
@@ -108,7 +108,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${helvetica};
     letter-spacing: 0.015em;
     word-spacing: 0.001em;
-    font-size: 1.125rem;
+    font-size: 1.15rem;
     font-weight: 500;
     line-height: 1.45;
 
@@ -133,6 +133,8 @@ const GlobalStyle = createGlobalStyle`
 
   blockquote p {
     ${typeBase}
+    letter-spacing: -0.02rem;
+    line-height: 1.3;
     font-size: 1.875rem;
     padding-left: 2.5rem;
     font-family: ${helvetica};

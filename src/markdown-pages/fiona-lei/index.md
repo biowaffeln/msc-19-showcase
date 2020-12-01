@@ -6,7 +6,7 @@ description: 'A digital installation that allows you to take control over shapes
 thumbnail: 'thumbnail.png'
 ---
 
-### Download Available at: https://muzitua.itch.io/cube. Windows only.
+#### [Download the windows game](https://muzitua.itch.io/cube)
 
 CUBe is a digital installation that allows you to take control over shapes and structure. I am hoping to bring out the concept of medium that have introduced by Marshall McLuhan in the 1960s, the time before digital games and the TV were just introduced to the public. Feel the control you have with the shapes and feel the message from the twisted textures over the shape.
 
