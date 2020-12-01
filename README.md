@@ -6,7 +6,9 @@
 
 ## Adding your project
 
-Clone the repository. You can add your project by populating the `index.md` in your `src/markdown-pages/your-name` directory.
+Clone the repository with: `git clone https://github.com/moritzsalla/msc-19-showcase.git`
+
+You can add your project by populating the `index.md` in your `src/markdown-pages/your-name` directory.
 
 ```
 markdown-pages
@@ -54,6 +56,8 @@ When adding Vimeo embeds, make sure to have responsive sizing enabled. Youtube e
   ></iframe>
 </div>
 ```
+
+If you try to simply `git push origin master` it will prompt you to create a fork instead. Do so.
 
 Stage a pull request and I'll merge it.
 
