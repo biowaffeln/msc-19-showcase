@@ -26,6 +26,8 @@ The Healing Orb is an exploration into how IoT can help us create digital wellbe
 
 ![Technical setup](illu1.png)
 
+![Technical setup 2](setup.png)
+
 ![Data flow](illu2.png)
 
 <!-- The Healing Orb is an exploration into how smart furniture can promote digital wellbeing. It recognises the need for mental wellbeing solutions in the tech industry and seeks to create awareness. Rather than relying on restrictive measures to enforce healthier content, the Healing Orb explores the notion of self-monitoring. This approach stands in contrast to most existing solutions. The Healing Orb is an ambient interface, in that it goes beyond the graphical user interface, and adapts the user's environment.
