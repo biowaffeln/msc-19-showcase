@@ -1,7 +1,7 @@
 ---
 slug: '/yilin-zheng'
 artist: 'Yilin Zheng'
-title: 'Example Project'
+title: 'Forest Daydream VR'
 thumbnail: 'thumbnail.jpg'
 ---
 
