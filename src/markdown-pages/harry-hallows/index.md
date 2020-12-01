@@ -18,4 +18,4 @@ Game Link: https://hhallows.itch.io/bystander
 
 
 
-![Bystander Screenshot](image.png)
+![Bystander Screenshot](BystanderShot04.JPG)
