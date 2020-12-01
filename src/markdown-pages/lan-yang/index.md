@@ -3,14 +3,12 @@ slug: '/lan-yang'
 artist: 'Lan Yang'
 title: 'Pocket Zoo AR'
 thumbnail: 'giraffe.jpg'
-description: 'An interactive game for children with the theme of zoo'
+description: 'An interactive game for children'
 ---
 
 Pocket zoo AR is an interactive game for children with the theme of zoo. This game is from an educational point of view, allowing children to learn some animal-related knowledge in the game. This is an interactive game. Children can take pictures of animals in reality to interact with animal models made on the screen, and learn knowledge in the game.
 
 The theme of the project proposal is about the practicality of educational AR applications. Is looking for an interactive way of children's education. I developed an AR application prototype called "Pocket Zoo", which contains 3D animal models that can interact with players. When the player clicks on the animal model on the computer, the model will change the body movements to generate interaction. Look for better ways to educate children by observing the interaction process between children and AR applications.
-
-Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus. Vivamus sollicitudin ante eget augue mattis, nec mollis nisl pharetra. Nam sollicitudin lacus eu est imperdiet interdum. Nunc quis tristique elit. Vestibulum sit amet dictum velit. Duis vestibulum nisl non est rhoncus viverra. Pellentesque posuere non augue vel luctus. Mauris ut nisi non lectus auctor condimentum vitae quis lacus.
 
 ### Game Interface Design
 
