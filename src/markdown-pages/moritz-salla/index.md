@@ -1,7 +1,7 @@
 ---
 slug: '/moritz-salla'
 artist: 'Moritz Salla'
-title: 'Healing Orb'
+title: 'The Healing Orb'
 thumbnail: './render10.jpg'
 description: 'A Smart Lamp for Digital Wellbeing'
 ---
