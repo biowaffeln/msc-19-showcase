@@ -6,6 +6,14 @@ thumbnail: './render4.jpg'
 description: 'A Smart Lamp for Digital Wellbeing'
 ---
 
+The introduction of new tools has frequently caused injury to humankind. The agricultural revolution reduced average life expectancy by 50% per cent, causing human teeth to grow crooked and fall out due to the softer, more sugary diet.
+
+The internet is a tool. As human brains have evolved very slowly over the last 2000 years, it has been hard for us to catch up on the enormous technological advancements of the 21 century. The blisteringly fast speed of technological evolution, combined with the stigma mental health continues to have in society, makes many of tech's symptoms go unnoticed.
+
+The Healing Orb is an exploration into how IoT can help us create digital wellbeing. By storing and analysing the content we browse with natural language processing, a branch of machine learning, it can judge the healthiness a user's content. The Healing Orb, a wireless smart lamp in the shape of an orb, visualises health levels by fading between user-defined colours. By flawlessly blending into existing furniture, it provides a less obtrusive interface for self-monitoring.
+
+<hr />
+
 The Healing Orb is an exploration into how smart furniture can promote digital wellbeing. It recognises the need for mental wellbeing solutions in the tech industry and seeks to create awareness. Rather than relying on restrictive measures to enforce healthier content, the Healing Orb explores the notion of self-monitoring. This approach stands in contrast to most existing solutions. The Healing Orb is an ambient interface, in that it goes beyond the graphical user interface, and adapts the user's environment.
 
 A significant problem to existing solutions is their restricted awareness of user behaviour. Screen time has access to the amount of time a user spends on which app. Internet filters detect which URL a user visits. In either case, whether or not an interaction is healthy depends solely on static factors, namely quantity of usage time, or blocklisted words. The Healing Orb explores the use of machine learning to overcome the limitations of traditional solutions. Machine learning can detect nuances and relationships of data. It can supply contextual and holistic insights into what kind of interaction a user is undertaking.
