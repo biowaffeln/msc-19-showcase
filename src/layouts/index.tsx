@@ -1,5 +1,6 @@
-import React from 'react';
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import React, { useEffect, useState } from 'react';
+import { animated, useSpring, config } from 'react-spring';
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
 import SocialLinks from '../components/SocialMediaLinks';
@@ -151,16 +152,50 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const Layout = ({ children }) => (
-  <ThemeProvider theme={theme}>
-    <div className='mx-2 mx-md-3 py-5 py-md-5'>
+const NavWrapper = styled(animated.div)`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+`;
+
+const Layout = ({ children, hideNavOnScroll }) => {
+  const [scrolling, setScrolling] = useState(false);
+
+  function handleScroll() {
+    if (window.pageYOffset > window.innerHeight * 0.5) {
+      setScrolling(true);
+    } else {
+      setScrolling(false);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, false);
+    return () => window.removeEventListener('scrolling', handleScroll, false);
+  });
+
+  const scrollAnim = useSpring({
+    transform:
+      hideNavOnScroll && scrolling ? 'translateY(-200px)' : 'translateY(0px)',
+    config: config.default,
+  });
+
+  return (
+    <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Nav />
-      <main>{children}</main>
-      <SocialLinks />
-    </div>
-    <Footer />
-  </ThemeProvider>
-);
+      <div className='mx-2 mx-md-3 py-5 py-md-5'>
+        <NavWrapper style={scrollAnim}>
+          <Nav />
+        </NavWrapper>
+
+        <main>{children}</main>
+        <SocialLinks />
+      </div>
+      <Footer />
+    </ThemeProvider>
+  );
+};
 
 export default Layout;

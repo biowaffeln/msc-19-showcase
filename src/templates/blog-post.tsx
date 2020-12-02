@@ -15,6 +15,8 @@ const ProjectLink = styled(Link)`
   align-items: center;
   pointer-events: none;
 
+  transition: 0.5s ease transform;
+
   h3 {
     max-width: 15ch;
     pointer-events: all;
@@ -26,12 +28,20 @@ const ProjectLink = styled(Link)`
     `
     right: 0;
     text-align: right;
+    &:hover {
+      transform: translateX(-5px);
+      transition: 0.5s ease transform;
+    }
   `}
 
   ${(props) =>
     props.left &&
     `
     left: 0;
+    &:hover {
+      transform: translateX(5px);
+      transition: 0.5s ease transform;
+    }
   `}
 
    @media (min-width: 768px) {
@@ -81,7 +91,7 @@ export default function BlogPost({ data, pageContext }) {
     : null;
 
   return (
-    <Layout>
+    <Layout hideNavOnScroll>
       <SEO
         title={artist}
         description={excerpt}
