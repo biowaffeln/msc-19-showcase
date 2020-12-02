@@ -18,8 +18,8 @@ const SEO = ({ title, description, image, slug }: Props) => {
     <Helmet>
       <meta charSet='utf-8' />
       <html lang='en' />
-      <meta name='robots' content='noindex' />
-      <meta name='googlebot' content='noindex' />
+      {/* <meta name='robots' content='noindex' /> */}
+      {/* <meta name='googlebot' content='noindex' /> */}
       <meta property='og:type' content='website' />
       <meta property='twitter:card' content='summary_large_image' />
 
