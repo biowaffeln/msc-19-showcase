@@ -65,26 +65,26 @@ Once I've done so, you can see a preview here: https://msc-19-showcase.vercel.ap
 
 ## Deploying on CCI Servers
 
-1. Clone repo
+1. Clone repository from Github
 
-2. Add a `.env` file
+```
+$ git clone https://github.com/moritzsalla/msc-19-showcase
+```
 
-3. Add font files
+2. Copy font files to server
 
-4. Builds static files to `public/` folder:
+```
+$ scp -rp -P 2020 ~/Documents/GitHub/msc-19-showcase/static/fonts ACCOUNT:~/msc-19-showcase/static
+```
+
+4. Builds static files to `public/` folder
 
 ```
 $ yarn run build
 ```
 
-5. Copy them into public_html from root:
+5. Copy the generated files into `public_html`
 
 ```
-$ cp -r ./msc-19-showcase/public/* ./creativecomputing.cci.arts.ac.uk/public_html/
-```
-
-6. Copy font files to server. Example:
-
-```
-$ scp -R /some/folder username:~/public_html -P 2020
+$ cp -r ~/msc-19-showcase/public/* ~/creativecomputing.cci.arts.ac.uk/public_html/
 ```
