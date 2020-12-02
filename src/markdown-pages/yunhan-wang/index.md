@@ -3,7 +3,7 @@ slug: '/yunhan-wang'
 artist: 'Yunhan Wang'
 title: 'Future Botanical Garden'
 thumbnail: 'main_02.png'
-description: 'Experience a different botanical garden of the future'
+description: 'Experience the botanical garden of the future'
 ---
 
 Many artists have their own ways to express their vision of the future, and I am curious of how the botanical garden will look like in a few decades. We need to rethink of our relationship with the nature, build stronger relationships between people and plants. My design gives people the opportunity to experience different botanical gardens and start thinking about how the botanical garden will look like in the future, and the changes that the botanical garden might face with so many problems that may occur in the future. I decided to create an immersive game that would allow everyone to experience different botanical gardens through digital devices. This work consists of six different scenes, which is named Future Botanical Garden. This is de- signed to reflect my own feelings about the future construction of the botanical garden. I want to give my audience an immersive environment where they can get the most au- thentic experience. In the main scene you will see four rooms, where each of them rep- resents a different world. Different characters have different stories. Entering each room will bring you into that specific world.
@@ -40,4 +40,4 @@ This room is a computer art garden, where the flowers are made with code-generat
 
 There is a towering tree in this room, which cultivates human organs. You can see the square fluid hanging from the tree keeps the organs growing, and the big trees feed and help them grow. They are like the fruits of plants, from bearing fruit to maturity. In the room, human organs and plant organs are closely linked, and can grow together. Eventually, humans will use the matured organs to help those in need of organ transplants. Under the transformation of biotechnology and genetic engineering, big trees have be- come completely different, and they can meet the human needs while growing in a better way.
 
-#### [Download the game](https://blueginger.itch.io/future-botanical-garden)
+#### Download the game here: <https://blueginger.itch.io/future-botanical-garden>

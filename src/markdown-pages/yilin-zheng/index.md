@@ -3,6 +3,7 @@ slug: '/yilin-zheng'
 artist: 'Yilin Zheng'
 title: 'Forest Daydream VR'
 thumbnail: 'thumbnail.jpg'
+description: 'An interactive VR experience about the global climate emergency'
 ---
 
 Forest Daydream VR is an interactive VR experience that aimed to create emotional connections of players with the virtual world, while expressing the concern of global climate emergency nowadays. It is an open-ended game that players can interact with game objects and build on the virtual world.

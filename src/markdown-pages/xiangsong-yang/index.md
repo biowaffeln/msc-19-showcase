@@ -2,20 +2,19 @@
 slug: '/xiangsong-yang'
 artist: 'Xiangsong Yang'
 title: 'Emotional Visualizer'
-description: 'Lorem Ipsum'
 thumbnail: 'graphic.jpg'
+description: 'Using machine learning to create playful user interfaces'
 ---
-
-<div class="iframe-wrapper">
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=ByVcCXy-KTw&t=15s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<br />
 
 ### Affective computing system
 
 The initial ideal of this system is to use the facial capture technology, FaceOSC, combing with an
 interactive machine learning application, Wekinator and a C++ based visualiser, to provide
 customised emotion visualisation and playful user interface.
+
+<div class="iframe-wrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ByVcCXy-KTw?start=15" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ![System map](system_map.jpg)
 
@@ -27,7 +26,7 @@ The input for this system is the facial expression of the user. Xiangsong used F
 the data of the human face and make it usable for Wekinator by normalising and selecting with 8
 different parameters. These 8 parameter are sent in OSC channel /wek/input.
 
-![Input](INPUT.jpg)
+![Input](input.jpg)
 
 ### Wekinator
 
