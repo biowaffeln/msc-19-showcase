@@ -1,0 +1,75 @@
+.mandelbrot {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-width: 2px;
+  --border-opacity: 1;
+  border-color: #e2e8f0;
+  border-color: rgba(226, 232, 240, var(--border-opacity));
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.mandelbrot .shader {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mandelbrot .controls {
+  display: grid;
+  align-items: center;
+  --bg-opacity: 1;
+  background-color: #edf2f7;
+  background-color: rgba(237, 242, 247, var(--bg-opacity));
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  grid-row-gap: 0.5rem;
+  row-gap: 0.5rem;
+  border-top-width: 2px;
+  --border-opacity: 1;
+  border-color: #e2e8f0;
+  border-color: rgba(226, 232, 240, var(--border-opacity));
+}
+
+@media (min-width: 768px) {
+  .mandelbrot .controls {
+    grid-template-columns: 1fr minmax(0, 2fr) 1fr minmax(0, 2fr);
+    grid-column-gap: 1.5rem;
+    -moz-column-gap: 1.5rem;
+    column-gap: 1.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+.mandelbrot input {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  --text-opacity: 1;
+  color: #4a5568;
+  color: rgba(74, 85, 104, var(--text-opacity));
+  line-height: 1.25;
+}
+
+.mandelbrot input:focus {
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+.mandelbrot input:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.mandelbrot label {
+  font-weight: 600;
+}
