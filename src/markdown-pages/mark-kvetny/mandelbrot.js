@@ -50,14 +50,14 @@ const useDrag = (cb) => {
     active: false,
   });
 
-  const onMouseDown = (e) => {
+  const onPointerDown = (e) => {
     vals.current.active = true;
     vals.current.x = e.nativeEvent.offsetX;
     vals.current.y = e.nativeEvent.offsetY;
     e.currentTarget.style.cursor = 'grabbing';
   };
 
-  const onMouseMove = (e) => {
+  const onPointerMove = (e) => {
     if (!vals.current.active) return;
     let { offsetX, offsetY } = e.nativeEvent;
     cb({ dx: offsetX - vals.current.x, dy: offsetY - vals.current.y });
@@ -65,16 +65,16 @@ const useDrag = (cb) => {
     vals.current.y = offsetY;
   };
 
-  const onMouseUp = (e) => {
+  const onPointerUp = (e) => {
     vals.current.x = vals.current.y = null;
     vals.current.active = false;
     e.currentTarget.style.cursor = 'grab';
   };
 
   return {
-    onMouseDown,
-    onMouseMove,
-    onMouseUp,
+    onPointerDown,
+    onPointerMove,
+    onPointerUp,
   };
 };
 
@@ -142,14 +142,18 @@ export const Mandelbrot = () => {
         />
         <label>zoom</label>
         <input
-          type='number'
+          type='range'
+          min='-2'
+          max='20'
           step='0.1'
           value={uniforms.u_zoom}
           onChange={(e) => setZoom(Number(e.target.value))}
         />
         <label>iterations:</label>
         <input
-          type='number'
+          type='range'
+          min='1'
+          max='300'
           step='1'
           min='1'
           value={iterations}
